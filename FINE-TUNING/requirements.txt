@@ -1,0 +1,12 @@
+anthropic>=0.40.0
+pydantic>=2.7.0
+
+# Training (optional — not required for tests without GPU)
+# transformers>=4.40.0
+# peft>=0.11.0
+# accelerate>=0.30.0
+# torch>=2.3.0
+# datasets>=2.20.0
+
+# Testing
+pytest>=8.0.0

@@ -1,0 +1,4439 @@
+[
+  {
+    "id": "syn_006_0085",
+    "text": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 85)",
+    "entities": [
+      {
+        "text": "Sarbanes-Oxley Section 404",
+        "entity_type": "REGULATION",
+        "start": 30,
+        "end": 56,
+        "confidence": 1.0
+      },
+      {
+        "text": "PricewaterhouseCoopers",
+        "entity_type": "COMPANY",
+        "start": 85,
+        "end": 107,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "easy",
+    "token_count": 53,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_006_0026",
+    "text": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 26)",
+    "entities": [
+      {
+        "text": "Sarbanes-Oxley Section 404",
+        "entity_type": "REGULATION",
+        "start": 30,
+        "end": 56,
+        "confidence": 1.0
+      },
+      {
+        "text": "PricewaterhouseCoopers",
+        "entity_type": "COMPANY",
+        "start": 85,
+        "end": 107,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "easy",
+    "token_count": 53,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_003_0045",
+    "text": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 45)",
+    "entities": [
+      {
+        "text": "Alphabet Inc.",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 13,
+        "confidence": 1.0
+      },
+      {
+        "text": "Digital Markets Act",
+        "entity_type": "REGULATION",
+        "start": 45,
+        "end": 64,
+        "confidence": 1.0
+      },
+      {
+        "text": "European Union",
+        "entity_type": "LOCATION",
+        "start": 72,
+        "end": 86,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Search",
+        "entity_type": "PRODUCT",
+        "start": 88,
+        "end": 101,
+        "confidence": 1.0
+      },
+      {
+        "text": "YouTube",
+        "entity_type": "PRODUCT",
+        "start": 106,
+        "end": 113,
+        "confidence": 1.0
+      },
+      {
+        "text": "DeepMind",
+        "entity_type": "COMPANY",
+        "start": 164,
+        "end": 172,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 60,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_003_0047",
+    "text": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 47)",
+    "entities": [
+      {
+        "text": "Alphabet Inc.",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 13,
+        "confidence": 1.0
+      },
+      {
+        "text": "Digital Markets Act",
+        "entity_type": "REGULATION",
+        "start": 45,
+        "end": 64,
+        "confidence": 1.0
+      },
+      {
+        "text": "European Union",
+        "entity_type": "LOCATION",
+        "start": 72,
+        "end": 86,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Search",
+        "entity_type": "PRODUCT",
+        "start": 88,
+        "end": 101,
+        "confidence": 1.0
+      },
+      {
+        "text": "YouTube",
+        "entity_type": "PRODUCT",
+        "start": 106,
+        "end": 113,
+        "confidence": 1.0
+      },
+      {
+        "text": "DeepMind",
+        "entity_type": "COMPANY",
+        "start": 164,
+        "end": 172,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 60,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_006_0020",
+    "text": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 20)",
+    "entities": [
+      {
+        "text": "Sarbanes-Oxley Section 404",
+        "entity_type": "REGULATION",
+        "start": 30,
+        "end": 56,
+        "confidence": 1.0
+      },
+      {
+        "text": "PricewaterhouseCoopers",
+        "entity_type": "COMPANY",
+        "start": 85,
+        "end": 107,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "easy",
+    "token_count": 53,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_005_0046",
+    "text": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 46)",
+    "entities": [
+      {
+        "text": "Intel Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 17,
+        "confidence": 1.0
+      },
+      {
+        "text": "CHIPS and Science Act",
+        "entity_type": "REGULATION",
+        "start": 75,
+        "end": 96,
+        "confidence": 1.0
+      },
+      {
+        "text": "Oregon",
+        "entity_type": "LOCATION",
+        "start": 158,
+        "end": 164,
+        "confidence": 1.0
+      },
+      {
+        "text": "Arizona",
+        "entity_type": "LOCATION",
+        "start": 169,
+        "end": 176,
+        "confidence": 1.0
+      },
+      {
+        "text": "Pat Gelsinger",
+        "entity_type": "PERSON",
+        "start": 178,
+        "end": 191,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 54,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_006_0106",
+    "text": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 106)",
+    "entities": [
+      {
+        "text": "Sarbanes-Oxley Section 404",
+        "entity_type": "REGULATION",
+        "start": 30,
+        "end": 56,
+        "confidence": 1.0
+      },
+      {
+        "text": "PricewaterhouseCoopers",
+        "entity_type": "COMPANY",
+        "start": 85,
+        "end": 107,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "easy",
+    "token_count": 53,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_002_0081",
+    "text": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 81)",
+    "entities": [
+      {
+        "text": "Microsoft Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 21,
+        "confidence": 1.0
+      },
+      {
+        "text": "Azure AI",
+        "entity_type": "PRODUCT",
+        "start": 24,
+        "end": 32,
+        "confidence": 1.0
+      },
+      {
+        "text": "29% increase",
+        "entity_type": "METRIC",
+        "start": 59,
+        "end": 71,
+        "confidence": 1.0
+      },
+      {
+        "text": "Amy Hood",
+        "entity_type": "PERSON",
+        "start": 94,
+        "end": 102,
+        "confidence": 1.0
+      },
+      {
+        "text": "Redmond, Washington",
+        "entity_type": "LOCATION",
+        "start": 213,
+        "end": 232,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 67,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_000_0058",
+    "text": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 58)",
+    "entities": [
+      {
+        "text": "NVIDIA Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 18,
+        "confidence": 1.0
+      },
+      {
+        "text": "$26.0 billion",
+        "entity_type": "METRIC",
+        "start": 39,
+        "end": 52,
+        "confidence": 1.0
+      },
+      {
+        "text": "H100 GPU",
+        "entity_type": "PRODUCT",
+        "start": 107,
+        "end": 115,
+        "confidence": 1.0
+      },
+      {
+        "text": "Jensen Huang",
+        "entity_type": "PERSON",
+        "start": 149,
+        "end": 161,
+        "confidence": 1.0
+      },
+      {
+        "text": "CUDA",
+        "entity_type": "PRODUCT",
+        "start": 186,
+        "end": 190,
+        "confidence": 1.0
+      },
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 243,
+        "end": 265,
+        "confidence": 1.0
+      },
+      {
+        "text": "Intel Corporation",
+        "entity_type": "COMPANY",
+        "start": 270,
+        "end": 287,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 79,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_002_0119",
+    "text": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 119)",
+    "entities": [
+      {
+        "text": "Microsoft Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 21,
+        "confidence": 1.0
+      },
+      {
+        "text": "Azure AI",
+        "entity_type": "PRODUCT",
+        "start": 24,
+        "end": 32,
+        "confidence": 1.0
+      },
+      {
+        "text": "29% increase",
+        "entity_type": "METRIC",
+        "start": 59,
+        "end": 71,
+        "confidence": 1.0
+      },
+      {
+        "text": "Amy Hood",
+        "entity_type": "PERSON",
+        "start": 94,
+        "end": 102,
+        "confidence": 1.0
+      },
+      {
+        "text": "Redmond, Washington",
+        "entity_type": "LOCATION",
+        "start": 213,
+        "end": 232,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 67,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_003_0118",
+    "text": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 118)",
+    "entities": [
+      {
+        "text": "Alphabet Inc.",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 13,
+        "confidence": 1.0
+      },
+      {
+        "text": "Digital Markets Act",
+        "entity_type": "REGULATION",
+        "start": 45,
+        "end": 64,
+        "confidence": 1.0
+      },
+      {
+        "text": "European Union",
+        "entity_type": "LOCATION",
+        "start": 72,
+        "end": 86,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Search",
+        "entity_type": "PRODUCT",
+        "start": 88,
+        "end": 101,
+        "confidence": 1.0
+      },
+      {
+        "text": "YouTube",
+        "entity_type": "PRODUCT",
+        "start": 106,
+        "end": 113,
+        "confidence": 1.0
+      },
+      {
+        "text": "DeepMind",
+        "entity_type": "COMPANY",
+        "start": 164,
+        "end": 172,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 60,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_007_0012",
+    "text": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 12)",
+    "entities": [
+      {
+        "text": "GAAP",
+        "entity_type": "REGULATION",
+        "start": 0,
+        "end": 4,
+        "confidence": 1.0
+      },
+      {
+        "text": "$1.2 billion",
+        "entity_type": "METRIC",
+        "start": 29,
+        "end": 41,
+        "confidence": 1.0
+      },
+      {
+        "text": "Non-GAAP EPS",
+        "entity_type": "METRIC",
+        "start": 109,
+        "end": 121,
+        "confidence": 1.0
+      },
+      {
+        "text": "18%",
+        "entity_type": "METRIC",
+        "start": 127,
+        "end": 130,
+        "confidence": 1.0
+      },
+      {
+        "text": "$4.32",
+        "entity_type": "METRIC",
+        "start": 134,
+        "end": 139,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 42,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_007_0110",
+    "text": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 110)",
+    "entities": [
+      {
+        "text": "GAAP",
+        "entity_type": "REGULATION",
+        "start": 0,
+        "end": 4,
+        "confidence": 1.0
+      },
+      {
+        "text": "$1.2 billion",
+        "entity_type": "METRIC",
+        "start": 29,
+        "end": 41,
+        "confidence": 1.0
+      },
+      {
+        "text": "Non-GAAP EPS",
+        "entity_type": "METRIC",
+        "start": 109,
+        "end": 121,
+        "confidence": 1.0
+      },
+      {
+        "text": "18%",
+        "entity_type": "METRIC",
+        "start": 127,
+        "end": 130,
+        "confidence": 1.0
+      },
+      {
+        "text": "$4.32",
+        "entity_type": "METRIC",
+        "start": 134,
+        "end": 139,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 43,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_002_0122",
+    "text": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 122)",
+    "entities": [
+      {
+        "text": "Microsoft Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 21,
+        "confidence": 1.0
+      },
+      {
+        "text": "Azure AI",
+        "entity_type": "PRODUCT",
+        "start": 24,
+        "end": 32,
+        "confidence": 1.0
+      },
+      {
+        "text": "29% increase",
+        "entity_type": "METRIC",
+        "start": 59,
+        "end": 71,
+        "confidence": 1.0
+      },
+      {
+        "text": "Amy Hood",
+        "entity_type": "PERSON",
+        "start": 94,
+        "end": 102,
+        "confidence": 1.0
+      },
+      {
+        "text": "Redmond, Washington",
+        "entity_type": "LOCATION",
+        "start": 213,
+        "end": 232,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 67,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_003_0109",
+    "text": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 109)",
+    "entities": [
+      {
+        "text": "Alphabet Inc.",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 13,
+        "confidence": 1.0
+      },
+      {
+        "text": "Digital Markets Act",
+        "entity_type": "REGULATION",
+        "start": 45,
+        "end": 64,
+        "confidence": 1.0
+      },
+      {
+        "text": "European Union",
+        "entity_type": "LOCATION",
+        "start": 72,
+        "end": 86,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Search",
+        "entity_type": "PRODUCT",
+        "start": 88,
+        "end": 101,
+        "confidence": 1.0
+      },
+      {
+        "text": "YouTube",
+        "entity_type": "PRODUCT",
+        "start": 106,
+        "end": 113,
+        "confidence": 1.0
+      },
+      {
+        "text": "DeepMind",
+        "entity_type": "COMPANY",
+        "start": 164,
+        "end": 172,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 60,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_001_0010",
+    "text": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 10)",
+    "entities": [
+      {
+        "text": "Amazon Web Services",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 19,
+        "confidence": 1.0
+      },
+      {
+        "text": "$9.4 billion",
+        "entity_type": "METRIC",
+        "start": 50,
+        "end": 62,
+        "confidence": 1.0
+      },
+      {
+        "text": "Microsoft Azure",
+        "entity_type": "PRODUCT",
+        "start": 93,
+        "end": 108,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Cloud Platform",
+        "entity_type": "PRODUCT",
+        "start": 113,
+        "end": 134,
+        "confidence": 1.0
+      },
+      {
+        "text": "Federal Trade Commission",
+        "entity_type": "REGULATION",
+        "start": 179,
+        "end": 203,
+        "confidence": 1.0
+      },
+      {
+        "text": "GDPR",
+        "entity_type": "REGULATION",
+        "start": 224,
+        "end": 228,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_000_0037",
+    "text": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 37)",
+    "entities": [
+      {
+        "text": "NVIDIA Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 18,
+        "confidence": 1.0
+      },
+      {
+        "text": "$26.0 billion",
+        "entity_type": "METRIC",
+        "start": 39,
+        "end": 52,
+        "confidence": 1.0
+      },
+      {
+        "text": "H100 GPU",
+        "entity_type": "PRODUCT",
+        "start": 107,
+        "end": 115,
+        "confidence": 1.0
+      },
+      {
+        "text": "Jensen Huang",
+        "entity_type": "PERSON",
+        "start": 149,
+        "end": 161,
+        "confidence": 1.0
+      },
+      {
+        "text": "CUDA",
+        "entity_type": "PRODUCT",
+        "start": 186,
+        "end": 190,
+        "confidence": 1.0
+      },
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 243,
+        "end": 265,
+        "confidence": 1.0
+      },
+      {
+        "text": "Intel Corporation",
+        "entity_type": "COMPANY",
+        "start": 270,
+        "end": 287,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 79,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_007_0098",
+    "text": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 98)",
+    "entities": [
+      {
+        "text": "GAAP",
+        "entity_type": "REGULATION",
+        "start": 0,
+        "end": 4,
+        "confidence": 1.0
+      },
+      {
+        "text": "$1.2 billion",
+        "entity_type": "METRIC",
+        "start": 29,
+        "end": 41,
+        "confidence": 1.0
+      },
+      {
+        "text": "Non-GAAP EPS",
+        "entity_type": "METRIC",
+        "start": 109,
+        "end": 121,
+        "confidence": 1.0
+      },
+      {
+        "text": "18%",
+        "entity_type": "METRIC",
+        "start": 127,
+        "end": 130,
+        "confidence": 1.0
+      },
+      {
+        "text": "$4.32",
+        "entity_type": "METRIC",
+        "start": 134,
+        "end": 139,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 42,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_001_0029",
+    "text": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 29)",
+    "entities": [
+      {
+        "text": "Amazon Web Services",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 19,
+        "confidence": 1.0
+      },
+      {
+        "text": "$9.4 billion",
+        "entity_type": "METRIC",
+        "start": 50,
+        "end": 62,
+        "confidence": 1.0
+      },
+      {
+        "text": "Microsoft Azure",
+        "entity_type": "PRODUCT",
+        "start": 93,
+        "end": 108,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Cloud Platform",
+        "entity_type": "PRODUCT",
+        "start": 113,
+        "end": 134,
+        "confidence": 1.0
+      },
+      {
+        "text": "Federal Trade Commission",
+        "entity_type": "REGULATION",
+        "start": 179,
+        "end": 203,
+        "confidence": 1.0
+      },
+      {
+        "text": "GDPR",
+        "entity_type": "REGULATION",
+        "start": 224,
+        "end": 228,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_005_0084",
+    "text": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 84)",
+    "entities": [
+      {
+        "text": "Intel Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 17,
+        "confidence": 1.0
+      },
+      {
+        "text": "CHIPS and Science Act",
+        "entity_type": "REGULATION",
+        "start": 75,
+        "end": 96,
+        "confidence": 1.0
+      },
+      {
+        "text": "Oregon",
+        "entity_type": "LOCATION",
+        "start": 158,
+        "end": 164,
+        "confidence": 1.0
+      },
+      {
+        "text": "Arizona",
+        "entity_type": "LOCATION",
+        "start": 169,
+        "end": 176,
+        "confidence": 1.0
+      },
+      {
+        "text": "Pat Gelsinger",
+        "entity_type": "PERSON",
+        "start": 178,
+        "end": 191,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 54,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_006_0005",
+    "text": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 5)",
+    "entities": [
+      {
+        "text": "Sarbanes-Oxley Section 404",
+        "entity_type": "REGULATION",
+        "start": 30,
+        "end": 56,
+        "confidence": 1.0
+      },
+      {
+        "text": "PricewaterhouseCoopers",
+        "entity_type": "COMPANY",
+        "start": 85,
+        "end": 107,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "easy",
+    "token_count": 53,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_007_0008",
+    "text": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 8)",
+    "entities": [
+      {
+        "text": "GAAP",
+        "entity_type": "REGULATION",
+        "start": 0,
+        "end": 4,
+        "confidence": 1.0
+      },
+      {
+        "text": "$1.2 billion",
+        "entity_type": "METRIC",
+        "start": 29,
+        "end": 41,
+        "confidence": 1.0
+      },
+      {
+        "text": "Non-GAAP EPS",
+        "entity_type": "METRIC",
+        "start": 109,
+        "end": 121,
+        "confidence": 1.0
+      },
+      {
+        "text": "18%",
+        "entity_type": "METRIC",
+        "start": 127,
+        "end": 130,
+        "confidence": 1.0
+      },
+      {
+        "text": "$4.32",
+        "entity_type": "METRIC",
+        "start": 134,
+        "end": 139,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 42,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_001_0090",
+    "text": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 90)",
+    "entities": [
+      {
+        "text": "Amazon Web Services",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 19,
+        "confidence": 1.0
+      },
+      {
+        "text": "$9.4 billion",
+        "entity_type": "METRIC",
+        "start": 50,
+        "end": 62,
+        "confidence": 1.0
+      },
+      {
+        "text": "Microsoft Azure",
+        "entity_type": "PRODUCT",
+        "start": 93,
+        "end": 108,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Cloud Platform",
+        "entity_type": "PRODUCT",
+        "start": 113,
+        "end": 134,
+        "confidence": 1.0
+      },
+      {
+        "text": "Federal Trade Commission",
+        "entity_type": "REGULATION",
+        "start": 179,
+        "end": 203,
+        "confidence": 1.0
+      },
+      {
+        "text": "GDPR",
+        "entity_type": "REGULATION",
+        "start": 224,
+        "end": 228,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_004_0024",
+    "text": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 24)",
+    "entities": [
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 22,
+        "confidence": 1.0
+      },
+      {
+        "text": "49%",
+        "entity_type": "METRIC",
+        "start": 48,
+        "end": 51,
+        "confidence": 1.0
+      },
+      {
+        "text": "Instinct MI300X",
+        "entity_type": "PRODUCT",
+        "start": 69,
+        "end": 84,
+        "confidence": 1.0
+      },
+      {
+        "text": "Lisa Su",
+        "entity_type": "PERSON",
+        "start": 155,
+        "end": 162,
+        "confidence": 1.0
+      },
+      {
+        "text": "San Jose, California",
+        "entity_type": "LOCATION",
+        "start": 227,
+        "end": 247,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_007_0073",
+    "text": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 73)",
+    "entities": [
+      {
+        "text": "GAAP",
+        "entity_type": "REGULATION",
+        "start": 0,
+        "end": 4,
+        "confidence": 1.0
+      },
+      {
+        "text": "$1.2 billion",
+        "entity_type": "METRIC",
+        "start": 29,
+        "end": 41,
+        "confidence": 1.0
+      },
+      {
+        "text": "Non-GAAP EPS",
+        "entity_type": "METRIC",
+        "start": 109,
+        "end": 121,
+        "confidence": 1.0
+      },
+      {
+        "text": "18%",
+        "entity_type": "METRIC",
+        "start": 127,
+        "end": 130,
+        "confidence": 1.0
+      },
+      {
+        "text": "$4.32",
+        "entity_type": "METRIC",
+        "start": 134,
+        "end": 139,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 42,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_002_0046",
+    "text": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 46)",
+    "entities": [
+      {
+        "text": "Microsoft Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 21,
+        "confidence": 1.0
+      },
+      {
+        "text": "Azure AI",
+        "entity_type": "PRODUCT",
+        "start": 24,
+        "end": 32,
+        "confidence": 1.0
+      },
+      {
+        "text": "29% increase",
+        "entity_type": "METRIC",
+        "start": 59,
+        "end": 71,
+        "confidence": 1.0
+      },
+      {
+        "text": "Amy Hood",
+        "entity_type": "PERSON",
+        "start": 94,
+        "end": 102,
+        "confidence": 1.0
+      },
+      {
+        "text": "Redmond, Washington",
+        "entity_type": "LOCATION",
+        "start": 213,
+        "end": 232,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 67,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_002_0110",
+    "text": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 110)",
+    "entities": [
+      {
+        "text": "Microsoft Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 21,
+        "confidence": 1.0
+      },
+      {
+        "text": "Azure AI",
+        "entity_type": "PRODUCT",
+        "start": 24,
+        "end": 32,
+        "confidence": 1.0
+      },
+      {
+        "text": "29% increase",
+        "entity_type": "METRIC",
+        "start": 59,
+        "end": 71,
+        "confidence": 1.0
+      },
+      {
+        "text": "Amy Hood",
+        "entity_type": "PERSON",
+        "start": 94,
+        "end": 102,
+        "confidence": 1.0
+      },
+      {
+        "text": "Redmond, Washington",
+        "entity_type": "LOCATION",
+        "start": 213,
+        "end": 232,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 67,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_002_0113",
+    "text": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 113)",
+    "entities": [
+      {
+        "text": "Microsoft Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 21,
+        "confidence": 1.0
+      },
+      {
+        "text": "Azure AI",
+        "entity_type": "PRODUCT",
+        "start": 24,
+        "end": 32,
+        "confidence": 1.0
+      },
+      {
+        "text": "29% increase",
+        "entity_type": "METRIC",
+        "start": 59,
+        "end": 71,
+        "confidence": 1.0
+      },
+      {
+        "text": "Amy Hood",
+        "entity_type": "PERSON",
+        "start": 94,
+        "end": 102,
+        "confidence": 1.0
+      },
+      {
+        "text": "Redmond, Washington",
+        "entity_type": "LOCATION",
+        "start": 213,
+        "end": 232,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 67,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_001_0079",
+    "text": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 79)",
+    "entities": [
+      {
+        "text": "Amazon Web Services",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 19,
+        "confidence": 1.0
+      },
+      {
+        "text": "$9.4 billion",
+        "entity_type": "METRIC",
+        "start": 50,
+        "end": 62,
+        "confidence": 1.0
+      },
+      {
+        "text": "Microsoft Azure",
+        "entity_type": "PRODUCT",
+        "start": 93,
+        "end": 108,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Cloud Platform",
+        "entity_type": "PRODUCT",
+        "start": 113,
+        "end": 134,
+        "confidence": 1.0
+      },
+      {
+        "text": "Federal Trade Commission",
+        "entity_type": "REGULATION",
+        "start": 179,
+        "end": 203,
+        "confidence": 1.0
+      },
+      {
+        "text": "GDPR",
+        "entity_type": "REGULATION",
+        "start": 224,
+        "end": 228,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_003_0080",
+    "text": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 80)",
+    "entities": [
+      {
+        "text": "Alphabet Inc.",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 13,
+        "confidence": 1.0
+      },
+      {
+        "text": "Digital Markets Act",
+        "entity_type": "REGULATION",
+        "start": 45,
+        "end": 64,
+        "confidence": 1.0
+      },
+      {
+        "text": "European Union",
+        "entity_type": "LOCATION",
+        "start": 72,
+        "end": 86,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Search",
+        "entity_type": "PRODUCT",
+        "start": 88,
+        "end": 101,
+        "confidence": 1.0
+      },
+      {
+        "text": "YouTube",
+        "entity_type": "PRODUCT",
+        "start": 106,
+        "end": 113,
+        "confidence": 1.0
+      },
+      {
+        "text": "DeepMind",
+        "entity_type": "COMPANY",
+        "start": 164,
+        "end": 172,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 60,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_001_0106",
+    "text": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 106)",
+    "entities": [
+      {
+        "text": "Amazon Web Services",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 19,
+        "confidence": 1.0
+      },
+      {
+        "text": "$9.4 billion",
+        "entity_type": "METRIC",
+        "start": 50,
+        "end": 62,
+        "confidence": 1.0
+      },
+      {
+        "text": "Microsoft Azure",
+        "entity_type": "PRODUCT",
+        "start": 93,
+        "end": 108,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Cloud Platform",
+        "entity_type": "PRODUCT",
+        "start": 113,
+        "end": 134,
+        "confidence": 1.0
+      },
+      {
+        "text": "Federal Trade Commission",
+        "entity_type": "REGULATION",
+        "start": 179,
+        "end": 203,
+        "confidence": 1.0
+      },
+      {
+        "text": "GDPR",
+        "entity_type": "REGULATION",
+        "start": 224,
+        "end": 228,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_004_0037",
+    "text": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 37)",
+    "entities": [
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 22,
+        "confidence": 1.0
+      },
+      {
+        "text": "49%",
+        "entity_type": "METRIC",
+        "start": 48,
+        "end": 51,
+        "confidence": 1.0
+      },
+      {
+        "text": "Instinct MI300X",
+        "entity_type": "PRODUCT",
+        "start": 69,
+        "end": 84,
+        "confidence": 1.0
+      },
+      {
+        "text": "Lisa Su",
+        "entity_type": "PERSON",
+        "start": 155,
+        "end": 162,
+        "confidence": 1.0
+      },
+      {
+        "text": "San Jose, California",
+        "entity_type": "LOCATION",
+        "start": 227,
+        "end": 247,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_005_0070",
+    "text": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 70)",
+    "entities": [
+      {
+        "text": "Intel Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 17,
+        "confidence": 1.0
+      },
+      {
+        "text": "CHIPS and Science Act",
+        "entity_type": "REGULATION",
+        "start": 75,
+        "end": 96,
+        "confidence": 1.0
+      },
+      {
+        "text": "Oregon",
+        "entity_type": "LOCATION",
+        "start": 158,
+        "end": 164,
+        "confidence": 1.0
+      },
+      {
+        "text": "Arizona",
+        "entity_type": "LOCATION",
+        "start": 169,
+        "end": 176,
+        "confidence": 1.0
+      },
+      {
+        "text": "Pat Gelsinger",
+        "entity_type": "PERSON",
+        "start": 178,
+        "end": 191,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 54,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_000_0010",
+    "text": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 10)",
+    "entities": [
+      {
+        "text": "NVIDIA Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 18,
+        "confidence": 1.0
+      },
+      {
+        "text": "$26.0 billion",
+        "entity_type": "METRIC",
+        "start": 39,
+        "end": 52,
+        "confidence": 1.0
+      },
+      {
+        "text": "H100 GPU",
+        "entity_type": "PRODUCT",
+        "start": 107,
+        "end": 115,
+        "confidence": 1.0
+      },
+      {
+        "text": "Jensen Huang",
+        "entity_type": "PERSON",
+        "start": 149,
+        "end": 161,
+        "confidence": 1.0
+      },
+      {
+        "text": "CUDA",
+        "entity_type": "PRODUCT",
+        "start": 186,
+        "end": 190,
+        "confidence": 1.0
+      },
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 243,
+        "end": 265,
+        "confidence": 1.0
+      },
+      {
+        "text": "Intel Corporation",
+        "entity_type": "COMPANY",
+        "start": 270,
+        "end": 287,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 79,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_003_0048",
+    "text": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 48)",
+    "entities": [
+      {
+        "text": "Alphabet Inc.",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 13,
+        "confidence": 1.0
+      },
+      {
+        "text": "Digital Markets Act",
+        "entity_type": "REGULATION",
+        "start": 45,
+        "end": 64,
+        "confidence": 1.0
+      },
+      {
+        "text": "European Union",
+        "entity_type": "LOCATION",
+        "start": 72,
+        "end": 86,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Search",
+        "entity_type": "PRODUCT",
+        "start": 88,
+        "end": 101,
+        "confidence": 1.0
+      },
+      {
+        "text": "YouTube",
+        "entity_type": "PRODUCT",
+        "start": 106,
+        "end": 113,
+        "confidence": 1.0
+      },
+      {
+        "text": "DeepMind",
+        "entity_type": "COMPANY",
+        "start": 164,
+        "end": 172,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 60,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_007_0015",
+    "text": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 15)",
+    "entities": [
+      {
+        "text": "GAAP",
+        "entity_type": "REGULATION",
+        "start": 0,
+        "end": 4,
+        "confidence": 1.0
+      },
+      {
+        "text": "$1.2 billion",
+        "entity_type": "METRIC",
+        "start": 29,
+        "end": 41,
+        "confidence": 1.0
+      },
+      {
+        "text": "Non-GAAP EPS",
+        "entity_type": "METRIC",
+        "start": 109,
+        "end": 121,
+        "confidence": 1.0
+      },
+      {
+        "text": "18%",
+        "entity_type": "METRIC",
+        "start": 127,
+        "end": 130,
+        "confidence": 1.0
+      },
+      {
+        "text": "$4.32",
+        "entity_type": "METRIC",
+        "start": 134,
+        "end": 139,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 42,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_005_0068",
+    "text": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 68)",
+    "entities": [
+      {
+        "text": "Intel Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 17,
+        "confidence": 1.0
+      },
+      {
+        "text": "CHIPS and Science Act",
+        "entity_type": "REGULATION",
+        "start": 75,
+        "end": 96,
+        "confidence": 1.0
+      },
+      {
+        "text": "Oregon",
+        "entity_type": "LOCATION",
+        "start": 158,
+        "end": 164,
+        "confidence": 1.0
+      },
+      {
+        "text": "Arizona",
+        "entity_type": "LOCATION",
+        "start": 169,
+        "end": 176,
+        "confidence": 1.0
+      },
+      {
+        "text": "Pat Gelsinger",
+        "entity_type": "PERSON",
+        "start": 178,
+        "end": 191,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 54,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_006_0058",
+    "text": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 58)",
+    "entities": [
+      {
+        "text": "Sarbanes-Oxley Section 404",
+        "entity_type": "REGULATION",
+        "start": 30,
+        "end": 56,
+        "confidence": 1.0
+      },
+      {
+        "text": "PricewaterhouseCoopers",
+        "entity_type": "COMPANY",
+        "start": 85,
+        "end": 107,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "easy",
+    "token_count": 53,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_003_0093",
+    "text": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 93)",
+    "entities": [
+      {
+        "text": "Alphabet Inc.",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 13,
+        "confidence": 1.0
+      },
+      {
+        "text": "Digital Markets Act",
+        "entity_type": "REGULATION",
+        "start": 45,
+        "end": 64,
+        "confidence": 1.0
+      },
+      {
+        "text": "European Union",
+        "entity_type": "LOCATION",
+        "start": 72,
+        "end": 86,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Search",
+        "entity_type": "PRODUCT",
+        "start": 88,
+        "end": 101,
+        "confidence": 1.0
+      },
+      {
+        "text": "YouTube",
+        "entity_type": "PRODUCT",
+        "start": 106,
+        "end": 113,
+        "confidence": 1.0
+      },
+      {
+        "text": "DeepMind",
+        "entity_type": "COMPANY",
+        "start": 164,
+        "end": 172,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 60,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_004_0005",
+    "text": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 5)",
+    "entities": [
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 22,
+        "confidence": 1.0
+      },
+      {
+        "text": "49%",
+        "entity_type": "METRIC",
+        "start": 48,
+        "end": 51,
+        "confidence": 1.0
+      },
+      {
+        "text": "Instinct MI300X",
+        "entity_type": "PRODUCT",
+        "start": 69,
+        "end": 84,
+        "confidence": 1.0
+      },
+      {
+        "text": "Lisa Su",
+        "entity_type": "PERSON",
+        "start": 155,
+        "end": 162,
+        "confidence": 1.0
+      },
+      {
+        "text": "San Jose, California",
+        "entity_type": "LOCATION",
+        "start": 227,
+        "end": 247,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_002_0103",
+    "text": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 103)",
+    "entities": [
+      {
+        "text": "Microsoft Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 21,
+        "confidence": 1.0
+      },
+      {
+        "text": "Azure AI",
+        "entity_type": "PRODUCT",
+        "start": 24,
+        "end": 32,
+        "confidence": 1.0
+      },
+      {
+        "text": "29% increase",
+        "entity_type": "METRIC",
+        "start": 59,
+        "end": 71,
+        "confidence": 1.0
+      },
+      {
+        "text": "Amy Hood",
+        "entity_type": "PERSON",
+        "start": 94,
+        "end": 102,
+        "confidence": 1.0
+      },
+      {
+        "text": "Redmond, Washington",
+        "entity_type": "LOCATION",
+        "start": 213,
+        "end": 232,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 67,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_006_0033",
+    "text": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 33)",
+    "entities": [
+      {
+        "text": "Sarbanes-Oxley Section 404",
+        "entity_type": "REGULATION",
+        "start": 30,
+        "end": 56,
+        "confidence": 1.0
+      },
+      {
+        "text": "PricewaterhouseCoopers",
+        "entity_type": "COMPANY",
+        "start": 85,
+        "end": 107,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "easy",
+    "token_count": 53,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_002_0077",
+    "text": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 77)",
+    "entities": [
+      {
+        "text": "Microsoft Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 21,
+        "confidence": 1.0
+      },
+      {
+        "text": "Azure AI",
+        "entity_type": "PRODUCT",
+        "start": 24,
+        "end": 32,
+        "confidence": 1.0
+      },
+      {
+        "text": "29% increase",
+        "entity_type": "METRIC",
+        "start": 59,
+        "end": 71,
+        "confidence": 1.0
+      },
+      {
+        "text": "Amy Hood",
+        "entity_type": "PERSON",
+        "start": 94,
+        "end": 102,
+        "confidence": 1.0
+      },
+      {
+        "text": "Redmond, Washington",
+        "entity_type": "LOCATION",
+        "start": 213,
+        "end": 232,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 67,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_000_0044",
+    "text": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 44)",
+    "entities": [
+      {
+        "text": "NVIDIA Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 18,
+        "confidence": 1.0
+      },
+      {
+        "text": "$26.0 billion",
+        "entity_type": "METRIC",
+        "start": 39,
+        "end": 52,
+        "confidence": 1.0
+      },
+      {
+        "text": "H100 GPU",
+        "entity_type": "PRODUCT",
+        "start": 107,
+        "end": 115,
+        "confidence": 1.0
+      },
+      {
+        "text": "Jensen Huang",
+        "entity_type": "PERSON",
+        "start": 149,
+        "end": 161,
+        "confidence": 1.0
+      },
+      {
+        "text": "CUDA",
+        "entity_type": "PRODUCT",
+        "start": 186,
+        "end": 190,
+        "confidence": 1.0
+      },
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 243,
+        "end": 265,
+        "confidence": 1.0
+      },
+      {
+        "text": "Intel Corporation",
+        "entity_type": "COMPANY",
+        "start": 270,
+        "end": 287,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 79,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_003_0108",
+    "text": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 108)",
+    "entities": [
+      {
+        "text": "Alphabet Inc.",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 13,
+        "confidence": 1.0
+      },
+      {
+        "text": "Digital Markets Act",
+        "entity_type": "REGULATION",
+        "start": 45,
+        "end": 64,
+        "confidence": 1.0
+      },
+      {
+        "text": "European Union",
+        "entity_type": "LOCATION",
+        "start": 72,
+        "end": 86,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Search",
+        "entity_type": "PRODUCT",
+        "start": 88,
+        "end": 101,
+        "confidence": 1.0
+      },
+      {
+        "text": "YouTube",
+        "entity_type": "PRODUCT",
+        "start": 106,
+        "end": 113,
+        "confidence": 1.0
+      },
+      {
+        "text": "DeepMind",
+        "entity_type": "COMPANY",
+        "start": 164,
+        "end": 172,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 60,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_007_0045",
+    "text": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 45)",
+    "entities": [
+      {
+        "text": "GAAP",
+        "entity_type": "REGULATION",
+        "start": 0,
+        "end": 4,
+        "confidence": 1.0
+      },
+      {
+        "text": "$1.2 billion",
+        "entity_type": "METRIC",
+        "start": 29,
+        "end": 41,
+        "confidence": 1.0
+      },
+      {
+        "text": "Non-GAAP EPS",
+        "entity_type": "METRIC",
+        "start": 109,
+        "end": 121,
+        "confidence": 1.0
+      },
+      {
+        "text": "18%",
+        "entity_type": "METRIC",
+        "start": 127,
+        "end": 130,
+        "confidence": 1.0
+      },
+      {
+        "text": "$4.32",
+        "entity_type": "METRIC",
+        "start": 134,
+        "end": 139,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 42,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_003_0012",
+    "text": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 12)",
+    "entities": [
+      {
+        "text": "Alphabet Inc.",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 13,
+        "confidence": 1.0
+      },
+      {
+        "text": "Digital Markets Act",
+        "entity_type": "REGULATION",
+        "start": 45,
+        "end": 64,
+        "confidence": 1.0
+      },
+      {
+        "text": "European Union",
+        "entity_type": "LOCATION",
+        "start": 72,
+        "end": 86,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Search",
+        "entity_type": "PRODUCT",
+        "start": 88,
+        "end": 101,
+        "confidence": 1.0
+      },
+      {
+        "text": "YouTube",
+        "entity_type": "PRODUCT",
+        "start": 106,
+        "end": 113,
+        "confidence": 1.0
+      },
+      {
+        "text": "DeepMind",
+        "entity_type": "COMPANY",
+        "start": 164,
+        "end": 172,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 60,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_005_0048",
+    "text": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 48)",
+    "entities": [
+      {
+        "text": "Intel Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 17,
+        "confidence": 1.0
+      },
+      {
+        "text": "CHIPS and Science Act",
+        "entity_type": "REGULATION",
+        "start": 75,
+        "end": 96,
+        "confidence": 1.0
+      },
+      {
+        "text": "Oregon",
+        "entity_type": "LOCATION",
+        "start": 158,
+        "end": 164,
+        "confidence": 1.0
+      },
+      {
+        "text": "Arizona",
+        "entity_type": "LOCATION",
+        "start": 169,
+        "end": 176,
+        "confidence": 1.0
+      },
+      {
+        "text": "Pat Gelsinger",
+        "entity_type": "PERSON",
+        "start": 178,
+        "end": 191,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 54,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_006_0011",
+    "text": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 11)",
+    "entities": [
+      {
+        "text": "Sarbanes-Oxley Section 404",
+        "entity_type": "REGULATION",
+        "start": 30,
+        "end": 56,
+        "confidence": 1.0
+      },
+      {
+        "text": "PricewaterhouseCoopers",
+        "entity_type": "COMPANY",
+        "start": 85,
+        "end": 107,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "easy",
+    "token_count": 53,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_006_0123",
+    "text": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 123)",
+    "entities": [
+      {
+        "text": "Sarbanes-Oxley Section 404",
+        "entity_type": "REGULATION",
+        "start": 30,
+        "end": 56,
+        "confidence": 1.0
+      },
+      {
+        "text": "PricewaterhouseCoopers",
+        "entity_type": "COMPANY",
+        "start": 85,
+        "end": 107,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "easy",
+    "token_count": 53,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_000_0043",
+    "text": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 43)",
+    "entities": [
+      {
+        "text": "NVIDIA Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 18,
+        "confidence": 1.0
+      },
+      {
+        "text": "$26.0 billion",
+        "entity_type": "METRIC",
+        "start": 39,
+        "end": 52,
+        "confidence": 1.0
+      },
+      {
+        "text": "H100 GPU",
+        "entity_type": "PRODUCT",
+        "start": 107,
+        "end": 115,
+        "confidence": 1.0
+      },
+      {
+        "text": "Jensen Huang",
+        "entity_type": "PERSON",
+        "start": 149,
+        "end": 161,
+        "confidence": 1.0
+      },
+      {
+        "text": "CUDA",
+        "entity_type": "PRODUCT",
+        "start": 186,
+        "end": 190,
+        "confidence": 1.0
+      },
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 243,
+        "end": 265,
+        "confidence": 1.0
+      },
+      {
+        "text": "Intel Corporation",
+        "entity_type": "COMPANY",
+        "start": 270,
+        "end": 287,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 79,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_005_0097",
+    "text": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 97)",
+    "entities": [
+      {
+        "text": "Intel Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 17,
+        "confidence": 1.0
+      },
+      {
+        "text": "CHIPS and Science Act",
+        "entity_type": "REGULATION",
+        "start": 75,
+        "end": 96,
+        "confidence": 1.0
+      },
+      {
+        "text": "Oregon",
+        "entity_type": "LOCATION",
+        "start": 158,
+        "end": 164,
+        "confidence": 1.0
+      },
+      {
+        "text": "Arizona",
+        "entity_type": "LOCATION",
+        "start": 169,
+        "end": 176,
+        "confidence": 1.0
+      },
+      {
+        "text": "Pat Gelsinger",
+        "entity_type": "PERSON",
+        "start": 178,
+        "end": 191,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 54,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_004_0027",
+    "text": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 27)",
+    "entities": [
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 22,
+        "confidence": 1.0
+      },
+      {
+        "text": "49%",
+        "entity_type": "METRIC",
+        "start": 48,
+        "end": 51,
+        "confidence": 1.0
+      },
+      {
+        "text": "Instinct MI300X",
+        "entity_type": "PRODUCT",
+        "start": 69,
+        "end": 84,
+        "confidence": 1.0
+      },
+      {
+        "text": "Lisa Su",
+        "entity_type": "PERSON",
+        "start": 155,
+        "end": 162,
+        "confidence": 1.0
+      },
+      {
+        "text": "San Jose, California",
+        "entity_type": "LOCATION",
+        "start": 227,
+        "end": 247,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_007_0019",
+    "text": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 19)",
+    "entities": [
+      {
+        "text": "GAAP",
+        "entity_type": "REGULATION",
+        "start": 0,
+        "end": 4,
+        "confidence": 1.0
+      },
+      {
+        "text": "$1.2 billion",
+        "entity_type": "METRIC",
+        "start": 29,
+        "end": 41,
+        "confidence": 1.0
+      },
+      {
+        "text": "Non-GAAP EPS",
+        "entity_type": "METRIC",
+        "start": 109,
+        "end": 121,
+        "confidence": 1.0
+      },
+      {
+        "text": "18%",
+        "entity_type": "METRIC",
+        "start": 127,
+        "end": 130,
+        "confidence": 1.0
+      },
+      {
+        "text": "$4.32",
+        "entity_type": "METRIC",
+        "start": 134,
+        "end": 139,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 42,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_004_0120",
+    "text": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 120)",
+    "entities": [
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 22,
+        "confidence": 1.0
+      },
+      {
+        "text": "49%",
+        "entity_type": "METRIC",
+        "start": 48,
+        "end": 51,
+        "confidence": 1.0
+      },
+      {
+        "text": "Instinct MI300X",
+        "entity_type": "PRODUCT",
+        "start": 69,
+        "end": 84,
+        "confidence": 1.0
+      },
+      {
+        "text": "Lisa Su",
+        "entity_type": "PERSON",
+        "start": 155,
+        "end": 162,
+        "confidence": 1.0
+      },
+      {
+        "text": "San Jose, California",
+        "entity_type": "LOCATION",
+        "start": 227,
+        "end": 247,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_004_0043",
+    "text": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 43)",
+    "entities": [
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 22,
+        "confidence": 1.0
+      },
+      {
+        "text": "49%",
+        "entity_type": "METRIC",
+        "start": 48,
+        "end": 51,
+        "confidence": 1.0
+      },
+      {
+        "text": "Instinct MI300X",
+        "entity_type": "PRODUCT",
+        "start": 69,
+        "end": 84,
+        "confidence": 1.0
+      },
+      {
+        "text": "Lisa Su",
+        "entity_type": "PERSON",
+        "start": 155,
+        "end": 162,
+        "confidence": 1.0
+      },
+      {
+        "text": "San Jose, California",
+        "entity_type": "LOCATION",
+        "start": 227,
+        "end": 247,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_007_0122",
+    "text": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 122)",
+    "entities": [
+      {
+        "text": "GAAP",
+        "entity_type": "REGULATION",
+        "start": 0,
+        "end": 4,
+        "confidence": 1.0
+      },
+      {
+        "text": "$1.2 billion",
+        "entity_type": "METRIC",
+        "start": 29,
+        "end": 41,
+        "confidence": 1.0
+      },
+      {
+        "text": "Non-GAAP EPS",
+        "entity_type": "METRIC",
+        "start": 109,
+        "end": 121,
+        "confidence": 1.0
+      },
+      {
+        "text": "18%",
+        "entity_type": "METRIC",
+        "start": 127,
+        "end": 130,
+        "confidence": 1.0
+      },
+      {
+        "text": "$4.32",
+        "entity_type": "METRIC",
+        "start": 134,
+        "end": 139,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 43,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_002_0089",
+    "text": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 89)",
+    "entities": [
+      {
+        "text": "Microsoft Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 21,
+        "confidence": 1.0
+      },
+      {
+        "text": "Azure AI",
+        "entity_type": "PRODUCT",
+        "start": 24,
+        "end": 32,
+        "confidence": 1.0
+      },
+      {
+        "text": "29% increase",
+        "entity_type": "METRIC",
+        "start": 59,
+        "end": 71,
+        "confidence": 1.0
+      },
+      {
+        "text": "Amy Hood",
+        "entity_type": "PERSON",
+        "start": 94,
+        "end": 102,
+        "confidence": 1.0
+      },
+      {
+        "text": "Redmond, Washington",
+        "entity_type": "LOCATION",
+        "start": 213,
+        "end": 232,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 67,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_003_0020",
+    "text": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 20)",
+    "entities": [
+      {
+        "text": "Alphabet Inc.",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 13,
+        "confidence": 1.0
+      },
+      {
+        "text": "Digital Markets Act",
+        "entity_type": "REGULATION",
+        "start": 45,
+        "end": 64,
+        "confidence": 1.0
+      },
+      {
+        "text": "European Union",
+        "entity_type": "LOCATION",
+        "start": 72,
+        "end": 86,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Search",
+        "entity_type": "PRODUCT",
+        "start": 88,
+        "end": 101,
+        "confidence": 1.0
+      },
+      {
+        "text": "YouTube",
+        "entity_type": "PRODUCT",
+        "start": 106,
+        "end": 113,
+        "confidence": 1.0
+      },
+      {
+        "text": "DeepMind",
+        "entity_type": "COMPANY",
+        "start": 164,
+        "end": 172,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 60,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_001_0103",
+    "text": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 103)",
+    "entities": [
+      {
+        "text": "Amazon Web Services",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 19,
+        "confidence": 1.0
+      },
+      {
+        "text": "$9.4 billion",
+        "entity_type": "METRIC",
+        "start": 50,
+        "end": 62,
+        "confidence": 1.0
+      },
+      {
+        "text": "Microsoft Azure",
+        "entity_type": "PRODUCT",
+        "start": 93,
+        "end": 108,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Cloud Platform",
+        "entity_type": "PRODUCT",
+        "start": 113,
+        "end": 134,
+        "confidence": 1.0
+      },
+      {
+        "text": "Federal Trade Commission",
+        "entity_type": "REGULATION",
+        "start": 179,
+        "end": 203,
+        "confidence": 1.0
+      },
+      {
+        "text": "GDPR",
+        "entity_type": "REGULATION",
+        "start": 224,
+        "end": 228,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_001_0097",
+    "text": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 97)",
+    "entities": [
+      {
+        "text": "Amazon Web Services",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 19,
+        "confidence": 1.0
+      },
+      {
+        "text": "$9.4 billion",
+        "entity_type": "METRIC",
+        "start": 50,
+        "end": 62,
+        "confidence": 1.0
+      },
+      {
+        "text": "Microsoft Azure",
+        "entity_type": "PRODUCT",
+        "start": 93,
+        "end": 108,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Cloud Platform",
+        "entity_type": "PRODUCT",
+        "start": 113,
+        "end": 134,
+        "confidence": 1.0
+      },
+      {
+        "text": "Federal Trade Commission",
+        "entity_type": "REGULATION",
+        "start": 179,
+        "end": 203,
+        "confidence": 1.0
+      },
+      {
+        "text": "GDPR",
+        "entity_type": "REGULATION",
+        "start": 224,
+        "end": 228,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_006_0000",
+    "text": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024.",
+    "entities": [
+      {
+        "text": "Sarbanes-Oxley Section 404",
+        "entity_type": "REGULATION",
+        "start": 30,
+        "end": 56,
+        "confidence": 1.0
+      },
+      {
+        "text": "PricewaterhouseCoopers",
+        "entity_type": "COMPANY",
+        "start": 85,
+        "end": 107,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "easy",
+    "token_count": 50,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_002_0111",
+    "text": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 111)",
+    "entities": [
+      {
+        "text": "Microsoft Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 21,
+        "confidence": 1.0
+      },
+      {
+        "text": "Azure AI",
+        "entity_type": "PRODUCT",
+        "start": 24,
+        "end": 32,
+        "confidence": 1.0
+      },
+      {
+        "text": "29% increase",
+        "entity_type": "METRIC",
+        "start": 59,
+        "end": 71,
+        "confidence": 1.0
+      },
+      {
+        "text": "Amy Hood",
+        "entity_type": "PERSON",
+        "start": 94,
+        "end": 102,
+        "confidence": 1.0
+      },
+      {
+        "text": "Redmond, Washington",
+        "entity_type": "LOCATION",
+        "start": 213,
+        "end": 232,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 67,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_004_0103",
+    "text": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 103)",
+    "entities": [
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 22,
+        "confidence": 1.0
+      },
+      {
+        "text": "49%",
+        "entity_type": "METRIC",
+        "start": 48,
+        "end": 51,
+        "confidence": 1.0
+      },
+      {
+        "text": "Instinct MI300X",
+        "entity_type": "PRODUCT",
+        "start": 69,
+        "end": 84,
+        "confidence": 1.0
+      },
+      {
+        "text": "Lisa Su",
+        "entity_type": "PERSON",
+        "start": 155,
+        "end": 162,
+        "confidence": 1.0
+      },
+      {
+        "text": "San Jose, California",
+        "entity_type": "LOCATION",
+        "start": 227,
+        "end": 247,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_004_0035",
+    "text": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 35)",
+    "entities": [
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 22,
+        "confidence": 1.0
+      },
+      {
+        "text": "49%",
+        "entity_type": "METRIC",
+        "start": 48,
+        "end": 51,
+        "confidence": 1.0
+      },
+      {
+        "text": "Instinct MI300X",
+        "entity_type": "PRODUCT",
+        "start": 69,
+        "end": 84,
+        "confidence": 1.0
+      },
+      {
+        "text": "Lisa Su",
+        "entity_type": "PERSON",
+        "start": 155,
+        "end": 162,
+        "confidence": 1.0
+      },
+      {
+        "text": "San Jose, California",
+        "entity_type": "LOCATION",
+        "start": 227,
+        "end": 247,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_003_0075",
+    "text": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 75)",
+    "entities": [
+      {
+        "text": "Alphabet Inc.",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 13,
+        "confidence": 1.0
+      },
+      {
+        "text": "Digital Markets Act",
+        "entity_type": "REGULATION",
+        "start": 45,
+        "end": 64,
+        "confidence": 1.0
+      },
+      {
+        "text": "European Union",
+        "entity_type": "LOCATION",
+        "start": 72,
+        "end": 86,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Search",
+        "entity_type": "PRODUCT",
+        "start": 88,
+        "end": 101,
+        "confidence": 1.0
+      },
+      {
+        "text": "YouTube",
+        "entity_type": "PRODUCT",
+        "start": 106,
+        "end": 113,
+        "confidence": 1.0
+      },
+      {
+        "text": "DeepMind",
+        "entity_type": "COMPANY",
+        "start": 164,
+        "end": 172,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 60,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_003_0057",
+    "text": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 57)",
+    "entities": [
+      {
+        "text": "Alphabet Inc.",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 13,
+        "confidence": 1.0
+      },
+      {
+        "text": "Digital Markets Act",
+        "entity_type": "REGULATION",
+        "start": 45,
+        "end": 64,
+        "confidence": 1.0
+      },
+      {
+        "text": "European Union",
+        "entity_type": "LOCATION",
+        "start": 72,
+        "end": 86,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Search",
+        "entity_type": "PRODUCT",
+        "start": 88,
+        "end": 101,
+        "confidence": 1.0
+      },
+      {
+        "text": "YouTube",
+        "entity_type": "PRODUCT",
+        "start": 106,
+        "end": 113,
+        "confidence": 1.0
+      },
+      {
+        "text": "DeepMind",
+        "entity_type": "COMPANY",
+        "start": 164,
+        "end": 172,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 60,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_001_0028",
+    "text": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 28)",
+    "entities": [
+      {
+        "text": "Amazon Web Services",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 19,
+        "confidence": 1.0
+      },
+      {
+        "text": "$9.4 billion",
+        "entity_type": "METRIC",
+        "start": 50,
+        "end": 62,
+        "confidence": 1.0
+      },
+      {
+        "text": "Microsoft Azure",
+        "entity_type": "PRODUCT",
+        "start": 93,
+        "end": 108,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Cloud Platform",
+        "entity_type": "PRODUCT",
+        "start": 113,
+        "end": 134,
+        "confidence": 1.0
+      },
+      {
+        "text": "Federal Trade Commission",
+        "entity_type": "REGULATION",
+        "start": 179,
+        "end": 203,
+        "confidence": 1.0
+      },
+      {
+        "text": "GDPR",
+        "entity_type": "REGULATION",
+        "start": 224,
+        "end": 228,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_005_0053",
+    "text": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 53)",
+    "entities": [
+      {
+        "text": "Intel Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 17,
+        "confidence": 1.0
+      },
+      {
+        "text": "CHIPS and Science Act",
+        "entity_type": "REGULATION",
+        "start": 75,
+        "end": 96,
+        "confidence": 1.0
+      },
+      {
+        "text": "Oregon",
+        "entity_type": "LOCATION",
+        "start": 158,
+        "end": 164,
+        "confidence": 1.0
+      },
+      {
+        "text": "Arizona",
+        "entity_type": "LOCATION",
+        "start": 169,
+        "end": 176,
+        "confidence": 1.0
+      },
+      {
+        "text": "Pat Gelsinger",
+        "entity_type": "PERSON",
+        "start": 178,
+        "end": 191,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 54,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_002_0123",
+    "text": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 123)",
+    "entities": [
+      {
+        "text": "Microsoft Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 21,
+        "confidence": 1.0
+      },
+      {
+        "text": "Azure AI",
+        "entity_type": "PRODUCT",
+        "start": 24,
+        "end": 32,
+        "confidence": 1.0
+      },
+      {
+        "text": "29% increase",
+        "entity_type": "METRIC",
+        "start": 59,
+        "end": 71,
+        "confidence": 1.0
+      },
+      {
+        "text": "Amy Hood",
+        "entity_type": "PERSON",
+        "start": 94,
+        "end": 102,
+        "confidence": 1.0
+      },
+      {
+        "text": "Redmond, Washington",
+        "entity_type": "LOCATION",
+        "start": 213,
+        "end": 232,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 67,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_006_0089",
+    "text": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 89)",
+    "entities": [
+      {
+        "text": "Sarbanes-Oxley Section 404",
+        "entity_type": "REGULATION",
+        "start": 30,
+        "end": 56,
+        "confidence": 1.0
+      },
+      {
+        "text": "PricewaterhouseCoopers",
+        "entity_type": "COMPANY",
+        "start": 85,
+        "end": 107,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "easy",
+    "token_count": 53,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_001_0083",
+    "text": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 83)",
+    "entities": [
+      {
+        "text": "Amazon Web Services",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 19,
+        "confidence": 1.0
+      },
+      {
+        "text": "$9.4 billion",
+        "entity_type": "METRIC",
+        "start": 50,
+        "end": 62,
+        "confidence": 1.0
+      },
+      {
+        "text": "Microsoft Azure",
+        "entity_type": "PRODUCT",
+        "start": 93,
+        "end": 108,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Cloud Platform",
+        "entity_type": "PRODUCT",
+        "start": 113,
+        "end": 134,
+        "confidence": 1.0
+      },
+      {
+        "text": "Federal Trade Commission",
+        "entity_type": "REGULATION",
+        "start": 179,
+        "end": 203,
+        "confidence": 1.0
+      },
+      {
+        "text": "GDPR",
+        "entity_type": "REGULATION",
+        "start": 224,
+        "end": 228,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_005_0091",
+    "text": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 91)",
+    "entities": [
+      {
+        "text": "Intel Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 17,
+        "confidence": 1.0
+      },
+      {
+        "text": "CHIPS and Science Act",
+        "entity_type": "REGULATION",
+        "start": 75,
+        "end": 96,
+        "confidence": 1.0
+      },
+      {
+        "text": "Oregon",
+        "entity_type": "LOCATION",
+        "start": 158,
+        "end": 164,
+        "confidence": 1.0
+      },
+      {
+        "text": "Arizona",
+        "entity_type": "LOCATION",
+        "start": 169,
+        "end": 176,
+        "confidence": 1.0
+      },
+      {
+        "text": "Pat Gelsinger",
+        "entity_type": "PERSON",
+        "start": 178,
+        "end": 191,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 54,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_003_0025",
+    "text": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 25)",
+    "entities": [
+      {
+        "text": "Alphabet Inc.",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 13,
+        "confidence": 1.0
+      },
+      {
+        "text": "Digital Markets Act",
+        "entity_type": "REGULATION",
+        "start": 45,
+        "end": 64,
+        "confidence": 1.0
+      },
+      {
+        "text": "European Union",
+        "entity_type": "LOCATION",
+        "start": 72,
+        "end": 86,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Search",
+        "entity_type": "PRODUCT",
+        "start": 88,
+        "end": 101,
+        "confidence": 1.0
+      },
+      {
+        "text": "YouTube",
+        "entity_type": "PRODUCT",
+        "start": 106,
+        "end": 113,
+        "confidence": 1.0
+      },
+      {
+        "text": "DeepMind",
+        "entity_type": "COMPANY",
+        "start": 164,
+        "end": 172,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 60,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_006_0071",
+    "text": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 71)",
+    "entities": [
+      {
+        "text": "Sarbanes-Oxley Section 404",
+        "entity_type": "REGULATION",
+        "start": 30,
+        "end": 56,
+        "confidence": 1.0
+      },
+      {
+        "text": "PricewaterhouseCoopers",
+        "entity_type": "COMPANY",
+        "start": 85,
+        "end": 107,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "easy",
+    "token_count": 53,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_003_0003",
+    "text": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 3)",
+    "entities": [
+      {
+        "text": "Alphabet Inc.",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 13,
+        "confidence": 1.0
+      },
+      {
+        "text": "Digital Markets Act",
+        "entity_type": "REGULATION",
+        "start": 45,
+        "end": 64,
+        "confidence": 1.0
+      },
+      {
+        "text": "European Union",
+        "entity_type": "LOCATION",
+        "start": 72,
+        "end": 86,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Search",
+        "entity_type": "PRODUCT",
+        "start": 88,
+        "end": 101,
+        "confidence": 1.0
+      },
+      {
+        "text": "YouTube",
+        "entity_type": "PRODUCT",
+        "start": 106,
+        "end": 113,
+        "confidence": 1.0
+      },
+      {
+        "text": "DeepMind",
+        "entity_type": "COMPANY",
+        "start": 164,
+        "end": 172,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 60,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_000_0077",
+    "text": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 77)",
+    "entities": [
+      {
+        "text": "NVIDIA Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 18,
+        "confidence": 1.0
+      },
+      {
+        "text": "$26.0 billion",
+        "entity_type": "METRIC",
+        "start": 39,
+        "end": 52,
+        "confidence": 1.0
+      },
+      {
+        "text": "H100 GPU",
+        "entity_type": "PRODUCT",
+        "start": 107,
+        "end": 115,
+        "confidence": 1.0
+      },
+      {
+        "text": "Jensen Huang",
+        "entity_type": "PERSON",
+        "start": 149,
+        "end": 161,
+        "confidence": 1.0
+      },
+      {
+        "text": "CUDA",
+        "entity_type": "PRODUCT",
+        "start": 186,
+        "end": 190,
+        "confidence": 1.0
+      },
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 243,
+        "end": 265,
+        "confidence": 1.0
+      },
+      {
+        "text": "Intel Corporation",
+        "entity_type": "COMPANY",
+        "start": 270,
+        "end": 287,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 79,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_005_0064",
+    "text": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 64)",
+    "entities": [
+      {
+        "text": "Intel Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 17,
+        "confidence": 1.0
+      },
+      {
+        "text": "CHIPS and Science Act",
+        "entity_type": "REGULATION",
+        "start": 75,
+        "end": 96,
+        "confidence": 1.0
+      },
+      {
+        "text": "Oregon",
+        "entity_type": "LOCATION",
+        "start": 158,
+        "end": 164,
+        "confidence": 1.0
+      },
+      {
+        "text": "Arizona",
+        "entity_type": "LOCATION",
+        "start": 169,
+        "end": 176,
+        "confidence": 1.0
+      },
+      {
+        "text": "Pat Gelsinger",
+        "entity_type": "PERSON",
+        "start": 178,
+        "end": 191,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 54,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_006_0029",
+    "text": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 29)",
+    "entities": [
+      {
+        "text": "Sarbanes-Oxley Section 404",
+        "entity_type": "REGULATION",
+        "start": 30,
+        "end": 56,
+        "confidence": 1.0
+      },
+      {
+        "text": "PricewaterhouseCoopers",
+        "entity_type": "COMPANY",
+        "start": 85,
+        "end": 107,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "easy",
+    "token_count": 53,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_007_0027",
+    "text": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 27)",
+    "entities": [
+      {
+        "text": "GAAP",
+        "entity_type": "REGULATION",
+        "start": 0,
+        "end": 4,
+        "confidence": 1.0
+      },
+      {
+        "text": "$1.2 billion",
+        "entity_type": "METRIC",
+        "start": 29,
+        "end": 41,
+        "confidence": 1.0
+      },
+      {
+        "text": "Non-GAAP EPS",
+        "entity_type": "METRIC",
+        "start": 109,
+        "end": 121,
+        "confidence": 1.0
+      },
+      {
+        "text": "18%",
+        "entity_type": "METRIC",
+        "start": 127,
+        "end": 130,
+        "confidence": 1.0
+      },
+      {
+        "text": "$4.32",
+        "entity_type": "METRIC",
+        "start": 134,
+        "end": 139,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 42,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_007_0011",
+    "text": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 11)",
+    "entities": [
+      {
+        "text": "GAAP",
+        "entity_type": "REGULATION",
+        "start": 0,
+        "end": 4,
+        "confidence": 1.0
+      },
+      {
+        "text": "$1.2 billion",
+        "entity_type": "METRIC",
+        "start": 29,
+        "end": 41,
+        "confidence": 1.0
+      },
+      {
+        "text": "Non-GAAP EPS",
+        "entity_type": "METRIC",
+        "start": 109,
+        "end": 121,
+        "confidence": 1.0
+      },
+      {
+        "text": "18%",
+        "entity_type": "METRIC",
+        "start": 127,
+        "end": 130,
+        "confidence": 1.0
+      },
+      {
+        "text": "$4.32",
+        "entity_type": "METRIC",
+        "start": 134,
+        "end": 139,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 42,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_006_0003",
+    "text": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 3)",
+    "entities": [
+      {
+        "text": "Sarbanes-Oxley Section 404",
+        "entity_type": "REGULATION",
+        "start": 30,
+        "end": 56,
+        "confidence": 1.0
+      },
+      {
+        "text": "PricewaterhouseCoopers",
+        "entity_type": "COMPANY",
+        "start": 85,
+        "end": 107,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "easy",
+    "token_count": 53,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_000_0004",
+    "text": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 4)",
+    "entities": [
+      {
+        "text": "NVIDIA Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 18,
+        "confidence": 1.0
+      },
+      {
+        "text": "$26.0 billion",
+        "entity_type": "METRIC",
+        "start": 39,
+        "end": 52,
+        "confidence": 1.0
+      },
+      {
+        "text": "H100 GPU",
+        "entity_type": "PRODUCT",
+        "start": 107,
+        "end": 115,
+        "confidence": 1.0
+      },
+      {
+        "text": "Jensen Huang",
+        "entity_type": "PERSON",
+        "start": 149,
+        "end": 161,
+        "confidence": 1.0
+      },
+      {
+        "text": "CUDA",
+        "entity_type": "PRODUCT",
+        "start": 186,
+        "end": 190,
+        "confidence": 1.0
+      },
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 243,
+        "end": 265,
+        "confidence": 1.0
+      },
+      {
+        "text": "Intel Corporation",
+        "entity_type": "COMPANY",
+        "start": 270,
+        "end": 287,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 79,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_000_0054",
+    "text": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 54)",
+    "entities": [
+      {
+        "text": "NVIDIA Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 18,
+        "confidence": 1.0
+      },
+      {
+        "text": "$26.0 billion",
+        "entity_type": "METRIC",
+        "start": 39,
+        "end": 52,
+        "confidence": 1.0
+      },
+      {
+        "text": "H100 GPU",
+        "entity_type": "PRODUCT",
+        "start": 107,
+        "end": 115,
+        "confidence": 1.0
+      },
+      {
+        "text": "Jensen Huang",
+        "entity_type": "PERSON",
+        "start": 149,
+        "end": 161,
+        "confidence": 1.0
+      },
+      {
+        "text": "CUDA",
+        "entity_type": "PRODUCT",
+        "start": 186,
+        "end": 190,
+        "confidence": 1.0
+      },
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 243,
+        "end": 265,
+        "confidence": 1.0
+      },
+      {
+        "text": "Intel Corporation",
+        "entity_type": "COMPANY",
+        "start": 270,
+        "end": 287,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 79,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_004_0075",
+    "text": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 75)",
+    "entities": [
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 22,
+        "confidence": 1.0
+      },
+      {
+        "text": "49%",
+        "entity_type": "METRIC",
+        "start": 48,
+        "end": 51,
+        "confidence": 1.0
+      },
+      {
+        "text": "Instinct MI300X",
+        "entity_type": "PRODUCT",
+        "start": 69,
+        "end": 84,
+        "confidence": 1.0
+      },
+      {
+        "text": "Lisa Su",
+        "entity_type": "PERSON",
+        "start": 155,
+        "end": 162,
+        "confidence": 1.0
+      },
+      {
+        "text": "San Jose, California",
+        "entity_type": "LOCATION",
+        "start": 227,
+        "end": 247,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_001_0011",
+    "text": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 11)",
+    "entities": [
+      {
+        "text": "Amazon Web Services",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 19,
+        "confidence": 1.0
+      },
+      {
+        "text": "$9.4 billion",
+        "entity_type": "METRIC",
+        "start": 50,
+        "end": 62,
+        "confidence": 1.0
+      },
+      {
+        "text": "Microsoft Azure",
+        "entity_type": "PRODUCT",
+        "start": 93,
+        "end": 108,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Cloud Platform",
+        "entity_type": "PRODUCT",
+        "start": 113,
+        "end": 134,
+        "confidence": 1.0
+      },
+      {
+        "text": "Federal Trade Commission",
+        "entity_type": "REGULATION",
+        "start": 179,
+        "end": 203,
+        "confidence": 1.0
+      },
+      {
+        "text": "GDPR",
+        "entity_type": "REGULATION",
+        "start": 224,
+        "end": 228,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_006_0069",
+    "text": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 69)",
+    "entities": [
+      {
+        "text": "Sarbanes-Oxley Section 404",
+        "entity_type": "REGULATION",
+        "start": 30,
+        "end": 56,
+        "confidence": 1.0
+      },
+      {
+        "text": "PricewaterhouseCoopers",
+        "entity_type": "COMPANY",
+        "start": 85,
+        "end": 107,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "easy",
+    "token_count": 53,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_001_0114",
+    "text": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 114)",
+    "entities": [
+      {
+        "text": "Amazon Web Services",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 19,
+        "confidence": 1.0
+      },
+      {
+        "text": "$9.4 billion",
+        "entity_type": "METRIC",
+        "start": 50,
+        "end": 62,
+        "confidence": 1.0
+      },
+      {
+        "text": "Microsoft Azure",
+        "entity_type": "PRODUCT",
+        "start": 93,
+        "end": 108,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Cloud Platform",
+        "entity_type": "PRODUCT",
+        "start": 113,
+        "end": 134,
+        "confidence": 1.0
+      },
+      {
+        "text": "Federal Trade Commission",
+        "entity_type": "REGULATION",
+        "start": 179,
+        "end": 203,
+        "confidence": 1.0
+      },
+      {
+        "text": "GDPR",
+        "entity_type": "REGULATION",
+        "start": 224,
+        "end": 228,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_006_0094",
+    "text": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 94)",
+    "entities": [
+      {
+        "text": "Sarbanes-Oxley Section 404",
+        "entity_type": "REGULATION",
+        "start": 30,
+        "end": 56,
+        "confidence": 1.0
+      },
+      {
+        "text": "PricewaterhouseCoopers",
+        "entity_type": "COMPANY",
+        "start": 85,
+        "end": 107,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "easy",
+    "token_count": 53,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_004_0086",
+    "text": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 86)",
+    "entities": [
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 22,
+        "confidence": 1.0
+      },
+      {
+        "text": "49%",
+        "entity_type": "METRIC",
+        "start": 48,
+        "end": 51,
+        "confidence": 1.0
+      },
+      {
+        "text": "Instinct MI300X",
+        "entity_type": "PRODUCT",
+        "start": 69,
+        "end": 84,
+        "confidence": 1.0
+      },
+      {
+        "text": "Lisa Su",
+        "entity_type": "PERSON",
+        "start": 155,
+        "end": 162,
+        "confidence": 1.0
+      },
+      {
+        "text": "San Jose, California",
+        "entity_type": "LOCATION",
+        "start": 227,
+        "end": 247,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_000_0013",
+    "text": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 13)",
+    "entities": [
+      {
+        "text": "NVIDIA Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 18,
+        "confidence": 1.0
+      },
+      {
+        "text": "$26.0 billion",
+        "entity_type": "METRIC",
+        "start": 39,
+        "end": 52,
+        "confidence": 1.0
+      },
+      {
+        "text": "H100 GPU",
+        "entity_type": "PRODUCT",
+        "start": 107,
+        "end": 115,
+        "confidence": 1.0
+      },
+      {
+        "text": "Jensen Huang",
+        "entity_type": "PERSON",
+        "start": 149,
+        "end": 161,
+        "confidence": 1.0
+      },
+      {
+        "text": "CUDA",
+        "entity_type": "PRODUCT",
+        "start": 186,
+        "end": 190,
+        "confidence": 1.0
+      },
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 243,
+        "end": 265,
+        "confidence": 1.0
+      },
+      {
+        "text": "Intel Corporation",
+        "entity_type": "COMPANY",
+        "start": 270,
+        "end": 287,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 79,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_002_0094",
+    "text": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 94)",
+    "entities": [
+      {
+        "text": "Microsoft Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 21,
+        "confidence": 1.0
+      },
+      {
+        "text": "Azure AI",
+        "entity_type": "PRODUCT",
+        "start": 24,
+        "end": 32,
+        "confidence": 1.0
+      },
+      {
+        "text": "29% increase",
+        "entity_type": "METRIC",
+        "start": 59,
+        "end": 71,
+        "confidence": 1.0
+      },
+      {
+        "text": "Amy Hood",
+        "entity_type": "PERSON",
+        "start": 94,
+        "end": 102,
+        "confidence": 1.0
+      },
+      {
+        "text": "Redmond, Washington",
+        "entity_type": "LOCATION",
+        "start": 213,
+        "end": 232,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 67,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_006_0017",
+    "text": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 17)",
+    "entities": [
+      {
+        "text": "Sarbanes-Oxley Section 404",
+        "entity_type": "REGULATION",
+        "start": 30,
+        "end": 56,
+        "confidence": 1.0
+      },
+      {
+        "text": "PricewaterhouseCoopers",
+        "entity_type": "COMPANY",
+        "start": 85,
+        "end": 107,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "easy",
+    "token_count": 53,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_004_0028",
+    "text": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 28)",
+    "entities": [
+      {
+        "text": "Advanced Micro Devices",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 22,
+        "confidence": 1.0
+      },
+      {
+        "text": "49%",
+        "entity_type": "METRIC",
+        "start": 48,
+        "end": 51,
+        "confidence": 1.0
+      },
+      {
+        "text": "Instinct MI300X",
+        "entity_type": "PRODUCT",
+        "start": 69,
+        "end": 84,
+        "confidence": 1.0
+      },
+      {
+        "text": "Lisa Su",
+        "entity_type": "PERSON",
+        "start": 155,
+        "end": 162,
+        "confidence": 1.0
+      },
+      {
+        "text": "San Jose, California",
+        "entity_type": "LOCATION",
+        "start": 227,
+        "end": 247,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_002_0031",
+    "text": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 31)",
+    "entities": [
+      {
+        "text": "Microsoft Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 21,
+        "confidence": 1.0
+      },
+      {
+        "text": "Azure AI",
+        "entity_type": "PRODUCT",
+        "start": 24,
+        "end": 32,
+        "confidence": 1.0
+      },
+      {
+        "text": "29% increase",
+        "entity_type": "METRIC",
+        "start": 59,
+        "end": 71,
+        "confidence": 1.0
+      },
+      {
+        "text": "Amy Hood",
+        "entity_type": "PERSON",
+        "start": 94,
+        "end": 102,
+        "confidence": 1.0
+      },
+      {
+        "text": "Redmond, Washington",
+        "entity_type": "LOCATION",
+        "start": 213,
+        "end": 232,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 67,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_001_0035",
+    "text": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 35)",
+    "entities": [
+      {
+        "text": "Amazon Web Services",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 19,
+        "confidence": 1.0
+      },
+      {
+        "text": "$9.4 billion",
+        "entity_type": "METRIC",
+        "start": 50,
+        "end": 62,
+        "confidence": 1.0
+      },
+      {
+        "text": "Microsoft Azure",
+        "entity_type": "PRODUCT",
+        "start": 93,
+        "end": 108,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Cloud Platform",
+        "entity_type": "PRODUCT",
+        "start": 113,
+        "end": 134,
+        "confidence": 1.0
+      },
+      {
+        "text": "Federal Trade Commission",
+        "entity_type": "REGULATION",
+        "start": 179,
+        "end": 203,
+        "confidence": 1.0
+      },
+      {
+        "text": "GDPR",
+        "entity_type": "REGULATION",
+        "start": 224,
+        "end": 228,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_007_0094",
+    "text": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 94)",
+    "entities": [
+      {
+        "text": "GAAP",
+        "entity_type": "REGULATION",
+        "start": 0,
+        "end": 4,
+        "confidence": 1.0
+      },
+      {
+        "text": "$1.2 billion",
+        "entity_type": "METRIC",
+        "start": 29,
+        "end": 41,
+        "confidence": 1.0
+      },
+      {
+        "text": "Non-GAAP EPS",
+        "entity_type": "METRIC",
+        "start": 109,
+        "end": 121,
+        "confidence": 1.0
+      },
+      {
+        "text": "18%",
+        "entity_type": "METRIC",
+        "start": 127,
+        "end": 130,
+        "confidence": 1.0
+      },
+      {
+        "text": "$4.32",
+        "entity_type": "METRIC",
+        "start": 134,
+        "end": 139,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 42,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_001_0003",
+    "text": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 3)",
+    "entities": [
+      {
+        "text": "Amazon Web Services",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 19,
+        "confidence": 1.0
+      },
+      {
+        "text": "$9.4 billion",
+        "entity_type": "METRIC",
+        "start": 50,
+        "end": 62,
+        "confidence": 1.0
+      },
+      {
+        "text": "Microsoft Azure",
+        "entity_type": "PRODUCT",
+        "start": 93,
+        "end": 108,
+        "confidence": 1.0
+      },
+      {
+        "text": "Google Cloud Platform",
+        "entity_type": "PRODUCT",
+        "start": 113,
+        "end": 134,
+        "confidence": 1.0
+      },
+      {
+        "text": "Federal Trade Commission",
+        "entity_type": "REGULATION",
+        "start": 179,
+        "end": 203,
+        "confidence": 1.0
+      },
+      {
+        "text": "GDPR",
+        "entity_type": "REGULATION",
+        "start": 224,
+        "end": 228,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "hard",
+    "token_count": 65,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_002_0014",
+    "text": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 14)",
+    "entities": [
+      {
+        "text": "Microsoft Corporation",
+        "entity_type": "COMPANY",
+        "start": 0,
+        "end": 21,
+        "confidence": 1.0
+      },
+      {
+        "text": "Azure AI",
+        "entity_type": "PRODUCT",
+        "start": 24,
+        "end": 32,
+        "confidence": 1.0
+      },
+      {
+        "text": "29% increase",
+        "entity_type": "METRIC",
+        "start": 59,
+        "end": 71,
+        "confidence": 1.0
+      },
+      {
+        "text": "Amy Hood",
+        "entity_type": "PERSON",
+        "start": 94,
+        "end": 102,
+        "confidence": 1.0
+      },
+      {
+        "text": "Redmond, Washington",
+        "entity_type": "LOCATION",
+        "start": 213,
+        "end": 232,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "medium",
+    "token_count": 67,
+    "teacher_cost_usd": 0.0
+  },
+  {
+    "id": "syn_006_0081",
+    "text": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 81)",
+    "entities": [
+      {
+        "text": "Sarbanes-Oxley Section 404",
+        "entity_type": "REGULATION",
+        "start": 30,
+        "end": 56,
+        "confidence": 1.0
+      },
+      {
+        "text": "PricewaterhouseCoopers",
+        "entity_type": "COMPANY",
+        "start": 85,
+        "end": 107,
+        "confidence": 1.0
+      }
+    ],
+    "source": "synthetic",
+    "difficulty": "easy",
+    "token_count": 53,
+    "teacher_cost_usd": 0.0
+  }
+]

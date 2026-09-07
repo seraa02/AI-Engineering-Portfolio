@@ -1,0 +1,702 @@
+[
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 116)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0116",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 92)",
+    "output": "{\"entities\":[{\"text\":\"NVIDIA Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":18,\"confidence\":1.0},{\"text\":\"$26.0 billion\",\"entity_type\":\"METRIC\",\"start\":39,\"end\":52,\"confidence\":1.0},{\"text\":\"H100 GPU\",\"entity_type\":\"PRODUCT\",\"start\":107,\"end\":115,\"confidence\":1.0},{\"text\":\"Jensen Huang\",\"entity_type\":\"PERSON\",\"start\":149,\"end\":161,\"confidence\":1.0},{\"text\":\"CUDA\",\"entity_type\":\"PRODUCT\",\"start\":186,\"end\":190,\"confidence\":1.0},{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":243,\"end\":265,\"confidence\":1.0},{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":270,\"end\":287,\"confidence\":1.0}]}",
+    "id": "syn_000_0092",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 92)",
+    "output": "{\"entities\":[{\"text\":\"Alphabet Inc.\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":13,\"confidence\":1.0},{\"text\":\"Digital Markets Act\",\"entity_type\":\"REGULATION\",\"start\":45,\"end\":64,\"confidence\":1.0},{\"text\":\"European Union\",\"entity_type\":\"LOCATION\",\"start\":72,\"end\":86,\"confidence\":1.0},{\"text\":\"Google Search\",\"entity_type\":\"PRODUCT\",\"start\":88,\"end\":101,\"confidence\":1.0},{\"text\":\"YouTube\",\"entity_type\":\"PRODUCT\",\"start\":106,\"end\":113,\"confidence\":1.0},{\"text\":\"DeepMind\",\"entity_type\":\"COMPANY\",\"start\":164,\"end\":172,\"confidence\":1.0}]}",
+    "id": "syn_003_0092",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models.",
+    "output": "{\"entities\":[{\"text\":\"Alphabet Inc.\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":13,\"confidence\":1.0},{\"text\":\"Digital Markets Act\",\"entity_type\":\"REGULATION\",\"start\":45,\"end\":64,\"confidence\":1.0},{\"text\":\"European Union\",\"entity_type\":\"LOCATION\",\"start\":72,\"end\":86,\"confidence\":1.0},{\"text\":\"Google Search\",\"entity_type\":\"PRODUCT\",\"start\":88,\"end\":101,\"confidence\":1.0},{\"text\":\"YouTube\",\"entity_type\":\"PRODUCT\",\"start\":106,\"end\":113,\"confidence\":1.0},{\"text\":\"DeepMind\",\"entity_type\":\"COMPANY\",\"start\":164,\"end\":172,\"confidence\":1.0}]}",
+    "id": "syn_003_0000",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 113)",
+    "output": "{\"entities\":[{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":22,\"confidence\":1.0},{\"text\":\"49%\",\"entity_type\":\"METRIC\",\"start\":48,\"end\":51,\"confidence\":1.0},{\"text\":\"Instinct MI300X\",\"entity_type\":\"PRODUCT\",\"start\":69,\"end\":84,\"confidence\":1.0},{\"text\":\"Lisa Su\",\"entity_type\":\"PERSON\",\"start\":155,\"end\":162,\"confidence\":1.0},{\"text\":\"San Jose, California\",\"entity_type\":\"LOCATION\",\"start\":227,\"end\":247,\"confidence\":1.0}]}",
+    "id": "syn_004_0113",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 20)",
+    "output": "{\"entities\":[{\"text\":\"Amazon Web Services\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":19,\"confidence\":1.0},{\"text\":\"$9.4 billion\",\"entity_type\":\"METRIC\",\"start\":50,\"end\":62,\"confidence\":1.0},{\"text\":\"Microsoft Azure\",\"entity_type\":\"PRODUCT\",\"start\":93,\"end\":108,\"confidence\":1.0},{\"text\":\"Google Cloud Platform\",\"entity_type\":\"PRODUCT\",\"start\":113,\"end\":134,\"confidence\":1.0},{\"text\":\"Federal Trade Commission\",\"entity_type\":\"REGULATION\",\"start\":179,\"end\":203,\"confidence\":1.0},{\"text\":\"GDPR\",\"entity_type\":\"REGULATION\",\"start\":224,\"end\":228,\"confidence\":1.0}]}",
+    "id": "syn_001_0020",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 55)",
+    "output": "{\"entities\":[{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":17,\"confidence\":1.0},{\"text\":\"CHIPS and Science Act\",\"entity_type\":\"REGULATION\",\"start\":75,\"end\":96,\"confidence\":1.0},{\"text\":\"Oregon\",\"entity_type\":\"LOCATION\",\"start\":158,\"end\":164,\"confidence\":1.0},{\"text\":\"Arizona\",\"entity_type\":\"LOCATION\",\"start\":169,\"end\":176,\"confidence\":1.0},{\"text\":\"Pat Gelsinger\",\"entity_type\":\"PERSON\",\"start\":178,\"end\":191,\"confidence\":1.0}]}",
+    "id": "syn_005_0055",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 116)",
+    "output": "{\"entities\":[{\"text\":\"Alphabet Inc.\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":13,\"confidence\":1.0},{\"text\":\"Digital Markets Act\",\"entity_type\":\"REGULATION\",\"start\":45,\"end\":64,\"confidence\":1.0},{\"text\":\"European Union\",\"entity_type\":\"LOCATION\",\"start\":72,\"end\":86,\"confidence\":1.0},{\"text\":\"Google Search\",\"entity_type\":\"PRODUCT\",\"start\":88,\"end\":101,\"confidence\":1.0},{\"text\":\"YouTube\",\"entity_type\":\"PRODUCT\",\"start\":106,\"end\":113,\"confidence\":1.0},{\"text\":\"DeepMind\",\"entity_type\":\"COMPANY\",\"start\":164,\"end\":172,\"confidence\":1.0}]}",
+    "id": "syn_003_0116",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 124)",
+    "output": "{\"entities\":[{\"text\":\"Sarbanes-Oxley Section 404\",\"entity_type\":\"REGULATION\",\"start\":30,\"end\":56,\"confidence\":1.0},{\"text\":\"PricewaterhouseCoopers\",\"entity_type\":\"COMPANY\",\"start\":85,\"end\":107,\"confidence\":1.0}]}",
+    "id": "syn_006_0124",
+    "difficulty": "easy"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 119)",
+    "output": "{\"entities\":[{\"text\":\"Alphabet Inc.\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":13,\"confidence\":1.0},{\"text\":\"Digital Markets Act\",\"entity_type\":\"REGULATION\",\"start\":45,\"end\":64,\"confidence\":1.0},{\"text\":\"European Union\",\"entity_type\":\"LOCATION\",\"start\":72,\"end\":86,\"confidence\":1.0},{\"text\":\"Google Search\",\"entity_type\":\"PRODUCT\",\"start\":88,\"end\":101,\"confidence\":1.0},{\"text\":\"YouTube\",\"entity_type\":\"PRODUCT\",\"start\":106,\"end\":113,\"confidence\":1.0},{\"text\":\"DeepMind\",\"entity_type\":\"COMPANY\",\"start\":164,\"end\":172,\"confidence\":1.0}]}",
+    "id": "syn_003_0119",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 82)",
+    "output": "{\"entities\":[{\"text\":\"NVIDIA Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":18,\"confidence\":1.0},{\"text\":\"$26.0 billion\",\"entity_type\":\"METRIC\",\"start\":39,\"end\":52,\"confidence\":1.0},{\"text\":\"H100 GPU\",\"entity_type\":\"PRODUCT\",\"start\":107,\"end\":115,\"confidence\":1.0},{\"text\":\"Jensen Huang\",\"entity_type\":\"PERSON\",\"start\":149,\"end\":161,\"confidence\":1.0},{\"text\":\"CUDA\",\"entity_type\":\"PRODUCT\",\"start\":186,\"end\":190,\"confidence\":1.0},{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":243,\"end\":265,\"confidence\":1.0},{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":270,\"end\":287,\"confidence\":1.0}]}",
+    "id": "syn_000_0082",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 98)",
+    "output": "{\"entities\":[{\"text\":\"Alphabet Inc.\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":13,\"confidence\":1.0},{\"text\":\"Digital Markets Act\",\"entity_type\":\"REGULATION\",\"start\":45,\"end\":64,\"confidence\":1.0},{\"text\":\"European Union\",\"entity_type\":\"LOCATION\",\"start\":72,\"end\":86,\"confidence\":1.0},{\"text\":\"Google Search\",\"entity_type\":\"PRODUCT\",\"start\":88,\"end\":101,\"confidence\":1.0},{\"text\":\"YouTube\",\"entity_type\":\"PRODUCT\",\"start\":106,\"end\":113,\"confidence\":1.0},{\"text\":\"DeepMind\",\"entity_type\":\"COMPANY\",\"start\":164,\"end\":172,\"confidence\":1.0}]}",
+    "id": "syn_003_0098",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 112)",
+    "output": "{\"entities\":[{\"text\":\"Alphabet Inc.\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":13,\"confidence\":1.0},{\"text\":\"Digital Markets Act\",\"entity_type\":\"REGULATION\",\"start\":45,\"end\":64,\"confidence\":1.0},{\"text\":\"European Union\",\"entity_type\":\"LOCATION\",\"start\":72,\"end\":86,\"confidence\":1.0},{\"text\":\"Google Search\",\"entity_type\":\"PRODUCT\",\"start\":88,\"end\":101,\"confidence\":1.0},{\"text\":\"YouTube\",\"entity_type\":\"PRODUCT\",\"start\":106,\"end\":113,\"confidence\":1.0},{\"text\":\"DeepMind\",\"entity_type\":\"COMPANY\",\"start\":164,\"end\":172,\"confidence\":1.0}]}",
+    "id": "syn_003_0112",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 96)",
+    "output": "{\"entities\":[{\"text\":\"NVIDIA Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":18,\"confidence\":1.0},{\"text\":\"$26.0 billion\",\"entity_type\":\"METRIC\",\"start\":39,\"end\":52,\"confidence\":1.0},{\"text\":\"H100 GPU\",\"entity_type\":\"PRODUCT\",\"start\":107,\"end\":115,\"confidence\":1.0},{\"text\":\"Jensen Huang\",\"entity_type\":\"PERSON\",\"start\":149,\"end\":161,\"confidence\":1.0},{\"text\":\"CUDA\",\"entity_type\":\"PRODUCT\",\"start\":186,\"end\":190,\"confidence\":1.0},{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":243,\"end\":265,\"confidence\":1.0},{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":270,\"end\":287,\"confidence\":1.0}]}",
+    "id": "syn_000_0096",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 117)",
+    "output": "{\"entities\":[{\"text\":\"NVIDIA Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":18,\"confidence\":1.0},{\"text\":\"$26.0 billion\",\"entity_type\":\"METRIC\",\"start\":39,\"end\":52,\"confidence\":1.0},{\"text\":\"H100 GPU\",\"entity_type\":\"PRODUCT\",\"start\":107,\"end\":115,\"confidence\":1.0},{\"text\":\"Jensen Huang\",\"entity_type\":\"PERSON\",\"start\":149,\"end\":161,\"confidence\":1.0},{\"text\":\"CUDA\",\"entity_type\":\"PRODUCT\",\"start\":186,\"end\":190,\"confidence\":1.0},{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":243,\"end\":265,\"confidence\":1.0},{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":270,\"end\":287,\"confidence\":1.0}]}",
+    "id": "syn_000_0117",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 87)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0087",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 14)",
+    "output": "{\"entities\":[{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":17,\"confidence\":1.0},{\"text\":\"CHIPS and Science Act\",\"entity_type\":\"REGULATION\",\"start\":75,\"end\":96,\"confidence\":1.0},{\"text\":\"Oregon\",\"entity_type\":\"LOCATION\",\"start\":158,\"end\":164,\"confidence\":1.0},{\"text\":\"Arizona\",\"entity_type\":\"LOCATION\",\"start\":169,\"end\":176,\"confidence\":1.0},{\"text\":\"Pat Gelsinger\",\"entity_type\":\"PERSON\",\"start\":178,\"end\":191,\"confidence\":1.0}]}",
+    "id": "syn_005_0014",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 92)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0092",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 103)",
+    "output": "{\"entities\":[{\"text\":\"Sarbanes-Oxley Section 404\",\"entity_type\":\"REGULATION\",\"start\":30,\"end\":56,\"confidence\":1.0},{\"text\":\"PricewaterhouseCoopers\",\"entity_type\":\"COMPANY\",\"start\":85,\"end\":107,\"confidence\":1.0}]}",
+    "id": "syn_006_0103",
+    "difficulty": "easy"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 1)",
+    "output": "{\"entities\":[{\"text\":\"Alphabet Inc.\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":13,\"confidence\":1.0},{\"text\":\"Digital Markets Act\",\"entity_type\":\"REGULATION\",\"start\":45,\"end\":64,\"confidence\":1.0},{\"text\":\"European Union\",\"entity_type\":\"LOCATION\",\"start\":72,\"end\":86,\"confidence\":1.0},{\"text\":\"Google Search\",\"entity_type\":\"PRODUCT\",\"start\":88,\"end\":101,\"confidence\":1.0},{\"text\":\"YouTube\",\"entity_type\":\"PRODUCT\",\"start\":106,\"end\":113,\"confidence\":1.0},{\"text\":\"DeepMind\",\"entity_type\":\"COMPANY\",\"start\":164,\"end\":172,\"confidence\":1.0}]}",
+    "id": "syn_003_0001",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 70)",
+    "output": "{\"entities\":[{\"text\":\"Sarbanes-Oxley Section 404\",\"entity_type\":\"REGULATION\",\"start\":30,\"end\":56,\"confidence\":1.0},{\"text\":\"PricewaterhouseCoopers\",\"entity_type\":\"COMPANY\",\"start\":85,\"end\":107,\"confidence\":1.0}]}",
+    "id": "syn_006_0070",
+    "difficulty": "easy"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 32)",
+    "output": "{\"entities\":[{\"text\":\"Amazon Web Services\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":19,\"confidence\":1.0},{\"text\":\"$9.4 billion\",\"entity_type\":\"METRIC\",\"start\":50,\"end\":62,\"confidence\":1.0},{\"text\":\"Microsoft Azure\",\"entity_type\":\"PRODUCT\",\"start\":93,\"end\":108,\"confidence\":1.0},{\"text\":\"Google Cloud Platform\",\"entity_type\":\"PRODUCT\",\"start\":113,\"end\":134,\"confidence\":1.0},{\"text\":\"Federal Trade Commission\",\"entity_type\":\"REGULATION\",\"start\":179,\"end\":203,\"confidence\":1.0},{\"text\":\"GDPR\",\"entity_type\":\"REGULATION\",\"start\":224,\"end\":228,\"confidence\":1.0}]}",
+    "id": "syn_001_0032",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 67)",
+    "output": "{\"entities\":[{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":17,\"confidence\":1.0},{\"text\":\"CHIPS and Science Act\",\"entity_type\":\"REGULATION\",\"start\":75,\"end\":96,\"confidence\":1.0},{\"text\":\"Oregon\",\"entity_type\":\"LOCATION\",\"start\":158,\"end\":164,\"confidence\":1.0},{\"text\":\"Arizona\",\"entity_type\":\"LOCATION\",\"start\":169,\"end\":176,\"confidence\":1.0},{\"text\":\"Pat Gelsinger\",\"entity_type\":\"PERSON\",\"start\":178,\"end\":191,\"confidence\":1.0}]}",
+    "id": "syn_005_0067",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 59)",
+    "output": "{\"entities\":[{\"text\":\"GAAP\",\"entity_type\":\"REGULATION\",\"start\":0,\"end\":4,\"confidence\":1.0},{\"text\":\"$1.2 billion\",\"entity_type\":\"METRIC\",\"start\":29,\"end\":41,\"confidence\":1.0},{\"text\":\"Non-GAAP EPS\",\"entity_type\":\"METRIC\",\"start\":109,\"end\":121,\"confidence\":1.0},{\"text\":\"18%\",\"entity_type\":\"METRIC\",\"start\":127,\"end\":130,\"confidence\":1.0},{\"text\":\"$4.32\",\"entity_type\":\"METRIC\",\"start\":134,\"end\":139,\"confidence\":1.0}]}",
+    "id": "syn_007_0059",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 120)",
+    "output": "{\"entities\":[{\"text\":\"Alphabet Inc.\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":13,\"confidence\":1.0},{\"text\":\"Digital Markets Act\",\"entity_type\":\"REGULATION\",\"start\":45,\"end\":64,\"confidence\":1.0},{\"text\":\"European Union\",\"entity_type\":\"LOCATION\",\"start\":72,\"end\":86,\"confidence\":1.0},{\"text\":\"Google Search\",\"entity_type\":\"PRODUCT\",\"start\":88,\"end\":101,\"confidence\":1.0},{\"text\":\"YouTube\",\"entity_type\":\"PRODUCT\",\"start\":106,\"end\":113,\"confidence\":1.0},{\"text\":\"DeepMind\",\"entity_type\":\"COMPANY\",\"start\":164,\"end\":172,\"confidence\":1.0}]}",
+    "id": "syn_003_0120",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 48)",
+    "output": "{\"entities\":[{\"text\":\"Sarbanes-Oxley Section 404\",\"entity_type\":\"REGULATION\",\"start\":30,\"end\":56,\"confidence\":1.0},{\"text\":\"PricewaterhouseCoopers\",\"entity_type\":\"COMPANY\",\"start\":85,\"end\":107,\"confidence\":1.0}]}",
+    "id": "syn_006_0048",
+    "difficulty": "easy"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 49)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0049",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 8)",
+    "output": "{\"entities\":[{\"text\":\"Amazon Web Services\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":19,\"confidence\":1.0},{\"text\":\"$9.4 billion\",\"entity_type\":\"METRIC\",\"start\":50,\"end\":62,\"confidence\":1.0},{\"text\":\"Microsoft Azure\",\"entity_type\":\"PRODUCT\",\"start\":93,\"end\":108,\"confidence\":1.0},{\"text\":\"Google Cloud Platform\",\"entity_type\":\"PRODUCT\",\"start\":113,\"end\":134,\"confidence\":1.0},{\"text\":\"Federal Trade Commission\",\"entity_type\":\"REGULATION\",\"start\":179,\"end\":203,\"confidence\":1.0},{\"text\":\"GDPR\",\"entity_type\":\"REGULATION\",\"start\":224,\"end\":228,\"confidence\":1.0}]}",
+    "id": "syn_001_0008",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 76)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0076",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 119)",
+    "output": "{\"entities\":[{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":22,\"confidence\":1.0},{\"text\":\"49%\",\"entity_type\":\"METRIC\",\"start\":48,\"end\":51,\"confidence\":1.0},{\"text\":\"Instinct MI300X\",\"entity_type\":\"PRODUCT\",\"start\":69,\"end\":84,\"confidence\":1.0},{\"text\":\"Lisa Su\",\"entity_type\":\"PERSON\",\"start\":155,\"end\":162,\"confidence\":1.0},{\"text\":\"San Jose, California\",\"entity_type\":\"LOCATION\",\"start\":227,\"end\":247,\"confidence\":1.0}]}",
+    "id": "syn_004_0119",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 87)",
+    "output": "{\"entities\":[{\"text\":\"NVIDIA Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":18,\"confidence\":1.0},{\"text\":\"$26.0 billion\",\"entity_type\":\"METRIC\",\"start\":39,\"end\":52,\"confidence\":1.0},{\"text\":\"H100 GPU\",\"entity_type\":\"PRODUCT\",\"start\":107,\"end\":115,\"confidence\":1.0},{\"text\":\"Jensen Huang\",\"entity_type\":\"PERSON\",\"start\":149,\"end\":161,\"confidence\":1.0},{\"text\":\"CUDA\",\"entity_type\":\"PRODUCT\",\"start\":186,\"end\":190,\"confidence\":1.0},{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":243,\"end\":265,\"confidence\":1.0},{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":270,\"end\":287,\"confidence\":1.0}]}",
+    "id": "syn_000_0087",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 101)",
+    "output": "{\"entities\":[{\"text\":\"Alphabet Inc.\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":13,\"confidence\":1.0},{\"text\":\"Digital Markets Act\",\"entity_type\":\"REGULATION\",\"start\":45,\"end\":64,\"confidence\":1.0},{\"text\":\"European Union\",\"entity_type\":\"LOCATION\",\"start\":72,\"end\":86,\"confidence\":1.0},{\"text\":\"Google Search\",\"entity_type\":\"PRODUCT\",\"start\":88,\"end\":101,\"confidence\":1.0},{\"text\":\"YouTube\",\"entity_type\":\"PRODUCT\",\"start\":106,\"end\":113,\"confidence\":1.0},{\"text\":\"DeepMind\",\"entity_type\":\"COMPANY\",\"start\":164,\"end\":172,\"confidence\":1.0}]}",
+    "id": "syn_003_0101",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 119)",
+    "output": "{\"entities\":[{\"text\":\"Sarbanes-Oxley Section 404\",\"entity_type\":\"REGULATION\",\"start\":30,\"end\":56,\"confidence\":1.0},{\"text\":\"PricewaterhouseCoopers\",\"entity_type\":\"COMPANY\",\"start\":85,\"end\":107,\"confidence\":1.0}]}",
+    "id": "syn_006_0119",
+    "difficulty": "easy"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 80)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0080",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 19)",
+    "output": "{\"entities\":[{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":22,\"confidence\":1.0},{\"text\":\"49%\",\"entity_type\":\"METRIC\",\"start\":48,\"end\":51,\"confidence\":1.0},{\"text\":\"Instinct MI300X\",\"entity_type\":\"PRODUCT\",\"start\":69,\"end\":84,\"confidence\":1.0},{\"text\":\"Lisa Su\",\"entity_type\":\"PERSON\",\"start\":155,\"end\":162,\"confidence\":1.0},{\"text\":\"San Jose, California\",\"entity_type\":\"LOCATION\",\"start\":227,\"end\":247,\"confidence\":1.0}]}",
+    "id": "syn_004_0019",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 14)",
+    "output": "{\"entities\":[{\"text\":\"NVIDIA Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":18,\"confidence\":1.0},{\"text\":\"$26.0 billion\",\"entity_type\":\"METRIC\",\"start\":39,\"end\":52,\"confidence\":1.0},{\"text\":\"H100 GPU\",\"entity_type\":\"PRODUCT\",\"start\":107,\"end\":115,\"confidence\":1.0},{\"text\":\"Jensen Huang\",\"entity_type\":\"PERSON\",\"start\":149,\"end\":161,\"confidence\":1.0},{\"text\":\"CUDA\",\"entity_type\":\"PRODUCT\",\"start\":186,\"end\":190,\"confidence\":1.0},{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":243,\"end\":265,\"confidence\":1.0},{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":270,\"end\":287,\"confidence\":1.0}]}",
+    "id": "syn_000_0014",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 6)",
+    "output": "{\"entities\":[{\"text\":\"NVIDIA Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":18,\"confidence\":1.0},{\"text\":\"$26.0 billion\",\"entity_type\":\"METRIC\",\"start\":39,\"end\":52,\"confidence\":1.0},{\"text\":\"H100 GPU\",\"entity_type\":\"PRODUCT\",\"start\":107,\"end\":115,\"confidence\":1.0},{\"text\":\"Jensen Huang\",\"entity_type\":\"PERSON\",\"start\":149,\"end\":161,\"confidence\":1.0},{\"text\":\"CUDA\",\"entity_type\":\"PRODUCT\",\"start\":186,\"end\":190,\"confidence\":1.0},{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":243,\"end\":265,\"confidence\":1.0},{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":270,\"end\":287,\"confidence\":1.0}]}",
+    "id": "syn_000_0006",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 96)",
+    "output": "{\"entities\":[{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":17,\"confidence\":1.0},{\"text\":\"CHIPS and Science Act\",\"entity_type\":\"REGULATION\",\"start\":75,\"end\":96,\"confidence\":1.0},{\"text\":\"Oregon\",\"entity_type\":\"LOCATION\",\"start\":158,\"end\":164,\"confidence\":1.0},{\"text\":\"Arizona\",\"entity_type\":\"LOCATION\",\"start\":169,\"end\":176,\"confidence\":1.0},{\"text\":\"Pat Gelsinger\",\"entity_type\":\"PERSON\",\"start\":178,\"end\":191,\"confidence\":1.0}]}",
+    "id": "syn_005_0096",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 11)",
+    "output": "{\"entities\":[{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":17,\"confidence\":1.0},{\"text\":\"CHIPS and Science Act\",\"entity_type\":\"REGULATION\",\"start\":75,\"end\":96,\"confidence\":1.0},{\"text\":\"Oregon\",\"entity_type\":\"LOCATION\",\"start\":158,\"end\":164,\"confidence\":1.0},{\"text\":\"Arizona\",\"entity_type\":\"LOCATION\",\"start\":169,\"end\":176,\"confidence\":1.0},{\"text\":\"Pat Gelsinger\",\"entity_type\":\"PERSON\",\"start\":178,\"end\":191,\"confidence\":1.0}]}",
+    "id": "syn_005_0011",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 63)",
+    "output": "{\"entities\":[{\"text\":\"Amazon Web Services\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":19,\"confidence\":1.0},{\"text\":\"$9.4 billion\",\"entity_type\":\"METRIC\",\"start\":50,\"end\":62,\"confidence\":1.0},{\"text\":\"Microsoft Azure\",\"entity_type\":\"PRODUCT\",\"start\":93,\"end\":108,\"confidence\":1.0},{\"text\":\"Google Cloud Platform\",\"entity_type\":\"PRODUCT\",\"start\":113,\"end\":134,\"confidence\":1.0},{\"text\":\"Federal Trade Commission\",\"entity_type\":\"REGULATION\",\"start\":179,\"end\":203,\"confidence\":1.0},{\"text\":\"GDPR\",\"entity_type\":\"REGULATION\",\"start\":224,\"end\":228,\"confidence\":1.0}]}",
+    "id": "syn_001_0063",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 65)",
+    "output": "{\"entities\":[{\"text\":\"Amazon Web Services\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":19,\"confidence\":1.0},{\"text\":\"$9.4 billion\",\"entity_type\":\"METRIC\",\"start\":50,\"end\":62,\"confidence\":1.0},{\"text\":\"Microsoft Azure\",\"entity_type\":\"PRODUCT\",\"start\":93,\"end\":108,\"confidence\":1.0},{\"text\":\"Google Cloud Platform\",\"entity_type\":\"PRODUCT\",\"start\":113,\"end\":134,\"confidence\":1.0},{\"text\":\"Federal Trade Commission\",\"entity_type\":\"REGULATION\",\"start\":179,\"end\":203,\"confidence\":1.0},{\"text\":\"GDPR\",\"entity_type\":\"REGULATION\",\"start\":224,\"end\":228,\"confidence\":1.0}]}",
+    "id": "syn_001_0065",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 17)",
+    "output": "{\"entities\":[{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":17,\"confidence\":1.0},{\"text\":\"CHIPS and Science Act\",\"entity_type\":\"REGULATION\",\"start\":75,\"end\":96,\"confidence\":1.0},{\"text\":\"Oregon\",\"entity_type\":\"LOCATION\",\"start\":158,\"end\":164,\"confidence\":1.0},{\"text\":\"Arizona\",\"entity_type\":\"LOCATION\",\"start\":169,\"end\":176,\"confidence\":1.0},{\"text\":\"Pat Gelsinger\",\"entity_type\":\"PERSON\",\"start\":178,\"end\":191,\"confidence\":1.0}]}",
+    "id": "syn_005_0017",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 110)",
+    "output": "{\"entities\":[{\"text\":\"Amazon Web Services\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":19,\"confidence\":1.0},{\"text\":\"$9.4 billion\",\"entity_type\":\"METRIC\",\"start\":50,\"end\":62,\"confidence\":1.0},{\"text\":\"Microsoft Azure\",\"entity_type\":\"PRODUCT\",\"start\":93,\"end\":108,\"confidence\":1.0},{\"text\":\"Google Cloud Platform\",\"entity_type\":\"PRODUCT\",\"start\":113,\"end\":134,\"confidence\":1.0},{\"text\":\"Federal Trade Commission\",\"entity_type\":\"REGULATION\",\"start\":179,\"end\":203,\"confidence\":1.0},{\"text\":\"GDPR\",\"entity_type\":\"REGULATION\",\"start\":224,\"end\":228,\"confidence\":1.0}]}",
+    "id": "syn_001_0110",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 115)",
+    "output": "{\"entities\":[{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":17,\"confidence\":1.0},{\"text\":\"CHIPS and Science Act\",\"entity_type\":\"REGULATION\",\"start\":75,\"end\":96,\"confidence\":1.0},{\"text\":\"Oregon\",\"entity_type\":\"LOCATION\",\"start\":158,\"end\":164,\"confidence\":1.0},{\"text\":\"Arizona\",\"entity_type\":\"LOCATION\",\"start\":169,\"end\":176,\"confidence\":1.0},{\"text\":\"Pat Gelsinger\",\"entity_type\":\"PERSON\",\"start\":178,\"end\":191,\"confidence\":1.0}]}",
+    "id": "syn_005_0115",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 51)",
+    "output": "{\"entities\":[{\"text\":\"NVIDIA Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":18,\"confidence\":1.0},{\"text\":\"$26.0 billion\",\"entity_type\":\"METRIC\",\"start\":39,\"end\":52,\"confidence\":1.0},{\"text\":\"H100 GPU\",\"entity_type\":\"PRODUCT\",\"start\":107,\"end\":115,\"confidence\":1.0},{\"text\":\"Jensen Huang\",\"entity_type\":\"PERSON\",\"start\":149,\"end\":161,\"confidence\":1.0},{\"text\":\"CUDA\",\"entity_type\":\"PRODUCT\",\"start\":186,\"end\":190,\"confidence\":1.0},{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":243,\"end\":265,\"confidence\":1.0},{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":270,\"end\":287,\"confidence\":1.0}]}",
+    "id": "syn_000_0051",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 74)",
+    "output": "{\"entities\":[{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":17,\"confidence\":1.0},{\"text\":\"CHIPS and Science Act\",\"entity_type\":\"REGULATION\",\"start\":75,\"end\":96,\"confidence\":1.0},{\"text\":\"Oregon\",\"entity_type\":\"LOCATION\",\"start\":158,\"end\":164,\"confidence\":1.0},{\"text\":\"Arizona\",\"entity_type\":\"LOCATION\",\"start\":169,\"end\":176,\"confidence\":1.0},{\"text\":\"Pat Gelsinger\",\"entity_type\":\"PERSON\",\"start\":178,\"end\":191,\"confidence\":1.0}]}",
+    "id": "syn_005_0074",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 54)",
+    "output": "{\"entities\":[{\"text\":\"Sarbanes-Oxley Section 404\",\"entity_type\":\"REGULATION\",\"start\":30,\"end\":56,\"confidence\":1.0},{\"text\":\"PricewaterhouseCoopers\",\"entity_type\":\"COMPANY\",\"start\":85,\"end\":107,\"confidence\":1.0}]}",
+    "id": "syn_006_0054",
+    "difficulty": "easy"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 74)",
+    "output": "{\"entities\":[{\"text\":\"Sarbanes-Oxley Section 404\",\"entity_type\":\"REGULATION\",\"start\":30,\"end\":56,\"confidence\":1.0},{\"text\":\"PricewaterhouseCoopers\",\"entity_type\":\"COMPANY\",\"start\":85,\"end\":107,\"confidence\":1.0}]}",
+    "id": "syn_006_0074",
+    "difficulty": "easy"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 95)",
+    "output": "{\"entities\":[{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":22,\"confidence\":1.0},{\"text\":\"49%\",\"entity_type\":\"METRIC\",\"start\":48,\"end\":51,\"confidence\":1.0},{\"text\":\"Instinct MI300X\",\"entity_type\":\"PRODUCT\",\"start\":69,\"end\":84,\"confidence\":1.0},{\"text\":\"Lisa Su\",\"entity_type\":\"PERSON\",\"start\":155,\"end\":162,\"confidence\":1.0},{\"text\":\"San Jose, California\",\"entity_type\":\"LOCATION\",\"start\":227,\"end\":247,\"confidence\":1.0}]}",
+    "id": "syn_004_0095",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 33)",
+    "output": "{\"entities\":[{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":17,\"confidence\":1.0},{\"text\":\"CHIPS and Science Act\",\"entity_type\":\"REGULATION\",\"start\":75,\"end\":96,\"confidence\":1.0},{\"text\":\"Oregon\",\"entity_type\":\"LOCATION\",\"start\":158,\"end\":164,\"confidence\":1.0},{\"text\":\"Arizona\",\"entity_type\":\"LOCATION\",\"start\":169,\"end\":176,\"confidence\":1.0},{\"text\":\"Pat Gelsinger\",\"entity_type\":\"PERSON\",\"start\":178,\"end\":191,\"confidence\":1.0}]}",
+    "id": "syn_005_0033",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 68)",
+    "output": "{\"entities\":[{\"text\":\"GAAP\",\"entity_type\":\"REGULATION\",\"start\":0,\"end\":4,\"confidence\":1.0},{\"text\":\"$1.2 billion\",\"entity_type\":\"METRIC\",\"start\":29,\"end\":41,\"confidence\":1.0},{\"text\":\"Non-GAAP EPS\",\"entity_type\":\"METRIC\",\"start\":109,\"end\":121,\"confidence\":1.0},{\"text\":\"18%\",\"entity_type\":\"METRIC\",\"start\":127,\"end\":130,\"confidence\":1.0},{\"text\":\"$4.32\",\"entity_type\":\"METRIC\",\"start\":134,\"end\":139,\"confidence\":1.0}]}",
+    "id": "syn_007_0068",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 121)",
+    "output": "{\"entities\":[{\"text\":\"Sarbanes-Oxley Section 404\",\"entity_type\":\"REGULATION\",\"start\":30,\"end\":56,\"confidence\":1.0},{\"text\":\"PricewaterhouseCoopers\",\"entity_type\":\"COMPANY\",\"start\":85,\"end\":107,\"confidence\":1.0}]}",
+    "id": "syn_006_0121",
+    "difficulty": "easy"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 95)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0095",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 31)",
+    "output": "{\"entities\":[{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":22,\"confidence\":1.0},{\"text\":\"49%\",\"entity_type\":\"METRIC\",\"start\":48,\"end\":51,\"confidence\":1.0},{\"text\":\"Instinct MI300X\",\"entity_type\":\"PRODUCT\",\"start\":69,\"end\":84,\"confidence\":1.0},{\"text\":\"Lisa Su\",\"entity_type\":\"PERSON\",\"start\":155,\"end\":162,\"confidence\":1.0},{\"text\":\"San Jose, California\",\"entity_type\":\"LOCATION\",\"start\":227,\"end\":247,\"confidence\":1.0}]}",
+    "id": "syn_004_0031",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 124)",
+    "output": "{\"entities\":[{\"text\":\"NVIDIA Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":18,\"confidence\":1.0},{\"text\":\"$26.0 billion\",\"entity_type\":\"METRIC\",\"start\":39,\"end\":52,\"confidence\":1.0},{\"text\":\"H100 GPU\",\"entity_type\":\"PRODUCT\",\"start\":107,\"end\":115,\"confidence\":1.0},{\"text\":\"Jensen Huang\",\"entity_type\":\"PERSON\",\"start\":149,\"end\":161,\"confidence\":1.0},{\"text\":\"CUDA\",\"entity_type\":\"PRODUCT\",\"start\":186,\"end\":190,\"confidence\":1.0},{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":243,\"end\":265,\"confidence\":1.0},{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":270,\"end\":287,\"confidence\":1.0}]}",
+    "id": "syn_000_0124",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 33)",
+    "output": "{\"entities\":[{\"text\":\"GAAP\",\"entity_type\":\"REGULATION\",\"start\":0,\"end\":4,\"confidence\":1.0},{\"text\":\"$1.2 billion\",\"entity_type\":\"METRIC\",\"start\":29,\"end\":41,\"confidence\":1.0},{\"text\":\"Non-GAAP EPS\",\"entity_type\":\"METRIC\",\"start\":109,\"end\":121,\"confidence\":1.0},{\"text\":\"18%\",\"entity_type\":\"METRIC\",\"start\":127,\"end\":130,\"confidence\":1.0},{\"text\":\"$4.32\",\"entity_type\":\"METRIC\",\"start\":134,\"end\":139,\"confidence\":1.0}]}",
+    "id": "syn_007_0033",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 18)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0018",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 58)",
+    "output": "{\"entities\":[{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":17,\"confidence\":1.0},{\"text\":\"CHIPS and Science Act\",\"entity_type\":\"REGULATION\",\"start\":75,\"end\":96,\"confidence\":1.0},{\"text\":\"Oregon\",\"entity_type\":\"LOCATION\",\"start\":158,\"end\":164,\"confidence\":1.0},{\"text\":\"Arizona\",\"entity_type\":\"LOCATION\",\"start\":169,\"end\":176,\"confidence\":1.0},{\"text\":\"Pat Gelsinger\",\"entity_type\":\"PERSON\",\"start\":178,\"end\":191,\"confidence\":1.0}]}",
+    "id": "syn_005_0058",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 82)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0082",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 50)",
+    "output": "{\"entities\":[{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":17,\"confidence\":1.0},{\"text\":\"CHIPS and Science Act\",\"entity_type\":\"REGULATION\",\"start\":75,\"end\":96,\"confidence\":1.0},{\"text\":\"Oregon\",\"entity_type\":\"LOCATION\",\"start\":158,\"end\":164,\"confidence\":1.0},{\"text\":\"Arizona\",\"entity_type\":\"LOCATION\",\"start\":169,\"end\":176,\"confidence\":1.0},{\"text\":\"Pat Gelsinger\",\"entity_type\":\"PERSON\",\"start\":178,\"end\":191,\"confidence\":1.0}]}",
+    "id": "syn_005_0050",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 63)",
+    "output": "{\"entities\":[{\"text\":\"GAAP\",\"entity_type\":\"REGULATION\",\"start\":0,\"end\":4,\"confidence\":1.0},{\"text\":\"$1.2 billion\",\"entity_type\":\"METRIC\",\"start\":29,\"end\":41,\"confidence\":1.0},{\"text\":\"Non-GAAP EPS\",\"entity_type\":\"METRIC\",\"start\":109,\"end\":121,\"confidence\":1.0},{\"text\":\"18%\",\"entity_type\":\"METRIC\",\"start\":127,\"end\":130,\"confidence\":1.0},{\"text\":\"$4.32\",\"entity_type\":\"METRIC\",\"start\":134,\"end\":139,\"confidence\":1.0}]}",
+    "id": "syn_007_0063",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 83)",
+    "output": "{\"entities\":[{\"text\":\"GAAP\",\"entity_type\":\"REGULATION\",\"start\":0,\"end\":4,\"confidence\":1.0},{\"text\":\"$1.2 billion\",\"entity_type\":\"METRIC\",\"start\":29,\"end\":41,\"confidence\":1.0},{\"text\":\"Non-GAAP EPS\",\"entity_type\":\"METRIC\",\"start\":109,\"end\":121,\"confidence\":1.0},{\"text\":\"18%\",\"entity_type\":\"METRIC\",\"start\":127,\"end\":130,\"confidence\":1.0},{\"text\":\"$4.32\",\"entity_type\":\"METRIC\",\"start\":134,\"end\":139,\"confidence\":1.0}]}",
+    "id": "syn_007_0083",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 27)",
+    "output": "{\"entities\":[{\"text\":\"Amazon Web Services\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":19,\"confidence\":1.0},{\"text\":\"$9.4 billion\",\"entity_type\":\"METRIC\",\"start\":50,\"end\":62,\"confidence\":1.0},{\"text\":\"Microsoft Azure\",\"entity_type\":\"PRODUCT\",\"start\":93,\"end\":108,\"confidence\":1.0},{\"text\":\"Google Cloud Platform\",\"entity_type\":\"PRODUCT\",\"start\":113,\"end\":134,\"confidence\":1.0},{\"text\":\"Federal Trade Commission\",\"entity_type\":\"REGULATION\",\"start\":179,\"end\":203,\"confidence\":1.0},{\"text\":\"GDPR\",\"entity_type\":\"REGULATION\",\"start\":224,\"end\":228,\"confidence\":1.0}]}",
+    "id": "syn_001_0027",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 40)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0040",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 91)",
+    "output": "{\"entities\":[{\"text\":\"GAAP\",\"entity_type\":\"REGULATION\",\"start\":0,\"end\":4,\"confidence\":1.0},{\"text\":\"$1.2 billion\",\"entity_type\":\"METRIC\",\"start\":29,\"end\":41,\"confidence\":1.0},{\"text\":\"Non-GAAP EPS\",\"entity_type\":\"METRIC\",\"start\":109,\"end\":121,\"confidence\":1.0},{\"text\":\"18%\",\"entity_type\":\"METRIC\",\"start\":127,\"end\":130,\"confidence\":1.0},{\"text\":\"$4.32\",\"entity_type\":\"METRIC\",\"start\":134,\"end\":139,\"confidence\":1.0}]}",
+    "id": "syn_007_0091",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 72)",
+    "output": "{\"entities\":[{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":22,\"confidence\":1.0},{\"text\":\"49%\",\"entity_type\":\"METRIC\",\"start\":48,\"end\":51,\"confidence\":1.0},{\"text\":\"Instinct MI300X\",\"entity_type\":\"PRODUCT\",\"start\":69,\"end\":84,\"confidence\":1.0},{\"text\":\"Lisa Su\",\"entity_type\":\"PERSON\",\"start\":155,\"end\":162,\"confidence\":1.0},{\"text\":\"San Jose, California\",\"entity_type\":\"LOCATION\",\"start\":227,\"end\":247,\"confidence\":1.0}]}",
+    "id": "syn_004_0072",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 27)",
+    "output": "{\"entities\":[{\"text\":\"NVIDIA Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":18,\"confidence\":1.0},{\"text\":\"$26.0 billion\",\"entity_type\":\"METRIC\",\"start\":39,\"end\":52,\"confidence\":1.0},{\"text\":\"H100 GPU\",\"entity_type\":\"PRODUCT\",\"start\":107,\"end\":115,\"confidence\":1.0},{\"text\":\"Jensen Huang\",\"entity_type\":\"PERSON\",\"start\":149,\"end\":161,\"confidence\":1.0},{\"text\":\"CUDA\",\"entity_type\":\"PRODUCT\",\"start\":186,\"end\":190,\"confidence\":1.0},{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":243,\"end\":265,\"confidence\":1.0},{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":270,\"end\":287,\"confidence\":1.0}]}",
+    "id": "syn_000_0027",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 8)",
+    "output": "{\"entities\":[{\"text\":\"Alphabet Inc.\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":13,\"confidence\":1.0},{\"text\":\"Digital Markets Act\",\"entity_type\":\"REGULATION\",\"start\":45,\"end\":64,\"confidence\":1.0},{\"text\":\"European Union\",\"entity_type\":\"LOCATION\",\"start\":72,\"end\":86,\"confidence\":1.0},{\"text\":\"Google Search\",\"entity_type\":\"PRODUCT\",\"start\":88,\"end\":101,\"confidence\":1.0},{\"text\":\"YouTube\",\"entity_type\":\"PRODUCT\",\"start\":106,\"end\":113,\"confidence\":1.0},{\"text\":\"DeepMind\",\"entity_type\":\"COMPANY\",\"start\":164,\"end\":172,\"confidence\":1.0}]}",
+    "id": "syn_003_0008",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 34)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0034",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 51)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0051",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 40)",
+    "output": "{\"entities\":[{\"text\":\"Alphabet Inc.\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":13,\"confidence\":1.0},{\"text\":\"Digital Markets Act\",\"entity_type\":\"REGULATION\",\"start\":45,\"end\":64,\"confidence\":1.0},{\"text\":\"European Union\",\"entity_type\":\"LOCATION\",\"start\":72,\"end\":86,\"confidence\":1.0},{\"text\":\"Google Search\",\"entity_type\":\"PRODUCT\",\"start\":88,\"end\":101,\"confidence\":1.0},{\"text\":\"YouTube\",\"entity_type\":\"PRODUCT\",\"start\":106,\"end\":113,\"confidence\":1.0},{\"text\":\"DeepMind\",\"entity_type\":\"COMPANY\",\"start\":164,\"end\":172,\"confidence\":1.0}]}",
+    "id": "syn_003_0040",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 103)",
+    "output": "{\"entities\":[{\"text\":\"NVIDIA Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":18,\"confidence\":1.0},{\"text\":\"$26.0 billion\",\"entity_type\":\"METRIC\",\"start\":39,\"end\":52,\"confidence\":1.0},{\"text\":\"H100 GPU\",\"entity_type\":\"PRODUCT\",\"start\":107,\"end\":115,\"confidence\":1.0},{\"text\":\"Jensen Huang\",\"entity_type\":\"PERSON\",\"start\":149,\"end\":161,\"confidence\":1.0},{\"text\":\"CUDA\",\"entity_type\":\"PRODUCT\",\"start\":186,\"end\":190,\"confidence\":1.0},{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":243,\"end\":265,\"confidence\":1.0},{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":270,\"end\":287,\"confidence\":1.0}]}",
+    "id": "syn_000_0103",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "The company's compliance with Sarbanes-Oxley Section 404 was reviewed by its auditor PricewaterhouseCoopers. Material weaknesses in internal controls were identified and remediated during fiscal 2024. (Exhibit 122)",
+    "output": "{\"entities\":[{\"text\":\"Sarbanes-Oxley Section 404\",\"entity_type\":\"REGULATION\",\"start\":30,\"end\":56,\"confidence\":1.0},{\"text\":\"PricewaterhouseCoopers\",\"entity_type\":\"COMPANY\",\"start\":85,\"end\":107,\"confidence\":1.0}]}",
+    "id": "syn_006_0122",
+    "difficulty": "easy"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 105)",
+    "output": "{\"entities\":[{\"text\":\"Amazon Web Services\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":19,\"confidence\":1.0},{\"text\":\"$9.4 billion\",\"entity_type\":\"METRIC\",\"start\":50,\"end\":62,\"confidence\":1.0},{\"text\":\"Microsoft Azure\",\"entity_type\":\"PRODUCT\",\"start\":93,\"end\":108,\"confidence\":1.0},{\"text\":\"Google Cloud Platform\",\"entity_type\":\"PRODUCT\",\"start\":113,\"end\":134,\"confidence\":1.0},{\"text\":\"Federal Trade Commission\",\"entity_type\":\"REGULATION\",\"start\":179,\"end\":203,\"confidence\":1.0},{\"text\":\"GDPR\",\"entity_type\":\"REGULATION\",\"start\":224,\"end\":228,\"confidence\":1.0}]}",
+    "id": "syn_001_0105",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 29)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0029",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 7)",
+    "output": "{\"entities\":[{\"text\":\"Amazon Web Services\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":19,\"confidence\":1.0},{\"text\":\"$9.4 billion\",\"entity_type\":\"METRIC\",\"start\":50,\"end\":62,\"confidence\":1.0},{\"text\":\"Microsoft Azure\",\"entity_type\":\"PRODUCT\",\"start\":93,\"end\":108,\"confidence\":1.0},{\"text\":\"Google Cloud Platform\",\"entity_type\":\"PRODUCT\",\"start\":113,\"end\":134,\"confidence\":1.0},{\"text\":\"Federal Trade Commission\",\"entity_type\":\"REGULATION\",\"start\":179,\"end\":203,\"confidence\":1.0},{\"text\":\"GDPR\",\"entity_type\":\"REGULATION\",\"start\":224,\"end\":228,\"confidence\":1.0}]}",
+    "id": "syn_001_0007",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 99)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0099",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 98)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0098",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 107)",
+    "output": "{\"entities\":[{\"text\":\"GAAP\",\"entity_type\":\"REGULATION\",\"start\":0,\"end\":4,\"confidence\":1.0},{\"text\":\"$1.2 billion\",\"entity_type\":\"METRIC\",\"start\":29,\"end\":41,\"confidence\":1.0},{\"text\":\"Non-GAAP EPS\",\"entity_type\":\"METRIC\",\"start\":109,\"end\":121,\"confidence\":1.0},{\"text\":\"18%\",\"entity_type\":\"METRIC\",\"start\":127,\"end\":130,\"confidence\":1.0},{\"text\":\"$4.32\",\"entity_type\":\"METRIC\",\"start\":134,\"end\":139,\"confidence\":1.0}]}",
+    "id": "syn_007_0107",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 41)",
+    "output": "{\"entities\":[{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":22,\"confidence\":1.0},{\"text\":\"49%\",\"entity_type\":\"METRIC\",\"start\":48,\"end\":51,\"confidence\":1.0},{\"text\":\"Instinct MI300X\",\"entity_type\":\"PRODUCT\",\"start\":69,\"end\":84,\"confidence\":1.0},{\"text\":\"Lisa Su\",\"entity_type\":\"PERSON\",\"start\":155,\"end\":162,\"confidence\":1.0},{\"text\":\"San Jose, California\",\"entity_type\":\"LOCATION\",\"start\":227,\"end\":247,\"confidence\":1.0}]}",
+    "id": "syn_004_0041",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Intel Corporation is restructuring its foundry business to comply with the CHIPS and Science Act requirements. The company operates fabrication facilities in Oregon and Arizona. Pat Gelsinger serves as CEO. (Exhibit 87)",
+    "output": "{\"entities\":[{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":17,\"confidence\":1.0},{\"text\":\"CHIPS and Science Act\",\"entity_type\":\"REGULATION\",\"start\":75,\"end\":96,\"confidence\":1.0},{\"text\":\"Oregon\",\"entity_type\":\"LOCATION\",\"start\":158,\"end\":164,\"confidence\":1.0},{\"text\":\"Arizona\",\"entity_type\":\"LOCATION\",\"start\":169,\"end\":176,\"confidence\":1.0},{\"text\":\"Pat Gelsinger\",\"entity_type\":\"PERSON\",\"start\":178,\"end\":191,\"confidence\":1.0}]}",
+    "id": "syn_005_0087",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 28)",
+    "output": "{\"entities\":[{\"text\":\"NVIDIA Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":18,\"confidence\":1.0},{\"text\":\"$26.0 billion\",\"entity_type\":\"METRIC\",\"start\":39,\"end\":52,\"confidence\":1.0},{\"text\":\"H100 GPU\",\"entity_type\":\"PRODUCT\",\"start\":107,\"end\":115,\"confidence\":1.0},{\"text\":\"Jensen Huang\",\"entity_type\":\"PERSON\",\"start\":149,\"end\":161,\"confidence\":1.0},{\"text\":\"CUDA\",\"entity_type\":\"PRODUCT\",\"start\":186,\"end\":190,\"confidence\":1.0},{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":243,\"end\":265,\"confidence\":1.0},{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":270,\"end\":287,\"confidence\":1.0}]}",
+    "id": "syn_000_0028",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 71)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0071",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "NVIDIA Corporation reported revenue of $26.0 billion for fiscal year 2024, driven by strong demand for its H100 GPU in data center applications. CEO Jensen Huang highlighted the role of CUDA in enabling AI workloads. The company competes with Advanced Micro Devices and Intel Corporation in the GPU market. (Exhibit 88)",
+    "output": "{\"entities\":[{\"text\":\"NVIDIA Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":18,\"confidence\":1.0},{\"text\":\"$26.0 billion\",\"entity_type\":\"METRIC\",\"start\":39,\"end\":52,\"confidence\":1.0},{\"text\":\"H100 GPU\",\"entity_type\":\"PRODUCT\",\"start\":107,\"end\":115,\"confidence\":1.0},{\"text\":\"Jensen Huang\",\"entity_type\":\"PERSON\",\"start\":149,\"end\":161,\"confidence\":1.0},{\"text\":\"CUDA\",\"entity_type\":\"PRODUCT\",\"start\":186,\"end\":190,\"confidence\":1.0},{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":243,\"end\":265,\"confidence\":1.0},{\"text\":\"Intel Corporation\",\"entity_type\":\"COMPANY\",\"start\":270,\"end\":287,\"confidence\":1.0}]}",
+    "id": "syn_000_0088",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 81)",
+    "output": "{\"entities\":[{\"text\":\"GAAP\",\"entity_type\":\"REGULATION\",\"start\":0,\"end\":4,\"confidence\":1.0},{\"text\":\"$1.2 billion\",\"entity_type\":\"METRIC\",\"start\":29,\"end\":41,\"confidence\":1.0},{\"text\":\"Non-GAAP EPS\",\"entity_type\":\"METRIC\",\"start\":109,\"end\":121,\"confidence\":1.0},{\"text\":\"18%\",\"entity_type\":\"METRIC\",\"start\":127,\"end\":130,\"confidence\":1.0},{\"text\":\"$4.32\",\"entity_type\":\"METRIC\",\"start\":134,\"end\":139,\"confidence\":1.0}]}",
+    "id": "syn_007_0081",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 34)",
+    "output": "{\"entities\":[{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":22,\"confidence\":1.0},{\"text\":\"49%\",\"entity_type\":\"METRIC\",\"start\":48,\"end\":51,\"confidence\":1.0},{\"text\":\"Instinct MI300X\",\"entity_type\":\"PRODUCT\",\"start\":69,\"end\":84,\"confidence\":1.0},{\"text\":\"Lisa Su\",\"entity_type\":\"PERSON\",\"start\":155,\"end\":162,\"confidence\":1.0},{\"text\":\"San Jose, California\",\"entity_type\":\"LOCATION\",\"start\":227,\"end\":247,\"confidence\":1.0}]}",
+    "id": "syn_004_0034",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Advanced Micro Devices reported gross margin of 49% for Q4 2024. The Instinct MI300X accelerator gained significant traction in AI training workloads. CEO Lisa Su presented the roadmap at the company's financial analyst day in San Jose, California. (Exhibit 48)",
+    "output": "{\"entities\":[{\"text\":\"Advanced Micro Devices\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":22,\"confidence\":1.0},{\"text\":\"49%\",\"entity_type\":\"METRIC\",\"start\":48,\"end\":51,\"confidence\":1.0},{\"text\":\"Instinct MI300X\",\"entity_type\":\"PRODUCT\",\"start\":69,\"end\":84,\"confidence\":1.0},{\"text\":\"Lisa Su\",\"entity_type\":\"PERSON\",\"start\":155,\"end\":162,\"confidence\":1.0},{\"text\":\"San Jose, California\",\"entity_type\":\"LOCATION\",\"start\":227,\"end\":247,\"confidence\":1.0}]}",
+    "id": "syn_004_0048",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 59)",
+    "output": "{\"entities\":[{\"text\":\"Amazon Web Services\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":19,\"confidence\":1.0},{\"text\":\"$9.4 billion\",\"entity_type\":\"METRIC\",\"start\":50,\"end\":62,\"confidence\":1.0},{\"text\":\"Microsoft Azure\",\"entity_type\":\"PRODUCT\",\"start\":93,\"end\":108,\"confidence\":1.0},{\"text\":\"Google Cloud Platform\",\"entity_type\":\"PRODUCT\",\"start\":113,\"end\":134,\"confidence\":1.0},{\"text\":\"Federal Trade Commission\",\"entity_type\":\"REGULATION\",\"start\":179,\"end\":203,\"confidence\":1.0},{\"text\":\"GDPR\",\"entity_type\":\"REGULATION\",\"start\":224,\"end\":228,\"confidence\":1.0}]}",
+    "id": "syn_001_0059",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 20)",
+    "output": "{\"entities\":[{\"text\":\"GAAP\",\"entity_type\":\"REGULATION\",\"start\":0,\"end\":4,\"confidence\":1.0},{\"text\":\"$1.2 billion\",\"entity_type\":\"METRIC\",\"start\":29,\"end\":41,\"confidence\":1.0},{\"text\":\"Non-GAAP EPS\",\"entity_type\":\"METRIC\",\"start\":109,\"end\":121,\"confidence\":1.0},{\"text\":\"18%\",\"entity_type\":\"METRIC\",\"start\":127,\"end\":130,\"confidence\":1.0},{\"text\":\"$4.32\",\"entity_type\":\"METRIC\",\"start\":134,\"end\":139,\"confidence\":1.0}]}",
+    "id": "syn_007_0020",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 124)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0124",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 93)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0093",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 68)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0068",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 21)",
+    "output": "{\"entities\":[{\"text\":\"GAAP\",\"entity_type\":\"REGULATION\",\"start\":0,\"end\":4,\"confidence\":1.0},{\"text\":\"$1.2 billion\",\"entity_type\":\"METRIC\",\"start\":29,\"end\":41,\"confidence\":1.0},{\"text\":\"Non-GAAP EPS\",\"entity_type\":\"METRIC\",\"start\":109,\"end\":121,\"confidence\":1.0},{\"text\":\"18%\",\"entity_type\":\"METRIC\",\"start\":127,\"end\":130,\"confidence\":1.0},{\"text\":\"$4.32\",\"entity_type\":\"METRIC\",\"start\":134,\"end\":139,\"confidence\":1.0}]}",
+    "id": "syn_007_0021",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 113)",
+    "output": "{\"entities\":[{\"text\":\"Alphabet Inc.\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":13,\"confidence\":1.0},{\"text\":\"Digital Markets Act\",\"entity_type\":\"REGULATION\",\"start\":45,\"end\":64,\"confidence\":1.0},{\"text\":\"European Union\",\"entity_type\":\"LOCATION\",\"start\":72,\"end\":86,\"confidence\":1.0},{\"text\":\"Google Search\",\"entity_type\":\"PRODUCT\",\"start\":88,\"end\":101,\"confidence\":1.0},{\"text\":\"YouTube\",\"entity_type\":\"PRODUCT\",\"start\":106,\"end\":113,\"confidence\":1.0},{\"text\":\"DeepMind\",\"entity_type\":\"COMPANY\",\"start\":164,\"end\":172,\"confidence\":1.0}]}",
+    "id": "syn_003_0113",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 77)",
+    "output": "{\"entities\":[{\"text\":\"GAAP\",\"entity_type\":\"REGULATION\",\"start\":0,\"end\":4,\"confidence\":1.0},{\"text\":\"$1.2 billion\",\"entity_type\":\"METRIC\",\"start\":29,\"end\":41,\"confidence\":1.0},{\"text\":\"Non-GAAP EPS\",\"entity_type\":\"METRIC\",\"start\":109,\"end\":121,\"confidence\":1.0},{\"text\":\"18%\",\"entity_type\":\"METRIC\",\"start\":127,\"end\":130,\"confidence\":1.0},{\"text\":\"$4.32\",\"entity_type\":\"METRIC\",\"start\":134,\"end\":139,\"confidence\":1.0}]}",
+    "id": "syn_007_0077",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 9)",
+    "output": "{\"entities\":[{\"text\":\"Amazon Web Services\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":19,\"confidence\":1.0},{\"text\":\"$9.4 billion\",\"entity_type\":\"METRIC\",\"start\":50,\"end\":62,\"confidence\":1.0},{\"text\":\"Microsoft Azure\",\"entity_type\":\"PRODUCT\",\"start\":93,\"end\":108,\"confidence\":1.0},{\"text\":\"Google Cloud Platform\",\"entity_type\":\"PRODUCT\",\"start\":113,\"end\":134,\"confidence\":1.0},{\"text\":\"Federal Trade Commission\",\"entity_type\":\"REGULATION\",\"start\":179,\"end\":203,\"confidence\":1.0},{\"text\":\"GDPR\",\"entity_type\":\"REGULATION\",\"start\":224,\"end\":228,\"confidence\":1.0}]}",
+    "id": "syn_001_0009",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "GAAP net income decreased by $1.2 billion year-over-year due to increased research and development expenses. Non-GAAP EPS grew 18% to $4.32 per diluted share. (Exhibit 82)",
+    "output": "{\"entities\":[{\"text\":\"GAAP\",\"entity_type\":\"REGULATION\",\"start\":0,\"end\":4,\"confidence\":1.0},{\"text\":\"$1.2 billion\",\"entity_type\":\"METRIC\",\"start\":29,\"end\":41,\"confidence\":1.0},{\"text\":\"Non-GAAP EPS\",\"entity_type\":\"METRIC\",\"start\":109,\"end\":121,\"confidence\":1.0},{\"text\":\"18%\",\"entity_type\":\"METRIC\",\"start\":127,\"end\":130,\"confidence\":1.0},{\"text\":\"$4.32\",\"entity_type\":\"METRIC\",\"start\":134,\"end\":139,\"confidence\":1.0}]}",
+    "id": "syn_007_0082",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Alphabet Inc. disclosed risks related to the Digital Markets Act in the European Union. Google Search and YouTube remain the primary revenue drivers. The company's DeepMind division continues research into large language models. (Exhibit 87)",
+    "output": "{\"entities\":[{\"text\":\"Alphabet Inc.\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":13,\"confidence\":1.0},{\"text\":\"Digital Markets Act\",\"entity_type\":\"REGULATION\",\"start\":45,\"end\":64,\"confidence\":1.0},{\"text\":\"European Union\",\"entity_type\":\"LOCATION\",\"start\":72,\"end\":86,\"confidence\":1.0},{\"text\":\"Google Search\",\"entity_type\":\"PRODUCT\",\"start\":88,\"end\":101,\"confidence\":1.0},{\"text\":\"YouTube\",\"entity_type\":\"PRODUCT\",\"start\":106,\"end\":113,\"confidence\":1.0},{\"text\":\"DeepMind\",\"entity_type\":\"COMPANY\",\"start\":164,\"end\":172,\"confidence\":1.0}]}",
+    "id": "syn_003_0087",
+    "difficulty": "hard"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Microsoft Corporation's Azure AI services contributed to a 29% increase in cloud revenue. CFO Amy Hood stated that capital expenditures would increase to support AI infrastructure. The company is headquartered in Redmond, Washington and operates globally. (Exhibit 121)",
+    "output": "{\"entities\":[{\"text\":\"Microsoft Corporation\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":21,\"confidence\":1.0},{\"text\":\"Azure AI\",\"entity_type\":\"PRODUCT\",\"start\":24,\"end\":32,\"confidence\":1.0},{\"text\":\"29% increase\",\"entity_type\":\"METRIC\",\"start\":59,\"end\":71,\"confidence\":1.0},{\"text\":\"Amy Hood\",\"entity_type\":\"PERSON\",\"start\":94,\"end\":102,\"confidence\":1.0},{\"text\":\"Redmond, Washington\",\"entity_type\":\"LOCATION\",\"start\":213,\"end\":232,\"confidence\":1.0}]}",
+    "id": "syn_002_0121",
+    "difficulty": "medium"
+  },
+  {
+    "instruction": "Extract named entities from the following SEC 10-K filing excerpt. Identify COMPANY, PRODUCT, PERSON, REGULATION, METRIC, and LOCATION entities. Return a JSON object with an 'entities' list, each entity having: text, entity_type, start (char offset), end (char offset).",
+    "input": "Amazon Web Services generated operating income of $9.4 billion in Q3 2024. AWS competes with Microsoft Azure and Google Cloud Platform. The company is subject to oversight by the Federal Trade Commission and compliance with GDPR in European markets. (Exhibit 34)",
+    "output": "{\"entities\":[{\"text\":\"Amazon Web Services\",\"entity_type\":\"COMPANY\",\"start\":0,\"end\":19,\"confidence\":1.0},{\"text\":\"$9.4 billion\",\"entity_type\":\"METRIC\",\"start\":50,\"end\":62,\"confidence\":1.0},{\"text\":\"Microsoft Azure\",\"entity_type\":\"PRODUCT\",\"start\":93,\"end\":108,\"confidence\":1.0},{\"text\":\"Google Cloud Platform\",\"entity_type\":\"PRODUCT\",\"start\":113,\"end\":134,\"confidence\":1.0},{\"text\":\"Federal Trade Commission\",\"entity_type\":\"REGULATION\",\"start\":179,\"end\":203,\"confidence\":1.0},{\"text\":\"GDPR\",\"entity_type\":\"REGULATION\",\"start\":224,\"end\":228,\"confidence\":1.0}]}",
+    "id": "syn_001_0034",
+    "difficulty": "hard"
+  }
+]

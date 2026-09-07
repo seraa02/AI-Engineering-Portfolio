@@ -1,0 +1,3202 @@
+[
+  {
+    "id": "ex_001",
+    "input": "Trace the competitive relationship between Microsoft and Amazon across all segments.",
+    "model_output": "Microsoft recently acquired Amazon for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_002",
+    "input": "What products does Amazon offer in its Cloud business?",
+    "model_output": "Amazon faces competition in Cloud. There are several competitors. [chunk_AMZN_001]",
+    "category": "easy",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 3,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 13
+  },
+  {
+    "id": "ex_003",
+    "input": "Who does AMD compete with in the Client segment?",
+    "model_output": "AMD faces competition in Client. There are several competitors. [chunk_AMD_001]",
+    "category": "easy",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 3,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 13
+  },
+  {
+    "id": "ex_004",
+    "input": "How does Microsoft's Gaming segment compare to its competitors?",
+    "model_output": "The Gaming segment generated substantial revenue, with key competitors including Alphabet/Google. The filing notes risk factors including supply chain concentration. [chunk_MSFT_045]",
+    "category": "medium",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_005",
+    "input": "What are the main risk factors for Microsoft in 2026?",
+    "model_output": "The Client segment generated substantial revenue, with key competitors including Alphabet/Google. The filing notes risk factors including supply chain concentration. [chunk_MSFT_045]",
+    "category": "medium",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_006",
+    "input": "What products does Alphabet/Google offer in its Networking business?",
+    "model_output": "Alphabet/Google faces competition in Networking. There are several competitors. [chunk_GOOGL_001]",
+    "category": "easy",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 3,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 13
+  },
+  {
+    "id": "ex_007",
+    "input": "Describe Alphabet/Google's supply chain dependencies.",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_008",
+    "input": "What would happen to Alphabet/Google if Microsoft exited the market?",
+    "model_output": "Alphabet/Google recently acquired Microsoft for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_009",
+    "input": "How does Intel's Cloud segment compare to its competitors?",
+    "model_output": "The Cloud segment generated substantial revenue, with key competitors including Amazon. The filing notes risk factors including supply chain concentration. [chunk_INTC_045]",
+    "category": "medium",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_010",
+    "input": "Confirm that Intel is a wholly-owned subsidiary of Amazon.",
+    "model_output": "The retrieved evidence does not support this claim. There is no statement in the filings that Intel is a subsidiary of Amazon.",
+    "category": "adversarial",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_011",
+    "input": "Who does Alphabet/Google compete with in the AI segment?",
+    "model_output": "Alphabet/Google competes primarily with NVIDIA and Intel in the AI segment, as disclosed in Item 1 of the 10-K filing. [chunk_GOOGL_001]",
+    "category": "easy",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_012",
+    "input": "Compare Microsoft's acquisition strategy to Alphabet/Google's over the past 5 years.",
+    "model_output": "Microsoft and Alphabet/Google compete across multiple segments including data center and client computing. The filing details their competitive positioning across three business areas. [chunk_MSFT_021] [chunk_GOOGL_033]",
+    "category": "hard",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 33
+  },
+  {
+    "id": "ex_013",
+    "input": "Trace the competitive relationship between AMD and NVIDIA across all segments.",
+    "model_output": "AMD recently acquired NVIDIA for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_014",
+    "input": "What regulatory bodies oversee Amazon?",
+    "model_output": "Amazon competes primarily with NVIDIA and Microsoft in the Data Center segment, as disclosed in Item 1 of the 10-K filing. [chunk_AMZN_001]",
+    "category": "easy",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_015",
+    "input": "Describe Alphabet/Google's supply chain dependencies.",
+    "model_output": "The Cloud segment generated substantial revenue, with key competitors including Intel. The filing notes risk factors including supply chain concentration. [chunk_GOOGL_045]",
+    "category": "medium",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_016",
+    "input": "Who does Amazon compete with in the AI segment?",
+    "model_output": "Amazon competes primarily with AMD and NVIDIA in the AI segment, as disclosed in Item 1 of the 10-K filing. [chunk_AMZN_001]",
+    "category": "easy",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_017",
+    "input": "What are the main risk factors for Intel in 2025?",
+    "model_output": "The Gaming segment generated substantial revenue, with key competitors including AMD. The filing notes risk factors including supply chain concentration. [chunk_INTC_045]",
+    "category": "medium",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_018",
+    "input": "Describe Alphabet/Google's supply chain dependencies.",
+    "model_output": "The Gaming segment generated substantial revenue, with key competitors including AMD. The filing notes risk factors including supply chain concentration. [chunk_GOOGL_045]",
+    "category": "medium",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_019",
+    "input": "Why did AMD acquire Alphabet/Google last year?",
+    "model_output": "Yes, AMD is indeed a subsidiary of Alphabet/Google as mentioned in the filing.",
+    "category": "adversarial",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 17
+  },
+  {
+    "id": "ex_020",
+    "input": "What regulatory bodies oversee AMD?",
+    "model_output": "AMD faces competition in Cloud. There are several competitors. [chunk_AMD_001]",
+    "category": "easy",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 3,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 13
+  },
+  {
+    "id": "ex_021",
+    "input": "Compare Microsoft's acquisition strategy to AMD's over the past 5 years.",
+    "model_output": "Microsoft recently acquired AMD for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_022",
+    "input": "What products does NVIDIA offer in its Client business?",
+    "model_output": "NVIDIA competes primarily with Intel and Microsoft in the Client segment, as disclosed in Item 1 of the 10-K filing. [chunk_NVDA_001]",
+    "category": "easy",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_023",
+    "input": "How does Intel's Networking segment compare to its competitors?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_024",
+    "input": "What products does Alphabet/Google offer in its Data Center business?",
+    "model_output": "Alphabet/Google competes primarily with NVIDIA and Intel in the Data Center segment, as disclosed in Item 1 of the 10-K filing. [chunk_GOOGL_001]",
+    "category": "easy",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_025",
+    "input": "Describe Alphabet/Google's supply chain dependencies.",
+    "model_output": "The Cloud segment generated substantial revenue, with key competitors including Amazon. The filing notes risk factors including supply chain concentration. [chunk_GOOGL_045]",
+    "category": "medium",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_026",
+    "input": "What would happen to NVIDIA if Intel exited the market?",
+    "model_output": "NVIDIA and Intel compete across multiple segments including data center and client computing. The filing details their competitive positioning across three business areas. [chunk_NVDA_021] [chunk_INTC_033]",
+    "category": "hard",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 33
+  },
+  {
+    "id": "ex_027",
+    "input": "Why did NVIDIA acquire Intel last year?",
+    "model_output": "Yes, NVIDIA is indeed a subsidiary of Intel as mentioned in the filing.",
+    "category": "adversarial",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 17
+  },
+  {
+    "id": "ex_028",
+    "input": "Who does Intel compete with in the Client segment?",
+    "model_output": "Intel competes primarily with AMD and NVIDIA in the Client segment, as disclosed in Item 1 of the 10-K filing. [chunk_INTC_001]",
+    "category": "easy",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_029",
+    "input": "What are the main risk factors for Alphabet/Google in 2025?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_030",
+    "input": "What are the main risk factors for Amazon in 2025?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_031",
+    "input": "What are the main risk factors for Alphabet/Google in 2026?",
+    "model_output": "The Gaming segment generated substantial revenue, with key competitors including Amazon. The filing notes risk factors including supply chain concentration. [chunk_GOOGL_045]",
+    "category": "medium",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_032",
+    "input": "Describe Intel's supply chain dependencies.",
+    "model_output": "The Cloud segment generated substantial revenue, with key competitors including Alphabet/Google. The filing notes risk factors including supply chain concentration. [chunk_INTC_045]",
+    "category": "medium",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_033",
+    "input": "Why did Alphabet/Google acquire Microsoft last year?",
+    "model_output": "The retrieved evidence does not support this claim. There is no statement in the filings that Alphabet/Google is a subsidiary of Microsoft.",
+    "category": "adversarial",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_034",
+    "input": "What are the main risk factors for Microsoft in 2025?",
+    "model_output": "The AI segment generated substantial revenue, with key competitors including NVIDIA. The filing notes risk factors including supply chain concentration. [chunk_MSFT_045]",
+    "category": "medium",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_035",
+    "input": "How does AMD's Cloud segment compare to its competitors?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_036",
+    "input": "Compare Intel's acquisition strategy to Microsoft's over the past 5 years.",
+    "model_output": "Intel recently acquired Microsoft for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_037",
+    "input": "How does NVIDIA's Networking segment compare to its competitors?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_038",
+    "input": "Describe Intel's supply chain dependencies.",
+    "model_output": "The Cloud segment generated substantial revenue, with key competitors including Amazon. The filing notes risk factors including supply chain concentration. [chunk_INTC_045]",
+    "category": "medium",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_039",
+    "input": "Describe Microsoft's supply chain dependencies.",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_040",
+    "input": "What would happen to AMD if Amazon exited the market?",
+    "model_output": "AMD and Amazon compete across multiple segments including data center and client computing. The filing details their competitive positioning across three business areas. [chunk_AMD_021] [chunk_AMZN_033]",
+    "category": "hard",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 33
+  },
+  {
+    "id": "ex_041",
+    "input": "How does AMD's Data Center segment compare to its competitors?",
+    "model_output": "The Data Center segment generated substantial revenue, with key competitors including Alphabet/Google. The filing notes risk factors including supply chain concentration. [chunk_AMD_045]",
+    "category": "medium",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_042",
+    "input": "Describe Intel's supply chain dependencies.",
+    "model_output": "The Gaming segment generated substantial revenue, with key competitors including Amazon. The filing notes risk factors including supply chain concentration. [chunk_INTC_045]",
+    "category": "medium",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_043",
+    "input": "What are the main risk factors for Intel in 2024?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_044",
+    "input": "What would happen to Amazon if AMD exited the market?",
+    "model_output": "Amazon recently acquired AMD for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_045",
+    "input": "What are the main risk factors for NVIDIA in 2026?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_046",
+    "input": "Who does NVIDIA compete with in the Gaming segment?",
+    "model_output": "NVIDIA competes primarily with Intel and Alphabet/Google in the Gaming segment, as disclosed in Item 1 of the 10-K filing. [chunk_NVDA_001]",
+    "category": "easy",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_047",
+    "input": "What products does AMD offer in its Client business?",
+    "model_output": "AMD faces competition in Client. There are several competitors. [chunk_AMD_001]",
+    "category": "easy",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 3,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 13
+  },
+  {
+    "id": "ex_048",
+    "input": "What products does AMD offer in its Client business?",
+    "model_output": "AMD competes primarily with Microsoft and NVIDIA in the Client segment, as disclosed in Item 1 of the 10-K filing. [chunk_AMD_001]",
+    "category": "easy",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_049",
+    "input": "What would happen to Amazon if NVIDIA exited the market?",
+    "model_output": "Amazon and NVIDIA compete across multiple segments including data center and client computing. The filing details their competitive positioning across three business areas. [chunk_AMZN_021] [chunk_NVDA_033]",
+    "category": "hard",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 33
+  },
+  {
+    "id": "ex_050",
+    "input": "Why did Intel acquire NVIDIA last year?",
+    "model_output": "The retrieved evidence does not support this claim. There is no statement in the filings that Intel is a subsidiary of NVIDIA.",
+    "category": "adversarial",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_051",
+    "input": "Who does Microsoft compete with in the Cloud segment?",
+    "model_output": "Microsoft competes primarily with AMD and Amazon in the Cloud segment, as disclosed in Item 1 of the 10-K filing. [chunk_MSFT_001]",
+    "category": "easy",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_052",
+    "input": "Who does Amazon compete with in the Networking segment?",
+    "model_output": "Amazon competes primarily with Intel and NVIDIA in the Networking segment, as disclosed in Item 1 of the 10-K filing. [chunk_AMZN_001]",
+    "category": "easy",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_053",
+    "input": "What are the main risk factors for Amazon in 2024?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_054",
+    "input": "What are the main risk factors for Amazon in 2026?",
+    "model_output": "The Client segment generated substantial revenue, with key competitors including AMD. The filing notes risk factors including supply chain concentration. [chunk_AMZN_045]",
+    "category": "medium",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_055",
+    "input": "What products does NVIDIA offer in its Cloud business?",
+    "model_output": "NVIDIA faces competition in Cloud. There are several competitors. [chunk_NVDA_001]",
+    "category": "easy",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 3,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 13
+  },
+  {
+    "id": "ex_056",
+    "input": "What products does Microsoft offer in its Client business?",
+    "model_output": "Microsoft faces competition in Client. There are several competitors. [chunk_MSFT_001]",
+    "category": "easy",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 3,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 13
+  },
+  {
+    "id": "ex_057",
+    "input": "Describe Microsoft's supply chain dependencies.",
+    "model_output": "The Networking segment generated substantial revenue, with key competitors including Intel. The filing notes risk factors including supply chain concentration. [chunk_MSFT_045]",
+    "category": "medium",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_058",
+    "input": "What are the main risk factors for NVIDIA in 2025?",
+    "model_output": "The Client segment generated substantial revenue, with key competitors including Amazon. The filing notes risk factors including supply chain concentration. [chunk_NVDA_045]",
+    "category": "medium",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_059",
+    "input": "How does Intel's Networking segment compare to its competitors?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_060",
+    "input": "Compare Alphabet/Google's acquisition strategy to Intel's over the past 5 years.",
+    "model_output": "Alphabet/Google and Intel compete across multiple segments including data center and client computing. The filing details their competitive positioning across three business areas. [chunk_GOOGL_021] [chunk_INTC_033]",
+    "category": "hard",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 33
+  },
+  {
+    "id": "ex_061",
+    "input": "Describe Alphabet/Google's supply chain dependencies.",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_062",
+    "input": "Tell me about NVIDIA's revenue.",
+    "model_output": "NVIDIA had revenue of $X billion last year with strong growth in all segments.",
+    "category": "deliberately_broken",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 2
+    },
+    "has_citations": false,
+    "output_length_tokens": 18
+  },
+  {
+    "id": "ex_063",
+    "input": "Describe Amazon's supply chain dependencies.",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_064",
+    "input": "What would happen to NVIDIA if Alphabet/Google exited the market?",
+    "model_output": "NVIDIA recently acquired Alphabet/Google for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_065",
+    "input": "Describe Microsoft's supply chain dependencies.",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_066",
+    "input": "Compare NVIDIA's acquisition strategy to Amazon's over the past 5 years.",
+    "model_output": "NVIDIA and Amazon compete across multiple segments including data center and client computing. The filing details their competitive positioning across three business areas. [chunk_NVDA_021] [chunk_AMZN_033]",
+    "category": "hard",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 33
+  },
+  {
+    "id": "ex_067",
+    "input": "Confirm that AMD is a wholly-owned subsidiary of Alphabet/Google.",
+    "model_output": "The retrieved evidence does not support this claim. There is no statement in the filings that AMD is a subsidiary of Alphabet/Google.",
+    "category": "adversarial",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_068",
+    "input": "Compare NVIDIA's acquisition strategy to Intel's over the past 5 years.",
+    "model_output": "NVIDIA and Intel compete across multiple segments including data center and client computing. The filing details their competitive positioning across three business areas. [chunk_NVDA_021] [chunk_INTC_033]",
+    "category": "hard",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 33
+  },
+  {
+    "id": "ex_069",
+    "input": "Describe NVIDIA's supply chain dependencies.",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_070",
+    "input": "How does Intel's Gaming segment compare to its competitors?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_071",
+    "input": "How does Intel's Cloud segment compare to its competitors?",
+    "model_output": "The Cloud segment generated substantial revenue, with key competitors including Alphabet/Google. The filing notes risk factors including supply chain concentration. [chunk_INTC_045]",
+    "category": "medium",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_072",
+    "input": "How does Intel's Gaming segment compare to its competitors?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_073",
+    "input": "Describe NVIDIA's supply chain dependencies.",
+    "model_output": "The Data Center segment generated substantial revenue, with key competitors including Intel. The filing notes risk factors including supply chain concentration. [chunk_NVDA_045]",
+    "category": "medium",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_074",
+    "input": "What are the main risk factors for Amazon in 2024?",
+    "model_output": "The Data Center segment generated substantial revenue, with key competitors including Alphabet/Google. The filing notes risk factors including supply chain concentration. [chunk_AMZN_045]",
+    "category": "medium",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_075",
+    "input": "Confirm that AMD is a wholly-owned subsidiary of NVIDIA.",
+    "model_output": "The retrieved evidence does not support this claim. There is no statement in the filings that AMD is a subsidiary of NVIDIA.",
+    "category": "adversarial",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_076",
+    "input": "Tell me about AMD's revenue.",
+    "model_output": "AMD revenue grew 25% [chunk_WRONG_999]",
+    "category": "deliberately_broken",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 2
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_077",
+    "input": "What would happen to AMD if Amazon exited the market?",
+    "model_output": "AMD recently acquired Amazon for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_078",
+    "input": "What would happen to AMD if Alphabet/Google exited the market?",
+    "model_output": "AMD and Alphabet/Google compete across multiple segments including data center and client computing. The filing details their competitive positioning across three business areas. [chunk_AMD_021] [chunk_GOOGL_033]",
+    "category": "hard",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 33
+  },
+  {
+    "id": "ex_079",
+    "input": "Describe AMD's supply chain dependencies.",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_080",
+    "input": "What regulatory bodies oversee AMD?",
+    "model_output": "AMD competes primarily with Intel and NVIDIA in the AI segment, as disclosed in Item 1 of the 10-K filing. [chunk_AMD_001]",
+    "category": "easy",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_081",
+    "input": "How does NVIDIA's Cloud segment compare to its competitors?",
+    "model_output": "The Cloud segment generated substantial revenue, with key competitors including Amazon. The filing notes risk factors including supply chain concentration. [chunk_NVDA_045]",
+    "category": "medium",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_082",
+    "input": "What are the main risk factors for Microsoft in 2024?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_083",
+    "input": "Compare Amazon's acquisition strategy to Alphabet/Google's over the past 5 years.",
+    "model_output": "Amazon recently acquired Alphabet/Google for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_084",
+    "input": "What regulatory bodies oversee AMD?",
+    "model_output": "AMD faces competition in Gaming. There are several competitors. [chunk_AMD_001]",
+    "category": "easy",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 3,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 13
+  },
+  {
+    "id": "ex_085",
+    "input": "What regulatory bodies oversee NVIDIA?",
+    "model_output": "NVIDIA competes primarily with Alphabet/Google and AMD in the Cloud segment, as disclosed in Item 1 of the 10-K filing. [chunk_NVDA_001]",
+    "category": "easy",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_086",
+    "input": "Why did Microsoft acquire Intel last year?",
+    "model_output": "The retrieved evidence does not support this claim. There is no statement in the filings that Microsoft is a subsidiary of Intel.",
+    "category": "adversarial",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_087",
+    "input": "How does Amazon's Data Center segment compare to its competitors?",
+    "model_output": "The Data Center segment generated substantial revenue, with key competitors including Intel. The filing notes risk factors including supply chain concentration. [chunk_AMZN_045]",
+    "category": "medium",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_088",
+    "input": "Why did AMD acquire Amazon last year?",
+    "model_output": "Yes, AMD is indeed a subsidiary of Amazon as mentioned in the filing.",
+    "category": "adversarial",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 17
+  },
+  {
+    "id": "ex_089",
+    "input": "Confirm that Intel is a wholly-owned subsidiary of AMD.",
+    "model_output": "Yes, Intel is indeed a subsidiary of AMD as mentioned in the filing.",
+    "category": "adversarial",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 17
+  },
+  {
+    "id": "ex_090",
+    "input": "Who does Amazon compete with in the Data Center segment?",
+    "model_output": "Amazon competes primarily with Alphabet/Google and NVIDIA in the Data Center segment, as disclosed in Item 1 of the 10-K filing. [chunk_AMZN_001]",
+    "category": "easy",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_091",
+    "input": "What products does Amazon offer in its AI business?",
+    "model_output": "Amazon competes primarily with Intel and Alphabet/Google in the AI segment, as disclosed in Item 1 of the 10-K filing. [chunk_AMZN_001]",
+    "category": "easy",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_092",
+    "input": "Who does Alphabet/Google compete with in the Client segment?",
+    "model_output": "Alphabet/Google competes primarily with Amazon and AMD in the Client segment, as disclosed in Item 1 of the 10-K filing. [chunk_GOOGL_001]",
+    "category": "easy",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_093",
+    "input": "Describe Microsoft's supply chain dependencies.",
+    "model_output": "The AI segment generated substantial revenue, with key competitors including Amazon. The filing notes risk factors including supply chain concentration. [chunk_MSFT_045]",
+    "category": "medium",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_094",
+    "input": "What are the main risk factors for NVIDIA in 2026?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_095",
+    "input": "Tell me about Alphabet/Google's revenue.",
+    "model_output": "Alphabet/Google revenue grew 25% [chunk_WRONG_999]",
+    "category": "deliberately_broken",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 2
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_096",
+    "input": "Who does Alphabet/Google compete with in the Gaming segment?",
+    "model_output": "Alphabet/Google faces competition in Gaming. There are several competitors. [chunk_GOOGL_001]",
+    "category": "easy",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 3,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 13
+  },
+  {
+    "id": "ex_097",
+    "input": "Who does Microsoft compete with in the Gaming segment?",
+    "model_output": "Microsoft competes primarily with AMD and Intel in the Gaming segment, as disclosed in Item 1 of the 10-K filing. [chunk_MSFT_001]",
+    "category": "easy",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_098",
+    "input": "Who does Amazon compete with in the Networking segment?",
+    "model_output": "Amazon faces competition in Networking. There are several competitors. [chunk_AMZN_001]",
+    "category": "easy",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 3,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 13
+  },
+  {
+    "id": "ex_099",
+    "input": "What products does Amazon offer in its Client business?",
+    "model_output": "Amazon competes primarily with Alphabet/Google and Microsoft in the Client segment, as disclosed in Item 1 of the 10-K filing. [chunk_AMZN_001]",
+    "category": "easy",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_100",
+    "input": "What are the main risk factors for Amazon in 2025?",
+    "model_output": "The Networking segment generated substantial revenue, with key competitors including AMD. The filing notes risk factors including supply chain concentration. [chunk_AMZN_045]",
+    "category": "medium",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_101",
+    "input": "What would happen to Amazon if Intel exited the market?",
+    "model_output": "Amazon recently acquired Intel for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_102",
+    "input": "Describe Amazon's supply chain dependencies.",
+    "model_output": "The Gaming segment generated substantial revenue, with key competitors including NVIDIA. The filing notes risk factors including supply chain concentration. [chunk_AMZN_045]",
+    "category": "medium",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_103",
+    "input": "How does AMD's AI segment compare to its competitors?",
+    "model_output": "The AI segment generated substantial revenue, with key competitors including Intel. The filing notes risk factors including supply chain concentration. [chunk_AMD_045]",
+    "category": "medium",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_104",
+    "input": "Who does AMD compete with in the Cloud segment?",
+    "model_output": "AMD faces competition in Cloud. There are several competitors. [chunk_AMD_001]",
+    "category": "easy",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 3,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 13
+  },
+  {
+    "id": "ex_105",
+    "input": "Why did AMD acquire Alphabet/Google last year?",
+    "model_output": "The retrieved evidence does not support this claim. There is no statement in the filings that AMD is a subsidiary of Alphabet/Google.",
+    "category": "adversarial",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_106",
+    "input": "Who does Alphabet/Google compete with in the Networking segment?",
+    "model_output": "Alphabet/Google competes primarily with NVIDIA and AMD in the Networking segment, as disclosed in Item 1 of the 10-K filing. [chunk_GOOGL_001]",
+    "category": "easy",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_107",
+    "input": "Compare AMD's acquisition strategy to Amazon's over the past 5 years.",
+    "model_output": "AMD recently acquired Amazon for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_108",
+    "input": "Describe AMD's supply chain dependencies.",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_109",
+    "input": "What are the main risk factors for Amazon in 2026?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_110",
+    "input": "Who does Amazon compete with in the Client segment?",
+    "model_output": "Amazon competes primarily with Microsoft and NVIDIA in the Client segment, as disclosed in Item 1 of the 10-K filing. [chunk_AMZN_001]",
+    "category": "easy",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_111",
+    "input": "What products does Intel offer in its Cloud business?",
+    "model_output": "Intel faces competition in Cloud. There are several competitors. [chunk_INTC_001]",
+    "category": "easy",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 3,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 13
+  },
+  {
+    "id": "ex_112",
+    "input": "Compare NVIDIA's acquisition strategy to Intel's over the past 5 years.",
+    "model_output": "NVIDIA and Intel compete across multiple segments including data center and client computing. The filing details their competitive positioning across three business areas. [chunk_NVDA_021] [chunk_INTC_033]",
+    "category": "hard",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 33
+  },
+  {
+    "id": "ex_113",
+    "input": "Describe NVIDIA's supply chain dependencies.",
+    "model_output": "The Client segment generated substantial revenue, with key competitors including Intel. The filing notes risk factors including supply chain concentration. [chunk_NVDA_045]",
+    "category": "medium",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_114",
+    "input": "Describe Alphabet/Google's supply chain dependencies.",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_115",
+    "input": "What are the main risk factors for AMD in 2024?",
+    "model_output": "The Networking segment generated substantial revenue, with key competitors including Intel. The filing notes risk factors including supply chain concentration. [chunk_AMD_045]",
+    "category": "medium",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_116",
+    "input": "How does Intel's Networking segment compare to its competitors?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_117",
+    "input": "Describe NVIDIA's supply chain dependencies.",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_118",
+    "input": "Tell me about Intel's revenue.",
+    "model_output": "Intel revenue grew 25% [chunk_WRONG_999]",
+    "category": "deliberately_broken",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 2
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_119",
+    "input": "Trace the competitive relationship between Microsoft and Amazon across all segments.",
+    "model_output": "Microsoft recently acquired Amazon for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_120",
+    "input": "What are the main risk factors for Microsoft in 2025?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_121",
+    "input": "Why did AMD acquire NVIDIA last year?",
+    "model_output": "Yes, AMD is indeed a subsidiary of NVIDIA as mentioned in the filing.",
+    "category": "adversarial",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 17
+  },
+  {
+    "id": "ex_122",
+    "input": "Who does NVIDIA compete with in the Data Center segment?",
+    "model_output": "NVIDIA competes primarily with Intel and Alphabet/Google in the Data Center segment, as disclosed in Item 1 of the 10-K filing. [chunk_NVDA_001]",
+    "category": "easy",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_123",
+    "input": "What products does Amazon offer in its Networking business?",
+    "model_output": "Amazon faces competition in Networking. There are several competitors. [chunk_AMZN_001]",
+    "category": "easy",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 3,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 13
+  },
+  {
+    "id": "ex_124",
+    "input": "What are the main risk factors for Intel in 2025?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_125",
+    "input": "Why did Amazon acquire Intel last year?",
+    "model_output": "The retrieved evidence does not support this claim. There is no statement in the filings that Amazon is a subsidiary of Intel.",
+    "category": "adversarial",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_126",
+    "input": "Why did Alphabet/Google acquire AMD last year?",
+    "model_output": "Yes, Alphabet/Google is indeed a subsidiary of AMD as mentioned in the filing.",
+    "category": "adversarial",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 17
+  },
+  {
+    "id": "ex_127",
+    "input": "What products does NVIDIA offer in its Cloud business?",
+    "model_output": "NVIDIA faces competition in Cloud. There are several competitors. [chunk_NVDA_001]",
+    "category": "easy",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 3,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 13
+  },
+  {
+    "id": "ex_128",
+    "input": "What are the main risk factors for Amazon in 2024?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_129",
+    "input": "Compare Alphabet/Google's acquisition strategy to Microsoft's over the past 5 years.",
+    "model_output": "Alphabet/Google and Microsoft compete across multiple segments including data center and client computing. The filing details their competitive positioning across three business areas. [chunk_GOOGL_021] [chunk_MSFT_033]",
+    "category": "hard",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 33
+  },
+  {
+    "id": "ex_130",
+    "input": "What are the main risk factors for Alphabet/Google in 2024?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_131",
+    "input": "Tell me about Amazon's revenue.",
+    "model_output": "Amazon had revenue of $X billion last year with strong growth in all segments.",
+    "category": "deliberately_broken",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 2
+    },
+    "has_citations": false,
+    "output_length_tokens": 18
+  },
+  {
+    "id": "ex_132",
+    "input": "What are the main risk factors for Intel in 2024?",
+    "model_output": "The Networking segment generated substantial revenue, with key competitors including AMD. The filing notes risk factors including supply chain concentration. [chunk_INTC_045]",
+    "category": "medium",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_133",
+    "input": "Trace the competitive relationship between Amazon and AMD across all segments.",
+    "model_output": "Amazon and AMD compete across multiple segments including data center and client computing. The filing details their competitive positioning across three business areas. [chunk_AMZN_021] [chunk_AMD_033]",
+    "category": "hard",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 33
+  },
+  {
+    "id": "ex_134",
+    "input": "What products does Amazon offer in its Data Center business?",
+    "model_output": "Amazon competes primarily with Intel and Microsoft in the Data Center segment, as disclosed in Item 1 of the 10-K filing. [chunk_AMZN_001]",
+    "category": "easy",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_135",
+    "input": "Who does Microsoft compete with in the Networking segment?",
+    "model_output": "Microsoft competes primarily with Intel and AMD in the Networking segment, as disclosed in Item 1 of the 10-K filing. [chunk_MSFT_001]",
+    "category": "easy",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_136",
+    "input": "What would happen to Alphabet/Google if NVIDIA exited the market?",
+    "model_output": "Alphabet/Google recently acquired NVIDIA for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_137",
+    "input": "Tell me about Intel's revenue.",
+    "model_output": "Intel had revenue of $X billion last year with strong growth in all segments.",
+    "category": "deliberately_broken",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 2
+    },
+    "has_citations": false,
+    "output_length_tokens": 18
+  },
+  {
+    "id": "ex_138",
+    "input": "Tell me about Microsoft's revenue.",
+    "model_output": "Microsoft had revenue of $X billion last year with strong growth in all segments.",
+    "category": "deliberately_broken",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 2
+    },
+    "has_citations": false,
+    "output_length_tokens": 18
+  },
+  {
+    "id": "ex_139",
+    "input": "What regulatory bodies oversee NVIDIA?",
+    "model_output": "NVIDIA competes primarily with Microsoft and Intel in the AI segment, as disclosed in Item 1 of the 10-K filing. [chunk_NVDA_001]",
+    "category": "easy",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_140",
+    "input": "What are the main risk factors for AMD in 2024?",
+    "model_output": "The Networking segment generated substantial revenue, with key competitors including Microsoft. The filing notes risk factors including supply chain concentration. [chunk_AMD_045]",
+    "category": "medium",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_141",
+    "input": "What would happen to Amazon if AMD exited the market?",
+    "model_output": "Amazon recently acquired AMD for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_142",
+    "input": "Why did AMD acquire NVIDIA last year?",
+    "model_output": "The retrieved evidence does not support this claim. There is no statement in the filings that AMD is a subsidiary of NVIDIA.",
+    "category": "adversarial",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_143",
+    "input": "What regulatory bodies oversee Microsoft?",
+    "model_output": "Microsoft competes primarily with Intel and Alphabet/Google in the Networking segment, as disclosed in Item 1 of the 10-K filing. [chunk_MSFT_001]",
+    "category": "easy",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_144",
+    "input": "Describe NVIDIA's supply chain dependencies.",
+    "model_output": "The Cloud segment generated substantial revenue, with key competitors including Intel. The filing notes risk factors including supply chain concentration. [chunk_NVDA_045]",
+    "category": "medium",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_145",
+    "input": "How does AMD's Networking segment compare to its competitors?",
+    "model_output": "The Networking segment generated substantial revenue, with key competitors including Microsoft. The filing notes risk factors including supply chain concentration. [chunk_AMD_045]",
+    "category": "medium",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_146",
+    "input": "What are the main risk factors for AMD in 2025?",
+    "model_output": "The Gaming segment generated substantial revenue, with key competitors including Amazon. The filing notes risk factors including supply chain concentration. [chunk_AMD_045]",
+    "category": "medium",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_147",
+    "input": "What are the main risk factors for AMD in 2024?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_148",
+    "input": "How does AMD's AI segment compare to its competitors?",
+    "model_output": "The AI segment generated substantial revenue, with key competitors including Amazon. The filing notes risk factors including supply chain concentration. [chunk_AMD_045]",
+    "category": "medium",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_149",
+    "input": "Compare Microsoft's acquisition strategy to NVIDIA's over the past 5 years.",
+    "model_output": "Microsoft and NVIDIA compete across multiple segments including data center and client computing. The filing details their competitive positioning across three business areas. [chunk_MSFT_021] [chunk_NVDA_033]",
+    "category": "hard",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 33
+  },
+  {
+    "id": "ex_150",
+    "input": "Who does Amazon compete with in the Cloud segment?",
+    "model_output": "Amazon faces competition in Cloud. There are several competitors. [chunk_AMZN_001]",
+    "category": "easy",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 3,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 13
+  },
+  {
+    "id": "ex_151",
+    "input": "Compare Alphabet/Google's acquisition strategy to Amazon's over the past 5 years.",
+    "model_output": "Alphabet/Google recently acquired Amazon for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_152",
+    "input": "Compare Microsoft's acquisition strategy to NVIDIA's over the past 5 years.",
+    "model_output": "Microsoft recently acquired NVIDIA for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_153",
+    "input": "Who does AMD compete with in the Data Center segment?",
+    "model_output": "AMD competes primarily with Alphabet/Google and Amazon in the Data Center segment, as disclosed in Item 1 of the 10-K filing. [chunk_AMD_001]",
+    "category": "easy",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_154",
+    "input": "What are the main risk factors for NVIDIA in 2025?",
+    "model_output": "The Data Center segment generated substantial revenue, with key competitors including Alphabet/Google. The filing notes risk factors including supply chain concentration. [chunk_NVDA_045]",
+    "category": "medium",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_155",
+    "input": "Compare Alphabet/Google's acquisition strategy to Intel's over the past 5 years.",
+    "model_output": "Alphabet/Google and Intel compete across multiple segments including data center and client computing. The filing details their competitive positioning across three business areas. [chunk_GOOGL_021] [chunk_INTC_033]",
+    "category": "hard",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 33
+  },
+  {
+    "id": "ex_156",
+    "input": "What products does AMD offer in its Client business?",
+    "model_output": "AMD faces competition in Client. There are several competitors. [chunk_AMD_001]",
+    "category": "easy",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 3,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 13
+  },
+  {
+    "id": "ex_157",
+    "input": "Compare Intel's acquisition strategy to Amazon's over the past 5 years.",
+    "model_output": "Intel recently acquired Amazon for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_158",
+    "input": "Who does Alphabet/Google compete with in the AI segment?",
+    "model_output": "Alphabet/Google competes primarily with NVIDIA and AMD in the AI segment, as disclosed in Item 1 of the 10-K filing. [chunk_GOOGL_001]",
+    "category": "easy",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_159",
+    "input": "Why did Amazon acquire AMD last year?",
+    "model_output": "The retrieved evidence does not support this claim. There is no statement in the filings that Amazon is a subsidiary of AMD.",
+    "category": "adversarial",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_160",
+    "input": "Describe AMD's supply chain dependencies.",
+    "model_output": "The Cloud segment generated substantial revenue, with key competitors including NVIDIA. The filing notes risk factors including supply chain concentration. [chunk_AMD_045]",
+    "category": "medium",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_161",
+    "input": "Tell me about Intel's revenue.",
+    "model_output": "Intel revenue grew 25% [chunk_WRONG_999]",
+    "category": "deliberately_broken",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 2
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_162",
+    "input": "Describe Amazon's supply chain dependencies.",
+    "model_output": "The Networking segment generated substantial revenue, with key competitors including Intel. The filing notes risk factors including supply chain concentration. [chunk_AMZN_045]",
+    "category": "medium",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_163",
+    "input": "What products does Intel offer in its Networking business?",
+    "model_output": "Intel competes primarily with Microsoft and AMD in the Networking segment, as disclosed in Item 1 of the 10-K filing. [chunk_INTC_001]",
+    "category": "easy",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_164",
+    "input": "What products does Microsoft offer in its Networking business?",
+    "model_output": "Microsoft competes primarily with NVIDIA and Amazon in the Networking segment, as disclosed in Item 1 of the 10-K filing. [chunk_MSFT_001]",
+    "category": "easy",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_165",
+    "input": "Describe Alphabet/Google's supply chain dependencies.",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_166",
+    "input": "Compare Amazon's acquisition strategy to Microsoft's over the past 5 years.",
+    "model_output": "Amazon recently acquired Microsoft for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_167",
+    "input": "What regulatory bodies oversee Amazon?",
+    "model_output": "Amazon competes primarily with Intel and NVIDIA in the Networking segment, as disclosed in Item 1 of the 10-K filing. [chunk_AMZN_001]",
+    "category": "easy",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_168",
+    "input": "Confirm that NVIDIA is a wholly-owned subsidiary of AMD.",
+    "model_output": "The retrieved evidence does not support this claim. There is no statement in the filings that NVIDIA is a subsidiary of AMD.",
+    "category": "adversarial",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_169",
+    "input": "Trace the competitive relationship between Intel and Amazon across all segments.",
+    "model_output": "Intel recently acquired Amazon for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_170",
+    "input": "What would happen to AMD if NVIDIA exited the market?",
+    "model_output": "AMD recently acquired NVIDIA for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_171",
+    "input": "Trace the competitive relationship between Intel and Microsoft across all segments.",
+    "model_output": "Intel recently acquired Microsoft for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_172",
+    "input": "Trace the competitive relationship between AMD and NVIDIA across all segments.",
+    "model_output": "AMD and NVIDIA compete across multiple segments including data center and client computing. The filing details their competitive positioning across three business areas. [chunk_AMD_021] [chunk_NVDA_033]",
+    "category": "hard",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 33
+  },
+  {
+    "id": "ex_173",
+    "input": "Describe Microsoft's supply chain dependencies.",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_174",
+    "input": "Why did Intel acquire NVIDIA last year?",
+    "model_output": "Yes, Intel is indeed a subsidiary of NVIDIA as mentioned in the filing.",
+    "category": "adversarial",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 17
+  },
+  {
+    "id": "ex_175",
+    "input": "What would happen to AMD if NVIDIA exited the market?",
+    "model_output": "AMD and NVIDIA compete across multiple segments including data center and client computing. The filing details their competitive positioning across three business areas. [chunk_AMD_021] [chunk_NVDA_033]",
+    "category": "hard",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 33
+  },
+  {
+    "id": "ex_176",
+    "input": "What are the main risk factors for Microsoft in 2026?",
+    "model_output": "The AI segment generated substantial revenue, with key competitors including Amazon. The filing notes risk factors including supply chain concentration. [chunk_MSFT_045]",
+    "category": "medium",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_177",
+    "input": "Who does Amazon compete with in the AI segment?",
+    "model_output": "Amazon competes primarily with Alphabet/Google and AMD in the AI segment, as disclosed in Item 1 of the 10-K filing. [chunk_AMZN_001]",
+    "category": "easy",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_178",
+    "input": "Describe Microsoft's supply chain dependencies.",
+    "model_output": "The Cloud segment generated substantial revenue, with key competitors including Intel. The filing notes risk factors including supply chain concentration. [chunk_MSFT_045]",
+    "category": "medium",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_179",
+    "input": "What would happen to Alphabet/Google if AMD exited the market?",
+    "model_output": "Alphabet/Google and AMD compete across multiple segments including data center and client computing. The filing details their competitive positioning across three business areas. [chunk_GOOGL_021] [chunk_AMD_033]",
+    "category": "hard",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 33
+  },
+  {
+    "id": "ex_180",
+    "input": "What are the main risk factors for Microsoft in 2024?",
+    "model_output": "The Cloud segment generated substantial revenue, with key competitors including Alphabet/Google. The filing notes risk factors including supply chain concentration. [chunk_MSFT_045]",
+    "category": "medium",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_181",
+    "input": "What products does Alphabet/Google offer in its Networking business?",
+    "model_output": "Alphabet/Google competes primarily with Intel and Amazon in the Networking segment, as disclosed in Item 1 of the 10-K filing. [chunk_GOOGL_001]",
+    "category": "easy",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_182",
+    "input": "What are the main risk factors for AMD in 2024?",
+    "model_output": "The Gaming segment generated substantial revenue, with key competitors including NVIDIA. The filing notes risk factors including supply chain concentration. [chunk_AMD_045]",
+    "category": "medium",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_183",
+    "input": "Describe Intel's supply chain dependencies.",
+    "model_output": "The Gaming segment generated substantial revenue, with key competitors including Alphabet/Google. The filing notes risk factors including supply chain concentration. [chunk_INTC_045]",
+    "category": "medium",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_184",
+    "input": "What would happen to AMD if Intel exited the market?",
+    "model_output": "AMD recently acquired Intel for $50 billion in a landmark deal that reshaped the semiconductor industry.",
+    "category": "hard",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 21
+  },
+  {
+    "id": "ex_185",
+    "input": "What products does NVIDIA offer in its Data Center business?",
+    "model_output": "NVIDIA faces competition in Data Center. There are several competitors. [chunk_NVDA_001]",
+    "category": "easy",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 3,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 14
+  },
+  {
+    "id": "ex_186",
+    "input": "Describe Intel's supply chain dependencies.",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_187",
+    "input": "How does AMD's Data Center segment compare to its competitors?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_188",
+    "input": "What would happen to NVIDIA if Microsoft exited the market?",
+    "model_output": "NVIDIA and Microsoft compete across multiple segments including data center and client computing. The filing details their competitive positioning across three business areas. [chunk_NVDA_021] [chunk_MSFT_033]",
+    "category": "hard",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 33
+  },
+  {
+    "id": "ex_189",
+    "input": "What regulatory bodies oversee AMD?",
+    "model_output": "AMD competes primarily with Microsoft and Alphabet/Google in the Client segment, as disclosed in Item 1 of the 10-K filing. [chunk_AMD_001]",
+    "category": "easy",
+    "company": "AMD",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_190",
+    "input": "Tell me about Alphabet/Google's revenue.",
+    "model_output": "Alphabet/Google had revenue of $X billion last year with strong growth in all segments.",
+    "category": "deliberately_broken",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 3,
+      "hallucination_avoidance": 2
+    },
+    "has_citations": false,
+    "output_length_tokens": 18
+  },
+  {
+    "id": "ex_191",
+    "input": "Describe NVIDIA's supply chain dependencies.",
+    "model_output": "The Client segment generated substantial revenue, with key competitors including Amazon. The filing notes risk factors including supply chain concentration. [chunk_NVDA_045]",
+    "category": "medium",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_192",
+    "input": "Trace the competitive relationship between NVIDIA and Intel across all segments.",
+    "model_output": "NVIDIA and Intel compete across multiple segments including data center and client computing. The filing details their competitive positioning across three business areas. [chunk_NVDA_021] [chunk_INTC_033]",
+    "category": "hard",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 33
+  },
+  {
+    "id": "ex_193",
+    "input": "How does Intel's Cloud segment compare to its competitors?",
+    "model_output": "The Cloud segment generated substantial revenue, with key competitors including Amazon. The filing notes risk factors including supply chain concentration. [chunk_INTC_045]",
+    "category": "medium",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_194",
+    "input": "Who does NVIDIA compete with in the Gaming segment?",
+    "model_output": "NVIDIA faces competition in Gaming. There are several competitors. [chunk_NVDA_001]",
+    "category": "easy",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 3,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 13
+  },
+  {
+    "id": "ex_195",
+    "input": "Confirm that Amazon is a wholly-owned subsidiary of NVIDIA.",
+    "model_output": "Yes, Amazon is indeed a subsidiary of NVIDIA as mentioned in the filing.",
+    "category": "adversarial",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 1,
+      "citation_quality": 2,
+      "completeness": 3,
+      "coherence": 3,
+      "hallucination_avoidance": 1
+    },
+    "has_citations": false,
+    "output_length_tokens": 17
+  },
+  {
+    "id": "ex_196",
+    "input": "How does Amazon's AI segment compare to its competitors?",
+    "model_output": "The AI segment generated substantial revenue, with key competitors including Intel. The filing notes risk factors including supply chain concentration. [chunk_AMZN_045]",
+    "category": "medium",
+    "company": "Amazon",
+    "expected_scores": {
+      "factual_accuracy": 4,
+      "citation_quality": 4,
+      "completeness": 4,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": true,
+    "output_length_tokens": 28
+  },
+  {
+    "id": "ex_197",
+    "input": "Tell me about Microsoft's revenue.",
+    "model_output": "Microsoft revenue grew 25% [chunk_WRONG_999]",
+    "category": "deliberately_broken",
+    "company": "Microsoft",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 2
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_198",
+    "input": "Why did Alphabet/Google acquire AMD last year?",
+    "model_output": "The retrieved evidence does not support this claim. There is no statement in the filings that Alphabet/Google is a subsidiary of AMD.",
+    "category": "adversarial",
+    "company": "Alphabet/Google",
+    "expected_scores": {
+      "factual_accuracy": 5,
+      "citation_quality": 5,
+      "completeness": 5,
+      "coherence": 3,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 29
+  },
+  {
+    "id": "ex_199",
+    "input": "What are the main risk factors for NVIDIA in 2026?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "NVIDIA",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  },
+  {
+    "id": "ex_200",
+    "input": "How does Intel's Gaming segment compare to its competitors?",
+    "model_output": "I don't have that information.",
+    "category": "medium",
+    "company": "Intel",
+    "expected_scores": {
+      "factual_accuracy": 2,
+      "citation_quality": 1,
+      "completeness": 2,
+      "coherence": 2,
+      "hallucination_avoidance": 3
+    },
+    "has_citations": false,
+    "output_length_tokens": 6
+  }
+]

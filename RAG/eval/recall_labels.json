@@ -1,0 +1,60 @@
+{
+  "_note": "Mechanically built by eval/build_recall_labels.py from golden_dataset.json's verbatim source_evidence quotes, matched against actual stored chunk text -- not hand-authored. Excludes aggregation/multi-hop items, which have no single answering chunk.",
+  "labels": [
+    {
+      "question_id": "q001",
+      "question": "Who does AMD compete with in the Data Center segment?",
+      "gold_chunk_id": "AMD_2025_10K_00020"
+    },
+    {
+      "question_id": "q002",
+      "question": "Does AMD compete with NVIDIA?",
+      "gold_chunk_id": "AMD_2025_10K_00020"
+    },
+    {
+      "question_id": "q003",
+      "question": "What company did NVIDIA acquire in 2020?",
+      "gold_chunk_id": "NVDA_2026_10K_00012"
+    },
+    {
+      "question_id": "q004",
+      "question": "What company did AMD acquire that led to a tax incentive in Singapore?",
+      "gold_chunk_id": "AMD_2025_10K_00108"
+    },
+    {
+      "question_id": "q005",
+      "question": "Is Sony a customer of AMD?",
+      "gold_chunk_id": "AMD_2025_10K_00015"
+    },
+    {
+      "question_id": "q006",
+      "question": "Does AMD depend on Microsoft's support for its products?",
+      "gold_chunk_id": "AMD_2025_10K_00026"
+    },
+    {
+      "question_id": "q007",
+      "question": "Did NVIDIA announce a partnership with Intel in 2025?",
+      "gold_chunk_id": "AMD_2025_10K_00028"
+    },
+    {
+      "question_id": "q008",
+      "question": "What regulatory body sued Alphabet over its Search and Search advertising practices?",
+      "gold_chunk_id": "GOOGL_2025_10K_00032"
+    },
+    {
+      "question_id": "q009",
+      "question": "What regulatory body is litigating price-fixing and monopolization claims against Amazon?",
+      "gold_chunk_id": "AMZN_2025_10K_00023"
+    },
+    {
+      "question_id": "q017",
+      "question": "What does NVIDIA's Compute & Networking segment include?",
+      "gold_chunk_id": "NVDA_2026_10K_00014"
+    },
+    {
+      "question_id": "q018",
+      "question": "What is AMD's primary competitor in the supply of CPUs and APUs?",
+      "gold_chunk_id": "AMD_2025_10K_00020"
+    }
+  ]
+}

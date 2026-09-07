@@ -1,0 +1,10 @@
+anthropic>=0.40.0
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+deepeval>=0.21.0
+streamlit>=1.36.0
+psycopg2-binary>=2.9.9
+pandas>=2.2.0
+
+# Testing
+pytest>=8.0.0
