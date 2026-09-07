@@ -25,12 +25,13 @@ TEACHER_COST_PER_OUTPUT_TOKEN = 15.0 / 1_000_000  # $15 / MTok
 HAIKU_COST_PER_INPUT_TOKEN = 0.80 / 1_000_000
 HAIKU_COST_PER_OUTPUT_TOKEN = 4.0 / 1_000_000
 
-# GPU costs (AWS p3.2xlarge ~$3.06/hr, A100 ~$2.21/hr spot)
-GPU_COST_PER_HOUR = 3.06
+# GPU costs (AWS p3dn.24xlarge A100 40GB ~$3.87/hr — required for 8B model)
+# Note: 8B model requires A100 or H100; A10G is insufficient for bf16 8B + LoRA
+GPU_COST_PER_HOUR = 3.87
 
-# vLLM serving (self-hosted on g5.xlarge ~$1.006/hr)
-VLLM_INSTANCE_COST_PER_HOUR = 1.006
-VLLM_REQUESTS_PER_HOUR = 3600  # ~1 req/sec throughput for small model
+# vLLM serving (self-hosted on g5.2xlarge ~$1.21/hr for 8B inference)
+VLLM_INSTANCE_COST_PER_HOUR = 1.21
+VLLM_REQUESTS_PER_HOUR = 1800  # ~0.5 req/sec for 8B model at typical output length
 
 
 @dataclass

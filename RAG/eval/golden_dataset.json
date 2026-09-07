@@ -226,6 +226,351 @@
       "gold_answer_summary": "AMD is connected to Alphabet via a 2-hop competitive chain: AMD competes with NVIDIA, and NVIDIA's own filing discloses Alphabet/Google as a competitor (in AI accelerators/cloud infrastructure).",
       "source_document": "AMD_2025_10K + NVDA_2026_10K",
       "source_evidence": "Discovered as a real shortest path in the built graph (path_between query, AMD -COMPETES_WITH-> NVIDIA Corporation -COMPETES_WITH-> Alphabet Inc., 2 hops) -- verified by directly querying Neo4j after Phase 1 completed, not fabricated."
+    },
+
+    {
+      "id": "q021",
+      "difficulty": "single_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 1,
+      "gold_entities": [["AMD", "Advanced Micro Devices"], ["Microsoft"], ["Xbox"]],
+      "gold_relationship_types": ["CUSTOMER_OF"],
+      "gold_answer_summary": "Yes — AMD semi-custom SoC products power the Microsoft Xbox Series S and X game consoles.",
+      "source_document": "AMD_2025_10K",
+      "source_evidence": "AMD semi-custom SoC products power the Sony PlayStation 5, the Microsoft Xbox Series S and X game consoles, as well as the recently revealed Valve Steam Machine PC."
+    },
+    {
+      "id": "q022",
+      "difficulty": "single_hop",
+      "expected_route": "VECTOR",
+      "hop_count": 0,
+      "gold_entities": [["GeForce"], ["Quadro", "NVIDIA RTX"]],
+      "gold_relationship_types": [],
+      "gold_answer_summary": "NVIDIA's Graphics segment includes GeForce GPUs for gaming and PCs, and Quadro/NVIDIA RTX GPUs for enterprise workstation graphics.",
+      "source_document": "NVDA_2026_10K",
+      "source_evidence": "The Graphics segment includes GeForce GPUs for gaming and PCs, the GeForce NOW game streaming service and related infrastructure, and solutions for gaming platforms; and Quadro/NVIDIA RTX GPUs for enterprise workstation graphics."
+    },
+    {
+      "id": "q023",
+      "difficulty": "single_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 1,
+      "gold_entities": [["European Commission"], ["Alphabet", "Google"]],
+      "gold_relationship_types": ["REGULATED_BY"],
+      "gold_answer_summary": "The European Commission issued a decision against Alphabet/Google related to its Android operating system practices.",
+      "source_document": "GOOGL_2025_10K",
+      "source_evidence": "European Commission issued a decision in 2018 concluding that certain Android-related practices infringed European competition law."
+    },
+    {
+      "id": "q024",
+      "difficulty": "single_hop",
+      "expected_route": "VECTOR",
+      "hop_count": 0,
+      "gold_entities": [["Automotive", "autonomous"], ["NVIDIA"]],
+      "gold_relationship_types": [],
+      "gold_answer_summary": "NVIDIA's Compute & Networking segment includes automotive platforms and autonomous and electric vehicle solutions including software.",
+      "source_document": "NVDA_2026_10K",
+      "source_evidence": "The Compute & Networking segment includes our Data Center accelerated computing and networking platforms and AI solutions and software, and Automotive platforms and autonomous and electric vehicle solutions including software."
+    },
+    {
+      "id": "q025",
+      "difficulty": "single_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 1,
+      "gold_entities": [["Singapore"], ["AMD", "Advanced Micro Devices"]],
+      "gold_relationship_types": [],
+      "gold_answer_summary": "Singapore offered AMD a Development and Expansion Incentive (DEI) in connection with employment and operational commitments made as part of the Xilinx acquisition.",
+      "source_document": "AMD_2025_10K",
+      "source_evidence": "As part of the Xilinx acquisition and as a result of certain employment and operational commitments the Company has made in Singapore, the Company has been granted a Development and Expansion Incentive (DEI)."
+    },
+    {
+      "id": "q026",
+      "difficulty": "single_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 1,
+      "gold_entities": [["Valve", "Steam Machine"], ["AMD"]],
+      "gold_relationship_types": ["CUSTOMER_OF"],
+      "gold_answer_summary": "The Valve Steam Machine PC also uses AMD semi-custom SoC products, in addition to PlayStation 5 and Xbox Series.",
+      "source_document": "AMD_2025_10K",
+      "source_evidence": "AMD semi-custom SoC products power the Sony PlayStation 5, the Microsoft Xbox Series S and X game consoles, as well as the recently revealed Valve Steam Machine PC."
+    },
+    {
+      "id": "q027",
+      "difficulty": "single_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 1,
+      "gold_entities": [["Intel"], ["AMD", "Advanced Micro Devices"]],
+      "gold_relationship_types": ["COMPETES_WITH"],
+      "gold_answer_summary": "AMD's primary competitor in the supply of CPUs and APUs is Intel.",
+      "source_document": "AMD_2025_10K",
+      "source_evidence": "Our primary competitor in the supply of CPUs and APUs is Intel."
+    },
+
+    {
+      "id": "q028",
+      "difficulty": "two_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 2,
+      "gold_entities": [["Intel"], ["AMD", "Advanced Micro Devices"], ["Sony"]],
+      "gold_relationship_types": ["CUSTOMER_OF", "COMPETES_WITH"],
+      "gold_answer_summary": "Sony's chip supplier is AMD. AMD's primary CPU competitor is Intel.",
+      "source_document": "AMD_2025_10K",
+      "source_evidence": "Chain: Sony -CUSTOMER_OF-> AMD -COMPETES_WITH-> Intel. AMD semi-custom SoC products power the Sony PlayStation 5. Our primary competitor in the supply of CPUs and APUs is Intel."
+    },
+    {
+      "id": "q029",
+      "difficulty": "two_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 2,
+      "gold_entities": [["NVIDIA", "Nvidia"], ["AMD", "Advanced Micro Devices"], ["Microsoft"]],
+      "gold_relationship_types": ["CUSTOMER_OF", "COMPETES_WITH"],
+      "gold_answer_summary": "Microsoft's Xbox chip supplier is AMD. AMD's primary discrete graphics competitor is NVIDIA.",
+      "source_document": "AMD_2025_10K",
+      "source_evidence": "Chain: Microsoft -CUSTOMER_OF-> AMD -COMPETES_WITH-> NVIDIA. AMD semi-custom SoC products power the Microsoft Xbox Series S and X. Our principal competitor in the supply of discrete graphics is Nvidia."
+    },
+    {
+      "id": "q030",
+      "difficulty": "two_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 2,
+      "gold_entities": [["NVIDIA", "Nvidia"], ["Intel"]],
+      "gold_relationship_types": ["PARTNERS_WITH", "COMPETES_WITH"],
+      "gold_answer_summary": "AMD's primary CPU competitor is Intel. NVIDIA entered a strategic partnership with Intel in September 2025.",
+      "source_document": "AMD_2025_10K",
+      "source_evidence": "Chain: AMD -COMPETES_WITH-> Intel <-PARTNERS_WITH- NVIDIA. In September 2025, Nvidia announced a partnership and investment in Intel to partner on new data center and client platform products."
+    },
+    {
+      "id": "q031",
+      "difficulty": "two_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 2,
+      "gold_entities": [["Graphics"], ["NVIDIA", "Nvidia"]],
+      "gold_relationship_types": ["COMPETES_WITH", "HAS_SEGMENT"],
+      "gold_answer_summary": "AMD's main discrete graphics competitor is NVIDIA. NVIDIA's GPU-focused segment is the Graphics segment, which includes GeForce and Quadro/RTX products.",
+      "source_document": "AMD_2025_10K + NVDA_2026_10K",
+      "source_evidence": "Chain: AMD -COMPETES_WITH-> NVIDIA -HAS_SEGMENT-> Graphics. Our principal competitor in discrete graphics is Nvidia. The Graphics segment includes GeForce GPUs for gaming and Quadro/NVIDIA RTX for enterprise workstation graphics."
+    },
+    {
+      "id": "q032",
+      "difficulty": "two_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 2,
+      "gold_entities": [["Mellanox"], ["NVIDIA", "Nvidia"]],
+      "gold_relationship_types": ["COMPETES_WITH", "ACQUIRED"],
+      "gold_answer_summary": "AMD's primary discrete graphics competitor is NVIDIA. NVIDIA acquired Mellanox Technologies in 2020 to expand into data center networking.",
+      "source_document": "AMD_2025_10K + NVDA_2026_10K",
+      "source_evidence": "Chain: AMD -COMPETES_WITH-> NVIDIA -ACQUIRED-> Mellanox. Our acquisition of Mellanox in 2020 expanded our offerings to include networking."
+    },
+    {
+      "id": "q033",
+      "difficulty": "two_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 2,
+      "gold_entities": [["DOJ", "Department of Justice"], ["Alphabet", "Google"]],
+      "gold_relationship_types": ["COMPETES_WITH", "REGULATED_BY"],
+      "gold_answer_summary": "NVIDIA names Alphabet/Google as a cloud AI competitor. The DOJ (with state Attorneys General) sued Alphabet over its Search and Search advertising practices.",
+      "source_document": "NVDA_2026_10K + GOOGL_2025_10K",
+      "source_evidence": "Chain: NVIDIA -COMPETES_WITH-> Alphabet <-REGULATED_BY- DOJ. NVIDIA competes with Alphabet in AI cloud; the DOJ filed a lawsuit concerning Alphabet's Search and Search advertising practices."
+    },
+    {
+      "id": "q034",
+      "difficulty": "two_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 2,
+      "gold_entities": [["Intel"], ["AMD", "Advanced Micro Devices"], ["Data Center"]],
+      "gold_relationship_types": ["CUSTOMER_OF", "COMPETES_WITH"],
+      "gold_answer_summary": "AMD supplies both Sony and Microsoft. AMD competes with Intel and NVIDIA in the Data Center segment.",
+      "source_document": "AMD_2025_10K",
+      "source_evidence": "Chain: {Sony, Microsoft} -CUSTOMER_OF-> AMD -COMPETES_WITH-> Intel (Data Center). In the Data Center segment, we compete primarily against Intel Corporation and Nvidia Corporation."
+    },
+
+    {
+      "id": "q035",
+      "difficulty": "three_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 3,
+      "gold_entities": [["NVIDIA", "Nvidia"], ["Intel"], ["Sony"], ["AMD", "Advanced Micro Devices"]],
+      "gold_relationship_types": ["CUSTOMER_OF", "COMPETES_WITH", "PARTNERS_WITH"],
+      "gold_answer_summary": "Sony's chip supplier is AMD. AMD's primary CPU competitor is Intel. NVIDIA entered a strategic partnership with Intel in September 2025.",
+      "source_document": "AMD_2025_10K",
+      "source_evidence": "Three-hop chain: Sony -CUSTOMER_OF-> AMD -COMPETES_WITH-> Intel <-PARTNERS_WITH- NVIDIA. AMD supplies Sony PlayStation 5; AMD's primary CPU competitor is Intel; NVIDIA announced a partnership and investment in Intel in September 2025."
+    },
+    {
+      "id": "q036",
+      "difficulty": "three_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 3,
+      "gold_entities": [["Mellanox"], ["NVIDIA", "Nvidia"], ["Microsoft"], ["AMD", "Advanced Micro Devices"]],
+      "gold_relationship_types": ["CUSTOMER_OF", "COMPETES_WITH", "ACQUIRED"],
+      "gold_answer_summary": "Microsoft's chip supplier is AMD. AMD's primary GPU competitor is NVIDIA. NVIDIA acquired Mellanox in 2020.",
+      "source_document": "AMD_2025_10K + NVDA_2026_10K",
+      "source_evidence": "Three-hop chain: Microsoft -CUSTOMER_OF-> AMD -COMPETES_WITH-> NVIDIA -ACQUIRED-> Mellanox. AMD supplies Xbox; NVIDIA competes with AMD in discrete graphics; NVIDIA acquired Mellanox in 2020."
+    },
+    {
+      "id": "q037",
+      "difficulty": "three_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 3,
+      "gold_entities": [["Xilinx"], ["AMD", "Advanced Micro Devices"], ["Intel"], ["Singapore"]],
+      "gold_relationship_types": ["PARTNERS_WITH", "COMPETES_WITH", "ACQUIRED"],
+      "gold_answer_summary": "NVIDIA's 2025 partner is Intel. Intel's primary CPU competitor is AMD. AMD acquired Xilinx, which led to a Singapore Development and Expansion Incentive (DEI) tax incentive.",
+      "source_document": "AMD_2025_10K",
+      "source_evidence": "Three-hop chain: NVIDIA -PARTNERS_WITH-> Intel -COMPETES_WITH-> AMD -ACQUIRED-> Xilinx (Singapore DEI). In September 2025, NVIDIA announced a partnership with Intel; AMD acquired Xilinx; as part of the Xilinx acquisition AMD was granted a DEI in Singapore."
+    },
+    {
+      "id": "q038",
+      "difficulty": "three_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 3,
+      "gold_entities": [["Graphics"], ["NVIDIA", "Nvidia"], ["Intel"], ["AMD", "Advanced Micro Devices"]],
+      "gold_relationship_types": ["COMPETES_WITH", "PARTNERS_WITH", "HAS_SEGMENT"],
+      "gold_answer_summary": "AMD's main CPU competitor is Intel. NVIDIA partnered with Intel. NVIDIA's GPU-focused segment is the Graphics segment.",
+      "source_document": "AMD_2025_10K + NVDA_2026_10K",
+      "source_evidence": "Three-hop chain: AMD -COMPETES_WITH-> Intel <-PARTNERS_WITH- NVIDIA -HAS_SEGMENT-> Graphics. AMD competes with Intel; NVIDIA partnered with Intel; NVIDIA reports a Graphics segment with GeForce and Quadro/RTX products."
+    },
+    {
+      "id": "q039",
+      "difficulty": "three_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 3,
+      "gold_entities": [["Sony"], ["Microsoft"], ["AMD", "Advanced Micro Devices"], ["Intel"], ["NVIDIA", "Nvidia"]],
+      "gold_relationship_types": ["PARTNERS_WITH", "COMPETES_WITH", "CUSTOMER_OF"],
+      "gold_answer_summary": "NVIDIA's 2025 partner is Intel. Intel's primary CPU rival is AMD. AMD's gaming console customers are Sony (PlayStation 5), Microsoft (Xbox Series), and Valve (Steam Machine).",
+      "source_document": "AMD_2025_10K",
+      "source_evidence": "Three-hop chain: NVIDIA -PARTNERS_WITH-> Intel -COMPETES_WITH-> AMD <-CUSTOMER_OF- {Sony, Microsoft, Valve}. NVIDIA partnered with Intel; Intel's primary CPU competitor is AMD; AMD's semi-custom SoC products power PlayStation 5, Xbox Series, and Steam Machine."
+    },
+    {
+      "id": "q040",
+      "difficulty": "three_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 3,
+      "gold_entities": [["DOJ", "Department of Justice"], ["Alphabet", "Google"], ["NVIDIA", "Nvidia"], ["AMD", "Advanced Micro Devices"]],
+      "gold_relationship_types": ["COMPETES_WITH", "REGULATED_BY"],
+      "gold_answer_summary": "AMD's GPU competitor is NVIDIA. NVIDIA names Alphabet as a cloud AI rival. The DOJ sued Alphabet over its Search and ad practices.",
+      "source_document": "AMD_2025_10K + NVDA_2026_10K + GOOGL_2025_10K",
+      "source_evidence": "Three-hop chain: AMD -COMPETES_WITH-> NVIDIA -COMPETES_WITH-> Alphabet <-REGULATED_BY- DOJ. AMD competes with NVIDIA; NVIDIA competes with Alphabet in cloud AI; DOJ filed an antitrust lawsuit against Alphabet."
+    },
+    {
+      "id": "q041",
+      "difficulty": "three_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 3,
+      "gold_entities": [["Alphabet", "Google"], ["NVIDIA", "Nvidia"], ["Sony"], ["AMD", "Advanced Micro Devices"]],
+      "gold_relationship_types": ["CUSTOMER_OF", "COMPETES_WITH"],
+      "gold_answer_summary": "Sony's chip supplier is AMD. AMD's GPU competitor is NVIDIA. NVIDIA names Alphabet/Google as a cloud AI rival.",
+      "source_document": "AMD_2025_10K + NVDA_2026_10K",
+      "source_evidence": "Three-hop chain: Sony -CUSTOMER_OF-> AMD -COMPETES_WITH-> NVIDIA -COMPETES_WITH-> Alphabet. AMD supplies Sony PlayStation 5; AMD competes with NVIDIA in discrete graphics; NVIDIA discloses Alphabet as a cloud AI competitor."
+    },
+    {
+      "id": "q042",
+      "difficulty": "three_hop",
+      "expected_route": "GRAPH",
+      "hop_count": 3,
+      "gold_entities": [["Mellanox"], ["NVIDIA", "Nvidia"], ["Intel"], ["AMD", "Advanced Micro Devices"]],
+      "gold_relationship_types": ["COMPETES_WITH", "ACQUIRED"],
+      "gold_answer_summary": "AMD's primary CPU rival is Intel. Intel's main AI-accelerator competitor is NVIDIA. NVIDIA acquired Mellanox in 2020 to expand into data center networking.",
+      "source_document": "AMD_2025_10K + NVDA_2026_10K",
+      "source_evidence": "Three-hop chain: AMD -COMPETES_WITH-> Intel -COMPETES_WITH-> NVIDIA -ACQUIRED-> Mellanox. AMD competes with Intel in Data Center; Intel competes with NVIDIA in AI accelerators; NVIDIA acquired Mellanox in 2020."
+    },
+
+    {
+      "id": "q043",
+      "difficulty": "aggregation",
+      "expected_route": "GRAPH",
+      "hop_count": 1,
+      "gold_entities": [["AMD", "Advanced Micro Devices"]],
+      "gold_relationship_types": ["CUSTOMER_OF"],
+      "gold_count": 3,
+      "gold_count_status": "VERIFIED from filing text: Sony (PlayStation 5), Microsoft (Xbox Series S and X), Valve (Steam Machine) = 3 platforms.",
+      "gold_answer_summary": "Three distinct gaming console/PC platforms use AMD semi-custom SoC products: Sony PlayStation 5, Microsoft Xbox Series S and X, and the Valve Steam Machine PC.",
+      "source_document": "AMD_2025_10K",
+      "source_evidence": "AMD semi-custom SoC products power the Sony PlayStation 5, the Microsoft Xbox Series S and X game consoles, as well as the recently revealed Valve Steam Machine PC."
+    },
+    {
+      "id": "q044",
+      "difficulty": "aggregation",
+      "expected_route": "GRAPH",
+      "hop_count": 1,
+      "gold_entities": [["AMD", "Advanced Micro Devices"]],
+      "gold_relationship_types": ["HAS_SEGMENT"],
+      "gold_count": 3,
+      "gold_count_status": "VERIFIED from filing: Data Center, Client and Gaming, Embedded = 3 segments.",
+      "gold_answer_summary": "AMD reports three business segments: Data Center, Client and Gaming, and Embedded.",
+      "source_document": "AMD_2025_10K",
+      "source_evidence": "Competition in Data Center Segment... Competition in Client and Gaming Segment... [Embedded segment also disclosed]."
+    },
+    {
+      "id": "q045",
+      "difficulty": "aggregation",
+      "expected_route": "GRAPH",
+      "hop_count": 1,
+      "gold_entities": [["NVIDIA", "Nvidia"]],
+      "gold_relationship_types": ["HAS_SEGMENT"],
+      "gold_count": 2,
+      "gold_count_status": "VERIFIED from filing: Compute & Networking and Graphics = 2 segments.",
+      "gold_answer_summary": "NVIDIA reports two business segments: Compute & Networking and Graphics.",
+      "source_document": "NVDA_2026_10K",
+      "source_evidence": "The Compute & Networking segment includes... The Graphics segment includes GeForce GPUs for gaming."
+    },
+    {
+      "id": "q046",
+      "difficulty": "aggregation",
+      "expected_route": "GRAPH",
+      "hop_count": 1,
+      "gold_entities": [["AMD", "Advanced Micro Devices"]],
+      "gold_relationship_types": ["COMPETES_WITH"],
+      "gold_count": 2,
+      "gold_count_status": "VERIFIED from filing text: 'In the Data Center segment, we compete primarily against Intel Corporation (Intel) and Nvidia Corporation (Nvidia)' — 2 named competitors for Data Center specifically.",
+      "gold_answer_summary": "AMD names 2 direct competitors specifically in its Data Center segment: Intel and NVIDIA.",
+      "source_document": "AMD_2025_10K",
+      "source_evidence": "In the Data Center segment, we compete primarily against Intel Corporation (Intel) and Nvidia Corporation (Nvidia) with our CPU, GPU DPU and AI NIC server products."
+    },
+    {
+      "id": "q047",
+      "difficulty": "aggregation",
+      "expected_route": "GRAPH",
+      "hop_count": 1,
+      "gold_entities": [["NVIDIA", "Nvidia"]],
+      "gold_relationship_types": ["ACQUIRED"],
+      "gold_count": 1,
+      "gold_count_status": "VERIFIED: Only Mellanox is explicitly named as an acquisition by NVIDIA in the most recent 10-K. Other referenced entities (Cumulus Networks was part of Mellanox) may exist but are not separately called out as distinct NVIDIA acquisitions.",
+      "gold_answer_summary": "NVIDIA discloses one major acquisition in its most recent 10-K: Mellanox Technologies (acquired 2020), which expanded NVIDIA into data center networking.",
+      "source_document": "NVDA_2026_10K",
+      "source_evidence": "Our acquisition of Mellanox in 2020 expanded our offerings to include networking, enabled our platforms to be data center scale."
+    },
+
+    {
+      "id": "q048",
+      "difficulty": "out_of_scope",
+      "expected_route": "REFUSE",
+      "hop_count": 0,
+      "gold_entities": [],
+      "gold_relationship_types": [],
+      "gold_answer_summary": "Out of scope — future stock price predictions are not disclosed in 10-K filings. The system should decline rather than speculate.",
+      "source_document": null,
+      "source_evidence": null
+    },
+    {
+      "id": "q049",
+      "difficulty": "out_of_scope",
+      "expected_route": "REFUSE",
+      "hop_count": 0,
+      "gold_entities": [],
+      "gold_relationship_types": [],
+      "gold_answer_summary": "Out of scope — subjective comparative judgments about innovation culture are not disclosed in 10-K filings.",
+      "source_document": null,
+      "source_evidence": null
+    },
+    {
+      "id": "q050",
+      "difficulty": "out_of_scope",
+      "expected_route": "REFUSE",
+      "hop_count": 0,
+      "gold_entities": [],
+      "gold_relationship_types": [],
+      "gold_answer_summary": "Out of scope — forward-looking revenue forecasts are not present in historical 10-K filings. The system should decline to speculate.",
+      "source_document": null,
+      "source_evidence": null
     }
   ]
 }

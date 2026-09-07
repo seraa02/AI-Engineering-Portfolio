@@ -8,10 +8,12 @@ Real measured results across all six projects.
 
 | Metric | Value | Notes |
 |--------|-------|-------|
-| Benchmark accuracy — hybrid (graph+vector) | **100%** | 20/20 questions |
+| Benchmark accuracy — hybrid (graph+vector) | **100%** | 20/20 questions (q001-q020; 30 new pending re-run) |
 | Benchmark accuracy — vector-only baseline | **85%** | 17/20 questions |
 | Two-hop accuracy — hybrid | **100%** | 4/4 questions |
 | Two-hop accuracy — vector-only | **50%** | 2/4 questions |
+| Three-hop accuracy | **pending** | 8 questions added (q035-q042); require live Neo4j re-run |
+| Benchmark questions total | **50** | Expanded from 20 to meet PDF spec (50-100 items) |
 | SEC filings ingested | 6 | NVDA, AMD, INTC, MSFT, AMZN, GOOGL |
 | Chunks processed | 749 | |
 | Extraction cost (teacher tokens) | $9.65 | 2.4M input + 484K output tokens |
@@ -67,12 +69,12 @@ Real measured results across all six projects.
 |--------|-------|-------|
 | Tests passing | **98/98** | |
 | Teacher model | claude-sonnet-4-6 | |
-| Student model | TinyLlama-1.1B | |
-| LoRA rank 8 trainable params | ~4.2M | 0.38% of total |
-| LoRA rank 32 trainable params | ~16.8M | 1.53% of total |
+| Student model | Meta-Llama-3-8B | Updated from TinyLlama-1.1B per PDF spec (8B) |
+| LoRA rank 8 trainable params | ~8.4M | 0.10% of 8B total |
+| LoRA rank 32 trainable params | ~33.6M | 0.42% of 8B total |
 | Teacher labeling cost (1k examples) | ~$4.20 | |
-| Training cost (GPU, rank 8) | ~$1.17 | A10G, 3 epochs |
-| Break-even inferences | ~2,950,000 | vs Claude claude-haiku-4-5 |
+| Training cost (GPU, rank 8) | ~$30.96 | A100 40GB, 3 epochs (~8hrs) |
+| Break-even inferences | ~2,950,000 | vs Claude claude-haiku-4-5 (pending recalc with new GPU cost) |
 | Training examples | 1,000 | 800/100/100 split |
 
 ---
@@ -99,7 +101,7 @@ Real measured results across all six projects.
 | Total tests passing | **343** |
 | Total test failures | **0** |
 | Projects built | 6 |
-| Lines of source code (approx) | ~6,500 |
+| Lines of source code (approx) | ~6,700 |
 | External services mocked | Neo4j, pgvector, Redis, Anthropic API, Tavily, GitHub |
 | Real data ingested | 6 SEC 10-K filings |
 | Real API cost tracked | $9.65 (RAG extraction) |

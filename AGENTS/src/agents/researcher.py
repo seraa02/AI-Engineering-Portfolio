@@ -144,6 +144,10 @@ def run_researcher(
             all_raw_findings.extend(raw_findings)
             searches_performed += 1
 
+        # Deduplicate by URL and cap per domain before synthesis
+        all_raw_findings = _deduplicate_by_url(all_raw_findings)
+        all_raw_findings = _cap_by_domain(all_raw_findings, max_per_domain=3)
+
         # If we got no real findings, return empty result
         if not all_raw_findings:
             output = ResearcherOutput(
@@ -286,6 +290,40 @@ def run_researcher(
             timestamp=timestamp,
         )
         return output, trace_entry
+
+
+def _deduplicate_by_url(findings: list[Finding]) -> list[Finding]:
+    """Remove duplicate findings by source URL, keeping the first occurrence."""
+    seen: set[str] = set()
+    result: list[Finding] = []
+    for f in findings:
+        if f.source_url and f.source_url not in seen:
+            seen.add(f.source_url)
+            result.append(f)
+        elif not f.source_url:
+            result.append(f)
+    return result
+
+
+def _cap_by_domain(findings: list[Finding], max_per_domain: int = 3) -> list[Finding]:
+    """Cap results to max_per_domain per domain to avoid a single source dominating."""
+    from urllib.parse import urlparse
+
+    domain_counts: dict[str, int] = {}
+    result: list[Finding] = []
+    for f in findings:
+        if f.source_url:
+            try:
+                domain = urlparse(f.source_url).netloc
+            except Exception:
+                domain = ""
+            count = domain_counts.get(domain, 0)
+            if count < max_per_domain:
+                domain_counts[domain] = count + 1
+                result.append(f)
+        else:
+            result.append(f)
+    return result
 
 
 def _generate_search_queries(subquestion_text: str, count: int) -> list[str]:

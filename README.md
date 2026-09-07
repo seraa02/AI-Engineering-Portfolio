@@ -11,7 +11,7 @@ All results are real — no fabricated metrics.
 
 | # | Project | Stack | Tests | Key Result |
 |---|---------|-------|-------|------------|
-| 1 | [Knowledge Graph RAG](./RAG/) | Claude, Neo4j, pgvector, FastAPI | Benchmark | 100% hybrid vs 85% vector-only |
+| 1 | [Knowledge Graph RAG](./RAG/) | Claude, Neo4j, pgvector, FastAPI | Benchmark (50 Qs) | 100% hybrid vs 85% vector-only |
 | 2 | [Multi-Agent Research Assistant](./AGENTS/) | LangGraph, Claude, Tavily, Redis | 78/78 | Full agent trace + budget management |
 | 3 | [Self-Healing LLM Gateway](./LLMOPS/) | FastAPI, Redis, Prometheus | 47/47 | Circuit breaker + hedged requests |
 | 4 | [LLM-as-Judge + Calibration](./EVALS/) | DeepEval, Claude, SQLite | 34/34 | κ=0.74, Spearman ρ=0.83 |

@@ -120,48 +120,75 @@ def _call_mock_provider(messages: list[ChatMessage], model: str) -> dict:
     }
 
 
-def _call_anthropic_provider(messages: list[ChatMessage], model: str, api_key: str) -> dict:
-    """Call Anthropic Claude via the anthropic SDK."""
-    import anthropic
+def _call_litellm_provider(provider: str, messages: list[ChatMessage], model: str) -> dict:
+    """Normalize all real provider calls through LiteLLM for a unified interface.
 
-    extra_latency = chaos_store.get_extra_latency_ms("anthropic")
+    LiteLLM translates the OpenAI message format to each provider's native SDK,
+    so adding a new provider (Cohere, Bedrock, Gemini, etc.) only requires
+    updating the model string — no SDK-specific code.
+    """
+    import litellm  # pip install litellm
+
+    settings = get_settings()
+
+    extra_latency = chaos_store.get_extra_latency_ms(provider)
     if extra_latency:
         time.sleep(extra_latency / 1000)
 
-    fail, err_type = chaos_store.should_fail("anthropic")
+    fail, err_type = chaos_store.should_fail(provider)
     if fail:
         raise RuntimeError(f"Chaos-injected error: {err_type}")
 
-    client = anthropic.Anthropic(api_key=api_key)
-    sys_msgs = [m for m in messages if m.role == "system"]
-    user_msgs = [{"role": m.role, "content": m.content} for m in messages if m.role != "system"]
-    system_text = sys_msgs[0].content if sys_msgs else None
+    # Build litellm model string — format: "provider/model-name"
+    if provider == ProviderName.ANTHROPIC:
+        litellm_model = f"anthropic/{model}"
+        litellm.api_key = settings.anthropic_api_key
+    elif provider == ProviderName.OPENAI:
+        litellm_model = f"openai/{model}"
+        litellm.openai_key = settings.openai_api_key
+    else:
+        raise ValueError(f"Provider {provider!r} not supported via LiteLLM path")
 
-    kwargs: dict[str, Any] = dict(model=model, max_tokens=1024, messages=user_msgs)
-    if system_text:
-        kwargs["system"] = system_text
+    # LiteLLM accepts OpenAI-format messages for all providers
+    litellm_messages = [{"role": m.role, "content": m.content} for m in messages]
 
-    response = client.messages.create(**kwargs)
-    content = response.content[0].text
+    response = litellm.completion(
+        model=litellm_model,
+        messages=litellm_messages,
+        max_tokens=1024,
+    )
+
     return {
-        "id": response.id,
+        "id": getattr(response, "id", f"{provider}-{uuid.uuid4().hex[:8]}"),
         "object": "chat.completion",
         "created": int(time.time()),
         "model": model,
         "choices": [
-            {"index": 0, "message": {"role": "assistant", "content": content}, "finish_reason": "stop"}
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": response.choices[0].message.content,
+                },
+                "finish_reason": response.choices[0].finish_reason or "stop",
+            }
         ],
         "usage": {
-            "prompt_tokens": response.usage.input_tokens,
-            "completion_tokens": response.usage.output_tokens,
-            "total_tokens": response.usage.input_tokens + response.usage.output_tokens,
+            "prompt_tokens": response.usage.prompt_tokens,
+            "completion_tokens": response.usage.completion_tokens,
+            "total_tokens": response.usage.total_tokens,
         },
-        "provider": "anthropic",
+        "provider": provider,
     }
 
 
 def _call_provider(provider: str, messages: list[ChatMessage], model: str) -> dict:
-    """Dispatch to the right provider implementation."""
+    """Dispatch to the right provider implementation.
+
+    Real providers (Anthropic, OpenAI) are normalized through LiteLLM so that
+    adding a new provider requires no new SDK-specific code — only a new model
+    string in providers.py. Mock provider is handled locally for testing.
+    """
     settings = get_settings()
 
     if provider == ProviderName.MOCK:
@@ -169,7 +196,11 @@ def _call_provider(provider: str, messages: list[ChatMessage], model: str) -> di
     elif provider == ProviderName.ANTHROPIC:
         if not settings.anthropic_api_key:
             raise RuntimeError("ANTHROPIC_API_KEY not configured")
-        return _call_anthropic_provider(messages, model, settings.anthropic_api_key)
+        return _call_litellm_provider(provider, messages, model)
+    elif provider == ProviderName.OPENAI:
+        if not settings.openai_api_key:
+            raise RuntimeError("OPENAI_API_KEY not configured")
+        return _call_litellm_provider(provider, messages, model)
     else:
         # Default fallback to mock
         return _call_mock_provider(messages, model)

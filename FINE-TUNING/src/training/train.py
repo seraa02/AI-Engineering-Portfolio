@@ -1,12 +1,14 @@
 """
 Student model training with LoRA.
 
-Trains a small causal LM (TinyLlama-1.1B or similar) using LoRA adapters
+Trains an 8B causal LM (Meta-Llama-3-8B) using LoRA adapters
 on the teacher-generated entity extraction dataset.
 
 Two LoRA configurations are compared:
-  - Rank 8:  ~0.38% trainable params — fast, lower capacity
-  - Rank 32: ~1.53% trainable params — slower, higher capacity
+  - Rank 8:  ~0.10% trainable params — fast, lower capacity
+  - Rank 32: ~0.42% trainable params — slower, higher capacity
+
+8B model requires A100 40GB GPU; use rank 8 for faster iteration.
 
 This file defines the training pipeline. Actual training requires:
   pip install transformers peft accelerate datasets torch
@@ -36,7 +38,7 @@ class LoRAConfig:
 
 @dataclass
 class TrainingConfig:
-    model_name: str = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+    model_name: str = "meta-llama/Meta-Llama-3-8B"
     output_dir: str = "outputs/checkpoints"
     num_epochs: int = 3
     per_device_batch_size: int = 4
@@ -157,8 +159,11 @@ def train(
         return _try_real_training(config, train_records, val_records)
     except Exception:
         # Mock result for CI / testing without GPU or when deps have conflicts
-        trainable = {8: 4_194_304, 32: 16_777_216}.get(config.lora.rank, config.lora.rank * 524_288)
-        total = 1_100_000_000
+        # For Meta-Llama-3-8B with LoRA on q_proj+v_proj (hidden=4096, 32 layers):
+        #   trainable = 2 * hidden_dim * rank * num_layers * num_modules
+        #             = 2 * 4096 * rank * 32 * 2
+        trainable = {8: 8_388_608, 32: 33_554_432}.get(config.lora.rank, config.lora.rank * 1_048_576)
+        total = 8_000_000_000
         return {
             "status": "mock_trained",
             "output_dir": config.output_dir,
@@ -166,5 +171,5 @@ def train(
             "total_params": total,
             "trainable_pct": round(100.0 * trainable / total, 4),
             "lora_rank": config.lora.rank,
-            "note": "Real training skipped — transformers/peft/torch not installed.",
+            "note": "Real training skipped — GPU (A100 40GB) required for Meta-Llama-3-8B.",
         }

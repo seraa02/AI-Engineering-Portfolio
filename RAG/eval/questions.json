@@ -1,6 +1,6 @@
 {
-  "_status": "COMPLETE (development tier, 20 items)",
-  "_note": "Question text only. Gold evidence (entities, relationships, expected route, hop count, source quote) lives in golden_dataset.json, keyed by the same id. See eval/annotations.json for verification provenance.",
+  "_status": "COMPLETE (50 items — 20 single-hop, 9 two-hop, 8 three-hop, 7 aggregation, 6 out-of-scope)",
+  "_note": "Question text only. Gold evidence (entities, relationships, expected route, hop count, source quote) lives in golden_dataset.json, keyed by the same id. q021-q050 added to meet the PDF spec requirement of 50-100 items stratified by difficulty. Three-hop questions (q035-q042) are the primary addition over the prior 20-item set.",
   "questions": [
     { "id": "q001", "question": "Who does AMD compete with in the Data Center segment?" },
     { "id": "q002", "question": "Does AMD compete with NVIDIA?" },
@@ -21,6 +21,41 @@
     { "id": "q017", "question": "What does NVIDIA's Compute & Networking segment include?" },
     { "id": "q018", "question": "What is AMD's primary competitor in the supply of CPUs and APUs?" },
     { "id": "q019", "question": "Who competes with AMD's competitors?" },
-    { "id": "q020", "question": "How is AMD connected to Alphabet?" }
+    { "id": "q020", "question": "How is AMD connected to Alphabet?" },
+
+    { "id": "q021", "question": "Does Microsoft use AMD chips in its Xbox gaming consoles?" },
+    { "id": "q022", "question": "What GPU products are included in NVIDIA's Graphics segment?" },
+    { "id": "q023", "question": "What antitrust action did the European Commission take against Alphabet related to Android?" },
+    { "id": "q024", "question": "What automotive solutions does NVIDIA include in its Compute & Networking segment?" },
+    { "id": "q025", "question": "What country offered AMD a tax incentive as a result of employment commitments tied to an acquisition?" },
+    { "id": "q026", "question": "Which gaming platform besides PlayStation uses AMD semi-custom SoC products?" },
+    { "id": "q027", "question": "What does AMD describe as its primary competitor in the supply of CPUs in its latest filing?" },
+
+    { "id": "q028", "question": "Who does Sony's chip supplier primarily compete with in the CPU market?" },
+    { "id": "q029", "question": "Who does Microsoft's Xbox chip supplier compete with in discrete GPU products?" },
+    { "id": "q030", "question": "What company entered a partnership with the firm that is AMD's primary CPU competitor?" },
+    { "id": "q031", "question": "What GPU segment does AMD's main discrete graphics competitor report alongside its data center business?" },
+    { "id": "q032", "question": "What company was acquired by AMD's primary discrete graphics competitor in 2020 to expand into networking?" },
+    { "id": "q033", "question": "What regulatory body took legal action against the company that NVIDIA discloses as a cloud AI competitor?" },
+    { "id": "q034", "question": "What business does the company that supplies chips for both PlayStation 5 and Xbox Series primarily compete in alongside its customers?" },
+
+    { "id": "q035", "question": "Which company entered a strategic partnership with the primary CPU competitor of Sony's chip supplier?" },
+    { "id": "q036", "question": "What networking company did the primary GPU competitor of Microsoft's chip supplier acquire in 2020?" },
+    { "id": "q037", "question": "What company did NVIDIA's 2025 strategic partner's primary CPU competitor acquire, and what tax incentive did that deal produce?" },
+    { "id": "q038", "question": "What GPU-focused reporting segment does the company that partnered with AMD's main CPU competitor maintain?" },
+    { "id": "q039", "question": "Which game console makers buy chips from the primary CPU rival of NVIDIA's 2025 strategic partner?" },
+    { "id": "q040", "question": "What regulatory body took action against the cloud AI company that AMD's GPU competitor names as a rival?" },
+    { "id": "q041", "question": "What cloud technology giant does the primary GPU competitor of Sony's chip supplier identify as a cloud AI rival?" },
+    { "id": "q042", "question": "What company did AMD's primary CPU rival's main AI-accelerator competitor acquire to expand into data center networking?" },
+
+    { "id": "q043", "question": "How many distinct gaming console platforms use AMD semi-custom SoC products according to the filings?" },
+    { "id": "q044", "question": "How many business segments does AMD report in its most recent 10-K?" },
+    { "id": "q045", "question": "How many business segments does NVIDIA report in its most recent 10-K?" },
+    { "id": "q046", "question": "How many companies does AMD identify as direct named competitors specifically in its Data Center segment?" },
+    { "id": "q047", "question": "How many external companies does NVIDIA disclose acquiring in its most recent 10-K?" },
+
+    { "id": "q048", "question": "What will AMD's stock price be next quarter?" },
+    { "id": "q049", "question": "Which of the six companies is the most innovative?" },
+    { "id": "q050", "question": "What will NVIDIA's revenue be for the next fiscal year?" }
   ]
 }

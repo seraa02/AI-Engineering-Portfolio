@@ -1,7 +1,10 @@
 {
+  "_note": "q001-q020 run against live system (COMPLETE). q021-q050 added per PDF spec (50-item minimum); three-hop results (q035-q042) pending re-run with live API — marked NOT_RUN below.",
   "overall": {
     "hybrid_accuracy": 1.0,
-    "vector_only_accuracy": 0.85
+    "vector_only_accuracy": 0.85,
+    "questions_run": 20,
+    "questions_pending": 30
   },
   "by_difficulty": {
     "aggregation": {
@@ -19,6 +22,11 @@
     "two_hop": {
       "hybrid_accuracy": 1.0,
       "vector_only_accuracy": 0.5
+    },
+    "three_hop": {
+      "hybrid_accuracy": "NOT_RUN",
+      "vector_only_accuracy": "NOT_RUN",
+      "note": "8 three-hop questions (q035-q042) require live Neo4j re-run"
     }
   },
   "latency_ms": {
