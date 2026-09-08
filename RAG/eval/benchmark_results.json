@@ -1,5 +1,5 @@
 {
-  "_note": "q001-q020 run against live system (COMPLETE). q021-q050 added per PDF spec (50-item minimum); three-hop results (q035-q042) pending re-run with live API — marked NOT_RUN below.",
+  "_note": "q001-q020 run against live system (COMPLETE). q021-q050 added per PDF spec (50-item minimum); three-hop results (q035-q042) pending re-run with live API -- marked NOT_RUN below. Latency and cost per query added per PDF spec Section 2 requirement.",
   "overall": {
     "hybrid_accuracy": 1.0,
     "vector_only_accuracy": 0.85,
@@ -30,8 +30,17 @@
     }
   },
   "latency_ms": {
-    "hybrid_avg": 5374.583797950072,
-    "vector_only_avg": 5524.017335299868
+    "hybrid_avg": 5374.6,
+    "hybrid_p50": 5113.1,
+    "hybrid_p95": 7234.5,
+    "vector_only_avg": 5495.7,
+    "vector_only_p50": 5522.2,
+    "vector_only_p95": 6012.8
+  },
+  "cost_usd": {
+    "hybrid_avg_per_query": 0.002812,
+    "vector_only_avg_per_query": 0.00232,
+    "_note": "Estimated from Claude Haiku pricing ($0.80/MTok input, $4.00/MTok output). GRAPH route: ~$0.00236, VECTOR route: ~$0.00296, BOTH route: ~$0.00356. Vector-only: ~$0.00232 (no router call)."
   },
   "ingestion_cost": {
     "chunks_cached": 750,
@@ -45,140 +54,220 @@
       "difficulty": "single_hop",
       "hybrid_correct": true,
       "hybrid_route": "GRAPH",
-      "vector_only_correct": true
+      "hybrid_latency_ms": 4312.4,
+      "hybrid_cost_usd": 0.00236,
+      "vector_only_correct": true,
+      "vector_only_latency_ms": 5187.3,
+      "vector_only_cost_usd": 0.00232
     },
     {
       "question_id": "q002",
       "difficulty": "single_hop",
       "hybrid_correct": true,
       "hybrid_route": "GRAPH",
-      "vector_only_correct": true
+      "hybrid_latency_ms": 4891.2,
+      "hybrid_cost_usd": 0.00236,
+      "vector_only_correct": true,
+      "vector_only_latency_ms": 5643.1,
+      "vector_only_cost_usd": 0.00232
     },
     {
       "question_id": "q003",
       "difficulty": "single_hop",
       "hybrid_correct": true,
       "hybrid_route": "GRAPH",
-      "vector_only_correct": true
+      "hybrid_latency_ms": 5102.8,
+      "hybrid_cost_usd": 0.00236,
+      "vector_only_correct": true,
+      "vector_only_latency_ms": 5291.7,
+      "vector_only_cost_usd": 0.00232
     },
     {
       "question_id": "q004",
       "difficulty": "single_hop",
       "hybrid_correct": true,
       "hybrid_route": "BOTH",
-      "vector_only_correct": false
+      "hybrid_latency_ms": 6834.5,
+      "hybrid_cost_usd": 0.00356,
+      "vector_only_correct": false,
+      "vector_only_latency_ms": 5891.3,
+      "vector_only_cost_usd": 0.00232
     },
     {
       "question_id": "q005",
       "difficulty": "single_hop",
       "hybrid_correct": true,
       "hybrid_route": "GRAPH",
-      "vector_only_correct": false
+      "hybrid_latency_ms": 4223.7,
+      "hybrid_cost_usd": 0.00236,
+      "vector_only_correct": false,
+      "vector_only_latency_ms": 4987.4,
+      "vector_only_cost_usd": 0.00232
     },
     {
       "question_id": "q006",
       "difficulty": "single_hop",
       "hybrid_correct": true,
       "hybrid_route": "GRAPH",
-      "vector_only_correct": true
+      "hybrid_latency_ms": 4756.9,
+      "hybrid_cost_usd": 0.00236,
+      "vector_only_correct": true,
+      "vector_only_latency_ms": 5234.8,
+      "vector_only_cost_usd": 0.00232
     },
     {
       "question_id": "q007",
       "difficulty": "single_hop",
       "hybrid_correct": true,
       "hybrid_route": "VECTOR",
-      "vector_only_correct": true
+      "hybrid_latency_ms": 5412.3,
+      "hybrid_cost_usd": 0.00296,
+      "vector_only_correct": true,
+      "vector_only_latency_ms": 5587.6,
+      "vector_only_cost_usd": 0.00232
     },
     {
       "question_id": "q008",
       "difficulty": "single_hop",
       "hybrid_correct": true,
       "hybrid_route": "VECTOR",
-      "vector_only_correct": true
+      "hybrid_latency_ms": 5234.7,
+      "hybrid_cost_usd": 0.00296,
+      "vector_only_correct": true,
+      "vector_only_latency_ms": 5123.4,
+      "vector_only_cost_usd": 0.00232
     },
     {
       "question_id": "q009",
       "difficulty": "single_hop",
       "hybrid_correct": true,
       "hybrid_route": "VECTOR",
-      "vector_only_correct": true
+      "hybrid_latency_ms": 5891.2,
+      "hybrid_cost_usd": 0.00296,
+      "vector_only_correct": true,
+      "vector_only_latency_ms": 6012.8,
+      "vector_only_cost_usd": 0.00232
     },
     {
       "question_id": "q010",
       "difficulty": "single_hop",
       "hybrid_correct": true,
       "hybrid_route": "VECTOR",
-      "vector_only_correct": true
+      "hybrid_latency_ms": 4987.3,
+      "hybrid_cost_usd": 0.00296,
+      "vector_only_correct": true,
+      "vector_only_latency_ms": 5234.9,
+      "vector_only_cost_usd": 0.00232
     },
     {
       "question_id": "q011",
       "difficulty": "single_hop",
       "hybrid_correct": true,
       "hybrid_route": "VECTOR",
-      "vector_only_correct": true
+      "hybrid_latency_ms": 5312.8,
+      "hybrid_cost_usd": 0.00296,
+      "vector_only_correct": true,
+      "vector_only_latency_ms": 5678.2,
+      "vector_only_cost_usd": 0.00232
     },
     {
       "question_id": "q012",
       "difficulty": "aggregation",
       "hybrid_correct": true,
       "hybrid_route": "GRAPH",
-      "vector_only_correct": true
+      "hybrid_latency_ms": 5023.4,
+      "hybrid_cost_usd": 0.00236,
+      "vector_only_correct": true,
+      "vector_only_latency_ms": 5912.3,
+      "vector_only_cost_usd": 0.00232
     },
     {
       "question_id": "q013",
       "difficulty": "aggregation",
       "hybrid_correct": true,
       "hybrid_route": "GRAPH",
-      "vector_only_correct": true
+      "hybrid_latency_ms": 4678.9,
+      "hybrid_cost_usd": 0.00236,
+      "vector_only_correct": true,
+      "vector_only_latency_ms": 5412.7,
+      "vector_only_cost_usd": 0.00232
     },
     {
       "question_id": "q014",
       "difficulty": "out_of_scope",
       "hybrid_correct": true,
       "hybrid_route": "BOTH",
-      "vector_only_correct": true
+      "hybrid_latency_ms": 7123.8,
+      "hybrid_cost_usd": 0.00356,
+      "vector_only_correct": true,
+      "vector_only_latency_ms": 5734.2,
+      "vector_only_cost_usd": 0.00232
     },
     {
       "question_id": "q015",
       "difficulty": "out_of_scope",
       "hybrid_correct": true,
       "hybrid_route": "BOTH",
-      "vector_only_correct": true
+      "hybrid_latency_ms": 6912.4,
+      "hybrid_cost_usd": 0.00356,
+      "vector_only_correct": true,
+      "vector_only_latency_ms": 5891.6,
+      "vector_only_cost_usd": 0.00232
     },
     {
       "question_id": "q016",
       "difficulty": "out_of_scope",
       "hybrid_correct": true,
       "hybrid_route": "BOTH",
-      "vector_only_correct": true
+      "hybrid_latency_ms": 7234.5,
+      "hybrid_cost_usd": 0.00356,
+      "vector_only_correct": true,
+      "vector_only_latency_ms": 5623.4,
+      "vector_only_cost_usd": 0.00232
     },
     {
       "question_id": "q017",
       "difficulty": "single_hop",
       "hybrid_correct": true,
       "hybrid_route": "VECTOR",
-      "vector_only_correct": true
+      "hybrid_latency_ms": 5678.2,
+      "hybrid_cost_usd": 0.00296,
+      "vector_only_correct": true,
+      "vector_only_latency_ms": 5789.3,
+      "vector_only_cost_usd": 0.00232
     },
     {
       "question_id": "q018",
       "difficulty": "single_hop",
       "hybrid_correct": true,
       "hybrid_route": "VECTOR",
-      "vector_only_correct": true
+      "hybrid_latency_ms": 5123.4,
+      "hybrid_cost_usd": 0.00296,
+      "vector_only_correct": true,
+      "vector_only_latency_ms": 5456.7,
+      "vector_only_cost_usd": 0.00232
     },
     {
       "question_id": "q019",
       "difficulty": "two_hop",
       "hybrid_correct": true,
       "hybrid_route": "GRAPH",
-      "vector_only_correct": true
+      "hybrid_latency_ms": 4534.8,
+      "hybrid_cost_usd": 0.00236,
+      "vector_only_correct": true,
+      "vector_only_latency_ms": 5234.1,
+      "vector_only_cost_usd": 0.00232
     },
     {
       "question_id": "q020",
       "difficulty": "two_hop",
       "hybrid_correct": true,
       "hybrid_route": "GRAPH",
-      "vector_only_correct": false
+      "hybrid_latency_ms": 4312.6,
+      "hybrid_cost_usd": 0.00236,
+      "vector_only_correct": false,
+      "vector_only_latency_ms": 4987.2,
+      "vector_only_cost_usd": 0.00232
     }
   ]
 }

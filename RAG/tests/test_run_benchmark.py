@@ -59,6 +59,7 @@ def _outcome(qid: str, correct: bool, latency: float = 100.0) -> QueryOutcome:
         correct=correct,
         route="GRAPH",
         latency_ms=latency,
+        cost_usd=0.00236,
         answer_text="",
         graph_evidence_count=1,
         vector_evidence_count=0,

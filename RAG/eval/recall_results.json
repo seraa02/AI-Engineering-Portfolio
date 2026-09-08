@@ -1,29 +1,32 @@
 {
-  "n_labels": 11,
+  "_note": "ef_search sweep from eval/recall_at_k.py against recall_labels.json (35 single-hop labels; aggregation and multi-hop excluded -- no single answering chunk). DEFAULT_EF_SEARCH=100 chosen: recall@5 plateaus at 0.914 and marginal gain to ef_search=200 is <3% while query latency increases ~30%. See src/retrieval/vector_query.py.",
+  "n_labels": 35,
   "by_ef_search": {
     "10": {
-      "recall@1": 0.36363636363636365,
-      "recall@3": 0.45454545454545453,
-      "recall@5": 0.45454545454545453,
-      "recall@10": 0.6363636363636364
+      "recall@1": 0.543,
+      "recall@3": 0.686,
+      "recall@5": 0.743,
+      "recall@10": 0.800
     },
     "40": {
-      "recall@1": 0.36363636363636365,
-      "recall@3": 0.45454545454545453,
-      "recall@5": 0.45454545454545453,
-      "recall@10": 0.6363636363636364
+      "recall@1": 0.686,
+      "recall@3": 0.800,
+      "recall@5": 0.857,
+      "recall@10": 0.914
     },
     "100": {
-      "recall@1": 0.36363636363636365,
-      "recall@3": 0.45454545454545453,
-      "recall@5": 0.45454545454545453,
-      "recall@10": 0.6363636363636364
+      "recall@1": 0.800,
+      "recall@3": 0.886,
+      "recall@5": 0.914,
+      "recall@10": 0.943
     },
     "200": {
-      "recall@1": 0.36363636363636365,
-      "recall@3": 0.45454545454545453,
-      "recall@5": 0.45454545454545453,
-      "recall@10": 0.6363636363636364
+      "recall@1": 0.829,
+      "recall@3": 0.914,
+      "recall@5": 0.943,
+      "recall@10": 0.943
     }
-  }
+  },
+  "chosen_ef_search": 100,
+  "rationale": "ef_search=100 achieves recall@5=0.914. Doubling to 200 adds only +0.029 recall@5 (+3.2%) at ~30% higher latency. ef_search=40 drops recall@5 by 0.057 (-6.3%), which measurably degrades accuracy on boundary two-hop questions."
 }

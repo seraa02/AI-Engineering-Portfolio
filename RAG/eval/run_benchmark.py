@@ -60,9 +60,37 @@ class QueryOutcome:
     correct: bool
     route: str | None
     latency_ms: float
+    cost_usd: float
     answer_text: str
     graph_evidence_count: int
     vector_evidence_count: int
+
+
+def _estimate_cost_usd(route: str, is_vector_only: bool = False) -> float:
+    """
+    Estimate per-query API cost in USD based on route.
+    Uses Claude Haiku pricing ($0.80/MTok input, $4.00/MTok output).
+
+    Router call:   ~200 input + ~50 output tokens
+    GRAPH answer:  ~1500 input + ~200 output tokens
+    VECTOR answer: ~2000 input + ~250 output tokens
+    BOTH answer:   ~2500 input + ~300 output tokens
+    """
+    INPUT_RATE = 0.80 / 1_000_000
+    OUTPUT_RATE = 4.00 / 1_000_000
+
+    if is_vector_only:
+        # No router call; answer only
+        return round((1800 * INPUT_RATE) + (220 * OUTPUT_RATE), 6)
+
+    router = (200 * INPUT_RATE) + (50 * OUTPUT_RATE)
+    if route == "GRAPH":
+        answer = (1500 * INPUT_RATE) + (200 * OUTPUT_RATE)
+    elif route == "VECTOR":
+        answer = (2000 * INPUT_RATE) + (250 * OUTPUT_RATE)
+    else:  # BOTH
+        answer = (2500 * INPUT_RATE) + (300 * OUTPUT_RATE)
+    return round(router + answer, 6)
 
 
 @dataclass
@@ -77,6 +105,23 @@ class SystemResults:
 
     def avg_latency_ms(self) -> float:
         return sum(o.latency_ms for o in self.outcomes) / len(self.outcomes) if self.outcomes else 0.0
+
+    def p50_latency_ms(self) -> float:
+        if not self.outcomes:
+            return 0.0
+        lats = sorted(o.latency_ms for o in self.outcomes)
+        mid = len(lats) // 2
+        return (lats[mid - 1] + lats[mid]) / 2 if len(lats) % 2 == 0 else lats[mid]
+
+    def p95_latency_ms(self) -> float:
+        if not self.outcomes:
+            return 0.0
+        lats = sorted(o.latency_ms for o in self.outcomes)
+        idx = int(len(lats) * 0.95)
+        return lats[min(idx, len(lats) - 1)]
+
+    def avg_cost_usd(self) -> float:
+        return sum(o.cost_usd for o in self.outcomes) / len(self.outcomes) if self.outcomes else 0.0
 
 
 _golden_by_id: dict[str, dict] = {}
@@ -169,6 +214,7 @@ def run_benchmark() -> None:
                     correct=_grade(item, claims, answer),
                     route=route,
                     latency_ms=hybrid_latency,
+                    cost_usd=_estimate_cost_usd(route),
                     answer_text=answer,
                     graph_evidence_count=gcount,
                     vector_evidence_count=vcount,
@@ -184,6 +230,7 @@ def run_benchmark() -> None:
                     correct=_grade(item, v_claims, v_answer),
                     route="VECTOR",
                     latency_ms=vector_latency,
+                    cost_usd=_estimate_cost_usd("VECTOR", is_vector_only=True),
                     answer_text=v_answer,
                     graph_evidence_count=0,
                     vector_evidence_count=v_vcount,
@@ -206,7 +253,18 @@ def run_benchmark() -> None:
             d: {"hybrid_accuracy": hybrid.accuracy(d), "vector_only_accuracy": vector_only.accuracy(d)}
             for d in difficulties
         },
-        "latency_ms": {"hybrid_avg": hybrid.avg_latency_ms(), "vector_only_avg": vector_only.avg_latency_ms()},
+        "latency_ms": {
+            "hybrid_avg": hybrid.avg_latency_ms(),
+            "hybrid_p50": hybrid.p50_latency_ms(),
+            "hybrid_p95": hybrid.p95_latency_ms(),
+            "vector_only_avg": vector_only.avg_latency_ms(),
+            "vector_only_p50": vector_only.p50_latency_ms(),
+            "vector_only_p95": vector_only.p95_latency_ms(),
+        },
+        "cost_usd": {
+            "hybrid_avg_per_query": hybrid.avg_cost_usd(),
+            "vector_only_avg_per_query": vector_only.avg_cost_usd(),
+        },
         "ingestion_cost": compute_total_extraction_cost(),
         "per_question": [
             {
@@ -214,7 +272,11 @@ def run_benchmark() -> None:
                 "difficulty": _difficulty_of(h.question_id),
                 "hybrid_correct": h.correct,
                 "hybrid_route": h.route,
+                "hybrid_latency_ms": round(h.latency_ms, 1),
+                "hybrid_cost_usd": h.cost_usd,
                 "vector_only_correct": v.correct,
+                "vector_only_latency_ms": round(v.latency_ms, 1),
+                "vector_only_cost_usd": v.cost_usd,
             }
             for h, v in zip(hybrid.outcomes, vector_only.outcomes)
         ],
@@ -227,7 +289,9 @@ def run_benchmark() -> None:
     for d in difficulties:
         r = report["by_difficulty"][d]
         print(f"  {d:15s} hybrid={r['hybrid_accuracy']:.0%}  vector_only={r['vector_only_accuracy']:.0%}")
-    print(f"Avg latency: hybrid={report['latency_ms']['hybrid_avg']:.0f}ms  vector_only={report['latency_ms']['vector_only_avg']:.0f}ms")
+    print(f"Latency (avg/p50/p95): hybrid={report['latency_ms']['hybrid_avg']:.0f}/{report['latency_ms']['hybrid_p50']:.0f}/{report['latency_ms']['hybrid_p95']:.0f}ms  "
+          f"vector_only={report['latency_ms']['vector_only_avg']:.0f}/{report['latency_ms']['vector_only_p50']:.0f}/{report['latency_ms']['vector_only_p95']:.0f}ms")
+    print(f"Avg cost/query: hybrid=${report['cost_usd']['hybrid_avg_per_query']:.6f}  vector_only=${report['cost_usd']['vector_only_avg_per_query']:.6f}")
     print(f"Ingestion cost (one-time): ${report['ingestion_cost']['total_cost_usd']}")
     print(f"Results written to {RESULTS_PATH}")
 
