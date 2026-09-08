@@ -4,9 +4,9 @@
 
 ## Project 1: Knowledge Graph RAG for SEC Filings
 
-- Built a hybrid retrieval system combining Neo4j knowledge graph + pgvector (HNSW) that achieved **100% accuracy on 50-question benchmark** (single-hop, two-hop, three-hop, aggregation, out-of-scope) vs 85% for vector-only baseline, with a 50-point gap on two-hop relationship queries
+- Built a hybrid retrieval system combining Neo4j knowledge graph + pgvector (HNSW) that achieved **100% accuracy on 50-question benchmark** (single-hop, two-hop, three-hop, aggregation, out-of-scope) vs 85% for vector-only baseline, with a 50-point gap on two-hop relationship queries; benchmarked per-query latency (hybrid p50=5.1s, p95=7.2s) and cost ($0.00281 hybrid vs $0.00232 vector-only)
 - Implemented entity extraction pipeline using Claude with structured JSON output, processing **6 SEC 10-K filings (749 chunks)** at $9.65 total cost; applied two-stage entity resolution (normalization + union-find + embedding similarity at 0.87 threshold)
-- Designed LLM-powered query router (GRAPH / VECTOR / BOTH) with confidence thresholding; enforced citation validation with reject-and-regenerate to eliminate hallucinated citations
+- Tuned HNSW index via recall@k sweep (ef_search=10/40/100/200, 35 labeled queries): chose ef_search=100 at recall@5=91.4% — doubling to 200 added only +3% recall at ~30% higher latency; designed LLM-powered query router (GRAPH / VECTOR / BOTH) with confidence thresholding
 
 ---
 
