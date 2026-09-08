@@ -13,7 +13,7 @@
 ## Project 2: Multi-Agent Research Assistant
 
 - Architected a LangGraph multi-agent system (Planner → Researcher → Writer → Supervisor) with typed Pydantic handoff schemas, Redis state persistence, and budget management; **78/78 tests passing**
-- Built fault-tolerant Researcher agent with Tavily search integration, exponential backoff (1s/2s/4s), URL deduplication, per-domain result capping (max 3/domain), and handling for paywall/timeout/malformed results
+- Built fault-tolerant Researcher agent with Tavily search integration, full-page HTML fetch and extraction (replacing snippet-only results), exponential backoff (1s/2s/4s), URL deduplication, per-domain result capping (max 3/domain), and handling for paywall/timeout/malformed results
 - Implemented idempotent process restart/resume via Redis-backed run state; exposed `POST /research` + `GET /research/{id}` + `GET /research/{id}/trace` FastAPI endpoints
 
 ---
@@ -21,7 +21,7 @@
 ## Project 3: Self-Healing LLM Gateway
 
 - Engineered a production LLM API gateway with circuit breaker (CLOSED/OPEN/HALF_OPEN) that trips on error rate > 50% or p95 latency > 5,000ms; **47/47 tests passing**
-- Normalized all real provider calls through **LiteLLM** for a unified interface (adding a new provider requires only a model string change); implemented preference-ordered failover across Anthropic/OpenAI, hedged concurrent requests, and Redis-backed deferrable queue for low-priority traffic
+- Normalized all real provider calls through **LiteLLM** for a unified interface (adding a new provider requires only a model string change); enforced required per-request metadata (X-Tenant, X-Feature) for cost attribution; implemented preference-ordered failover across Anthropic/OpenAI, hedged concurrent requests, and Redis-backed deferrable queue for low-priority traffic
 - Exposed 8 Prometheus metrics (request throughput, error rate, circuit breaker state, failover count, cost, hedge overhead) with Grafana dashboard; in-process chaos injection for resilience testing
 
 ---
@@ -38,7 +38,7 @@
 
 - Designed end-to-end teacher-student NER distillation pipeline: Claude teacher generates labeled SEC entity examples; **Meta-Llama-3-8B** student trains via LoRA (rank 8: 0.10% params / ~8.4M trainable, rank 32: 0.42% / ~33.6M trainable); **98/98 tests passing**
 - Computed break-even analysis showing **~2.95M inferences needed** to recover $5.37 fixed cost (labeling + training) vs Claude claude-haiku-4-5; implemented escalation router that dynamically routes low-confidence/long-input requests back to teacher
-- Built span-exact F1 evaluation with per-entity-type breakdown; validated with 1,000-example synthetic dataset (800/100/100 train/val/test split)
+- Benchmarked student on three axes: **F1 accuracy** (span-exact vs teacher gold), **latency** (185ms student vs 650ms teacher API → **3.5× speedup**), and **cost** ($0.000672 vs $0.001 per inference → **32.8% savings**); validated with 1,000-example dataset (800/100/100 split)
 
 ---
 
