@@ -213,8 +213,8 @@ def _call_provider(provider: str, messages: list[ChatMessage], model: str) -> di
 @app.post("/v1/chat/completions")
 async def chat_completions(
     request_body: ChatCompletionRequest,
-    x_tenant: str = Header(default="default", alias="X-Tenant"),
-    x_feature: str = Header(default="default", alias="X-Feature"),
+    x_tenant: str = Header(alias="X-Tenant"),
+    x_feature: str = Header(alias="X-Feature"),
     x_request_id: str = Header(default="", alias="X-Request-Id"),
     x_request_class: str = Header(default="interactive", alias="X-Request-Class"),
     x_hedge: str = Header(default="false", alias="X-Hedge"),

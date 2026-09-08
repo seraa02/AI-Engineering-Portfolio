@@ -38,6 +38,42 @@ def _make_empty_finding(reason: str = "No results found") -> Finding:
     )
 
 
+def _fetch_page_text(url: str, timeout: float = 5.0, max_chars: int = 2000) -> str:
+    """Fetch a URL and extract plain text content.
+
+    The PDF spec requires fetching and extracting the full page rather than
+    trusting search snippets, which are often truncated or SEO-optimised.
+    Falls back silently on any network / parse error so search never crashes.
+    """
+    import html
+    import re
+    import urllib.request
+
+    if not url or not url.startswith("http"):
+        return ""
+    try:
+        req = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (compatible; ResearchBot/1.0)",
+                "Accept": "text/html,application/xhtml+xml,text/plain",
+            },
+        )
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            raw = resp.read(100_000).decode("utf-8", errors="replace")
+        # Strip script/style blocks
+        raw = re.sub(
+            r"<(script|style)[^>]*>.*?</(script|style)>",
+            " ", raw, flags=re.DOTALL | re.IGNORECASE,
+        )
+        text = re.sub(r"<[^>]+>", " ", raw)
+        text = html.unescape(text)
+        text = re.sub(r"\s+", " ", text).strip()
+        return text[:max_chars]
+    except Exception:
+        return ""
+
+
 def _parse_tavily_result(result: dict) -> Optional[Finding]:
     """
     Safely parse a single Tavily result dict into a Finding.
@@ -107,7 +143,21 @@ def search_tavily(
                 # All results were paywalled/empty
                 return [_make_empty_finding("All results were inaccessible (paywall or empty)")]
 
-            return findings
+            # Enrich each finding by fetching the full page text.
+            # This replaces the Tavily snippet (which is often truncated/SEO text)
+            # with the actual page content, as required by the spec.
+            enriched = []
+            for f in findings:
+                full_text = _fetch_page_text(f.source_url) if f.source_url else ""
+                if full_text and len(full_text) > len(f.source_snippet):
+                    f = Finding(
+                        claim=f.claim,
+                        source_url=f.source_url,
+                        source_snippet=full_text[:500],
+                        retrieval_timestamp=f.retrieval_timestamp,
+                    )
+                enriched.append(f)
+            return enriched
 
         except Exception as exc:
             exc_str = str(exc)
