@@ -13,7 +13,7 @@ name: LLM-Judge Eval Gate
 #      This step only runs when ANTHROPIC_API_KEY is configured as a repo secret; without it,
 #      the job still runs the offline suite and reports that the live gate was skipped.
 
-on:
+"on":
   push:
     branches: [main, master]
     paths:
