@@ -1,0 +1,74 @@
+name: LLM-Judge Eval Gate
+
+# Project 4 (EVALS): gates PRs on calibrated LLM-judge scores.
+#
+# Two layers, per the PDF spec:
+#   1. "Run tests" — the mocked/offline unit suite (rubric math, kappa/Spearman, bias math,
+#      CI-gate logic, SQLite storage). No API key needed, always runs, always free.
+#   2. "Run eval gate (live judge, real Postgres, regression-gated)" — the real thing: calls
+#      the actual Claude judge (src.judge.judge) against a fixed 10-example evaluation set,
+#      stores the run in a real Postgres instance (a service container in this workflow), and
+#      fails the build if any criterion regresses vs. the last stored run by more than its
+#      tolerance — with hallucination_avoidance (the safety criterion) allowed ZERO regression.
+#      This step only runs when ANTHROPIC_API_KEY is configured as a repo secret; without it,
+#      the job still runs the offline suite and reports that the live gate was skipped.
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "EVALS/**"
+      - ".github/workflows/evals-judge-gate.yml"
+  pull_request:
+    paths:
+      - "EVALS/**"
+  workflow_dispatch: {}
+
+jobs:
+  judge-gate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: EVALS
+
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: evals_user
+          POSTGRES_PASSWORD: changeme125
+          POSTGRES_DB: evals_db
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tests (offline/mocked — rubric, kappa/Spearman, bias math, CI-gate logic)
+        run: python -m pytest tests/ -v -m "not live" --ignore=tests/test_judge_live.py --ignore=tests/test_database_postgres.py
+
+      - name: Run eval gate — live judge, real Postgres, regression-gated (safety criterion zero-tolerance)
+        if: ${{ secrets.ANTHROPIC_API_KEY != '' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          JUDGE_MODEL: claude-haiku-4-5
+          POSTGRES_DSN: postgresql://evals_user:changeme125@localhost:5432/evals_db
+        run: python -m src.ci.eval_gate --live --store --n 10
+
+      - name: Run eval gate — mock judge fallback (no ANTHROPIC_API_KEY secret configured)
+        if: ${{ secrets.ANTHROPIC_API_KEY == '' }}
+        run: |
+          echo "::warning::ANTHROPIC_API_KEY secret not set — running the deterministic mock judge instead of the real Claude judge. Absolute thresholds are still enforced; regression-vs-history is skipped."
+          python -m src.ci.eval_gate --n 10

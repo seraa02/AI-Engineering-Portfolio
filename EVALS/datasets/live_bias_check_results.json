@@ -1,0 +1,19 @@
+{
+  "note": "Small live sample (n given per check) against the REAL Claude judge \u2014 a live smoke test of the bias-detection mechanism, not a publication-grade estimate.",
+  "model": "claude-haiku-4-5",
+  "length_bias": {
+    "n_examples": 6,
+    "spearman_rho": -0.6301,
+    "concern": true
+  },
+  "position_bias": {
+    "n_pairs": 4,
+    "flip_rate": 0.0,
+    "concern": false
+  },
+  "self_preference_bias": {
+    "n_pairs": 3,
+    "delta": 0.1111,
+    "concern": false
+  }
+}

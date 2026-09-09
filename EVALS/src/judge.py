@@ -23,7 +23,17 @@ You will score the answer on specific criteria. For each criterion, you must:
 2. Assign a score within the valid range
 3. Provide a brief reasoning (1-2 sentences)
 
-IMPORTANT: Base your scores ONLY on the answer text provided. Do not use outside knowledge about the companies. The answer is evaluated purely on what it claims and how well those claims are supported."""
+IMPORTANT: If RETRIEVED EVIDENCE is provided below, factual_accuracy and hallucination_avoidance
+must be judged by checking the answer's claims AGAINST that evidence — a claim not supported by
+the evidence, or contradicted by it, is inaccurate/hallucinated even if it sounds plausible. A
+non-answer ("I don't know") is NOT automatically factually accurate just because it makes no
+false claims — score it low on completeness and factual_accuracy, since it fails to state the
+fact the evidence actually supports.
+
+If NO evidence is provided, you cannot verify claims against a source: score factual_accuracy
+and hallucination_avoidance based only on internal plausibility and whether citations are present,
+and say so explicitly in your reasoning — do not assert a claim is "accurate" without evidence to
+check it against."""
 
 
 def _build_scoring_schema(criteria: list[Criterion]) -> dict:
@@ -33,15 +43,20 @@ def _build_scoring_schema(criteria: list[Criterion]) -> dict:
         properties[c.name] = {
             "type": "object",
             "properties": {
+                "reasoning": {
+                    "type": "string",
+                    "description": f"1-2 sentence reasoning for the {c.name} score, written BEFORE deciding the score.",
+                },
                 "score": {
                     "type": "integer",
-                    "minimum": 1,
-                    "maximum": c.scale,
+                    "enum": list(range(1, c.scale + 1)),
                     "description": f"Score from 1 to {c.scale} for {c.name}",
                 },
-                "reasoning": {"type": "string"},
             },
-            "required": ["score", "reasoning"],
+            # NOTE: reasoning is listed first in "properties" and "required" so the
+            # model is constrained to write reasoning tokens before the score token
+            # (reasoning-before-score improves consistency; see README calibration notes).
+            "required": ["reasoning", "score"],
             "additionalProperties": False,
         }
     return {
@@ -68,8 +83,17 @@ def judge(
     answer: str,
     model: str = "claude-haiku-4-5",
     criteria: Optional[list[str]] = None,
+    context: Optional[str] = None,
 ) -> JudgmentResult:
-    """Score one answer on all (or specified) rubric criteria."""
+    """
+    Score one answer on all (or specified) rubric criteria.
+
+    `context` is the retrieved evidence (source chunks) the answer was supposedly grounded
+    in — e.g. Project 1's retrieved passages, or a golden dataset's `source_evidence`. When
+    provided, factual_accuracy and hallucination_avoidance are checked against it directly,
+    which is what actually makes those two criteria meaningful for a RAG system (without it,
+    the judge can only check internal plausibility, not real correctness — see SYSTEM_PROMPT).
+    """
     active_criteria = [c for c in CRITERIA if criteria is None or c.name in (criteria or [])]
     schema = _build_scoring_schema(active_criteria)
 
@@ -85,9 +109,12 @@ def judge(
         )
     rubric_text = "\n\n".join(rubric_lines)
 
+    context_block = f"RETRIEVED EVIDENCE:\n{context}\n\n" if context else ""
+
     user_content = (
         f"QUESTION: {question}\n\n"
         f"ANSWER TO EVALUATE:\n{answer}\n\n"
+        f"{context_block}"
         f"RUBRIC:\n{rubric_text}\n\n"
         "Score the answer on each criterion using the rubric above."
     )
@@ -115,6 +142,56 @@ def judge(
         output_tokens=response.usage.output_tokens,
         latency_ms=latency_ms,
     )
+
+
+PAIRWISE_SYSTEM_PROMPT = """You are a calibrated evaluator comparing two candidate answers to the
+same question about SEC 10-K filings. Decide which answer is better overall (factual accuracy,
+citation quality, completeness, coherence, and avoidance of hallucination all matter — weigh
+factual accuracy and hallucination avoidance most heavily).
+
+IMPORTANT: Base your judgment ONLY on the two answer texts provided. First write your reasoning,
+THEN give your verdict."""
+
+_PAIRWISE_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "reasoning": {"type": "string", "description": "1-3 sentence comparison of A and B, written before the verdict."},
+        "winner": {"type": "string", "enum": ["A", "B"], "description": "Which answer is better overall."},
+    },
+    "required": ["reasoning", "winner"],
+    "additionalProperties": False,
+}
+
+
+def judge_pairwise(
+    client: anthropic.Anthropic,
+    question: str,
+    answer_a: str,
+    answer_b: str,
+    model: str = "claude-haiku-4-5",
+) -> str:
+    """
+    Ask the judge which of two answers (A or B) is better. Used for the real position-bias
+    check in src/bias.py::measure_position_bias — call this twice per pair, once as
+    (question, x, y) and once as (question, y, x), and see if the verdict flips.
+
+    Returns "A" or "B".
+    """
+    user_content = (
+        f"QUESTION: {question}\n\n"
+        f"ANSWER A:\n{answer_a}\n\n"
+        f"ANSWER B:\n{answer_b}\n\n"
+        "Which answer is better overall?"
+    )
+    response = client.messages.create(
+        model=model,
+        max_tokens=512,
+        system=PAIRWISE_SYSTEM_PROMPT,
+        output_config={"format": {"type": "json_schema", "schema": _PAIRWISE_SCHEMA}},
+        messages=[{"role": "user", "content": user_content}],
+    )
+    raw = json.loads(next(b.text for b in response.content if b.type == "text"))
+    return raw["winner"]
 
 
 # ---------------------------------------------------------------------------
@@ -149,11 +226,14 @@ try:
             return self._reason
 
         def measure(self, test_case: LLMTestCase) -> float:
+            retrieval_context = getattr(test_case, "retrieval_context", None)
+            context = "\n---\n".join(retrieval_context) if retrieval_context else None
             result = judge(
                 client=self.client,
                 question=test_case.input,
                 answer=test_case.actual_output,
                 model=self.model,
+                context=context,
             )
             self._score = result.weighted_score
             self._reason = "; ".join(
