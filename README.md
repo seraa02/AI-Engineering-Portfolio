@@ -81,14 +81,6 @@ python -m src.ci.gate --unsafe-mock  # → FAILED (correctly)
 
 ---
 
-## Documentation
-
-- [FINAL_REPORT.md](./FINAL_REPORT.md) — Full project write-up with honest assessment
-- [PORTFOLIO_METRICS.md](./PORTFOLIO_METRICS.md) — All measured metrics in one place
-- [RESUME_BULLETS.md](./RESUME_BULLETS.md) — Resume-ready impact statements
-
----
-
 ## Key Engineering Decisions
 
 **Why knowledge graph + vector search?**
