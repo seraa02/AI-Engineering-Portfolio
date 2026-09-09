@@ -23,17 +23,12 @@ You will score the answer on specific criteria. For each criterion, you must:
 2. Assign a score within the valid range
 3. Provide a brief reasoning (1-2 sentences)
 
-IMPORTANT: If RETRIEVED EVIDENCE is provided below, factual_accuracy and hallucination_avoidance
-must be judged by checking the answer's claims AGAINST that evidence — a claim not supported by
-the evidence, or contradicted by it, is inaccurate/hallucinated even if it sounds plausible. A
-non-answer ("I don't know") is NOT automatically factually accurate just because it makes no
-false claims — score it low on completeness and factual_accuracy, since it fails to state the
-fact the evidence actually supports.
-
-If NO evidence is provided, you cannot verify claims against a source: score factual_accuracy
-and hallucination_avoidance based only on internal plausibility and whether citations are present,
-and say so explicitly in your reasoning — do not assert a claim is "accurate" without evidence to
-check it against."""
+Base your scores on the answer text provided and be generally lenient — assume good faith and
+give the benefit of the doubt on factual claims unless they are obviously wrong."""
+# DEMO REGRESSION (intentional, for the CI-gate PR demo — see PR description):
+# this drops the "check claims against RETRIEVED EVIDENCE" requirement added in commit
+# 9ece06d, and adds a "be lenient" instruction that actively works against the rubric's
+# factual_accuracy/hallucination_avoidance anchors. Do not merge.
 
 
 def _build_scoring_schema(criteria: list[Criterion]) -> dict:

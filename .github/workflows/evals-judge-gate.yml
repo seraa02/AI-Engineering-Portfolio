@@ -71,4 +71,7 @@ jobs:
         if: ${{ secrets.ANTHROPIC_API_KEY == '' }}
         run: |
           echo "::warning::ANTHROPIC_API_KEY secret not set — running the deterministic mock judge instead of the real Claude judge. Absolute thresholds are still enforced; regression-vs-history is skipped."
-          python -m src.ci.eval_gate --n 10
+          # DEMO (do not merge): --degraded forces this step to exercise the real exit-1 path
+          # on this PR, standing in for the live-judge-catches-a-weakened-prompt demo described
+          # in the PR body, since no ANTHROPIC_API_KEY secret is configured in this repo.
+          python -m src.ci.eval_gate --degraded --n 10
